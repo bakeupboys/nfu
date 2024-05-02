@@ -1,0 +1,11 @@
+td.fit {
+    width: 0;
+    white-space: nowrap;
+    min-width: fit-content;
+}
+
+.scissors {
+    width: 100%;
+    border-top: 3px dashed black;
+    margin-top: -3px;
+}
