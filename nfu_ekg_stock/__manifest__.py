@@ -6,7 +6,7 @@
     "category": "Stock",
     "version": "16.0.1.0.1",
     "depends": ["stock"],
-    "data": ["views/report_deliveryslip.xml", "report/stock_report_views.xml"],
+    "data": ["views/report_deliveryslip.xml", "views/report_deliveryslip_compact.xml", "report/stock_report_views.xml"],
     "assets": {"web.report_assets_common": ["nfu_ekg_stock/static/src/scss/report_stock_rule.scss"]},
     "license": "LGPL-3",
     "application": True,
