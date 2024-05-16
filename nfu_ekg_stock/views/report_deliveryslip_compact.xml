@@ -11,7 +11,8 @@
                         <thead>
                             <tr>
                                 <th name="th_sm_name"><span t-field="partner.name"/></th>
-                                <th name="th_sm_quantity" style="white-space: nowrap; width: 10%"><strong>Qty</strong></th>
+                                <th name="th_sm_quantity" style="white-space: nowrap; width: 10%"><strong
+                            >Qty</strong></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -27,12 +28,16 @@
                             </tr>
                         </tbody>
                     </table>
-                    <table class="table table-sm table-bordered" t-if="o.move_line_ids and o.state=='done'"
-                            name="stock_move_line_table">
+                    <table
+                class="table table-sm table-bordered"
+                t-if="o.move_line_ids and o.state=='done'"
+                name="stock_move_line_table"
+            >
                         <thead>
                             <tr>
                                 <th name="th_sm_name"><span t-field="partner.name"/></th>
-                                <th name="th_sm_quantity"  style="white-space: nowrap; width: 10%"><strong>Qty</strong></th>
+                                <th name="th_sm_quantity" style="white-space: nowrap; width: 10%"><strong
+                            >Qty</strong></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -52,14 +57,23 @@
     </template>
 
     <template id="report_ekg_deliveryslip_compact">
-        <t t-call="web.html_container">
-            <t t-call="web.basic_layout">
-                <div class="row">
-                <t t-foreach="docs" t-as="o">
-                    <div class="col-6">
+        <t t-call="web.basic_layout">
+            <t t-set="docs" t-value="[docs[i:i+2] for i in range(0, len(docs), 2)]"/>
+            <t t-foreach="docs" t-as="sub_doc">
+                <div class="row mb-3">
+                    <div class="col-6" style="margin-right: 1rem">
+                        <t t-set="o" t-value="sub_doc[0]"/>
                         <t t-call="nfu_ekg_stock.report_ekg_delivery_compact_document" t-lang="o._get_report_lang()"/>
                     </div>
-                </t>
+                    <t t-if="len(sub_doc)>1">
+                        <t t-set="o" t-value="sub_doc[1]"/>
+                        <div class="col-6">
+                            <t
+                                t-call="nfu_ekg_stock.report_ekg_delivery_compact_document"
+                                t-lang="o._get_report_lang()"
+                            />
+                        </div>
+                    </t>
                 </div>
             </t>
         </t>
