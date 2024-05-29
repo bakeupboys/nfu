@@ -9,7 +9,7 @@
                 <div class="page" style="page-break-inside: avoid;">
                     <div class="row mt32">
                         <div class="col-auto" name="div_name">
-                            <strong>Name:</strong> <span t-field="partner.name"/>
+                            <strong><span t-field="partner.name"/></strong>
                         </div>
                     </div>
                     <table class="table table-sm" name="stock_move_table">
