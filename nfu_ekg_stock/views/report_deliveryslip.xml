@@ -11,9 +11,6 @@
                         <div class="col-auto" name="div_name">
                             <strong>Name:</strong> <span t-field="partner.name"/>
                         </div>
-                        <div t-if="o.note" class="col-auto" name="div_note">
-                            <span t-field="o.note"/>
-                        </div>
                     </div>
                     <table class="table table-sm" name="stock_move_table">
                         <thead>
