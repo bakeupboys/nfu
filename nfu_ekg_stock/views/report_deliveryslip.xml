@@ -8,16 +8,16 @@
                 <div class="scissors"/>
                 <div class="page" style="page-break-inside: avoid;">
                     <div class="row mt32">
-                        <div class="col-auto" name="div_name">
+                        <div class="col-auto" name="div_name" t-if="partner">
                             <strong><span t-field="partner.name"/></strong>
                         </div>
                     </div>
                     <table class="table table-sm" name="stock_move_table">
                         <thead>
                             <tr>
-                                <th name="th_sm_product_qty"><strong>Batch Size</strong></th>
+                                <th class="fit" name="th_sm_product_qty"><strong>Batch Size</strong></th>
                                 <th name="th_sm_product"><strong>Product</strong></th>
-                                <th name="th_sm_ordered"><strong>Ordered</strong></th>
+                                <th class="fit" name="th_sm_ordered"><strong>Ordered</strong></th>
                             </tr>
                         </thead>
                         <tbody>
