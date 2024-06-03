@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_ekg_delivery_compact_document">
+
+                <t t-set="o" t-value="o.with_context(lang=o._get_report_lang())"/>
+                <t t-set="partner" t-value="o.partner_id or (o.move_ids and o.move_ids[0].partner_id) or False"/>
+
+                <div style="page-break-inside: avoid;">
+
+                    <table class="table table-sm table-bordered" t-if="o.state!='done'" name="stock_move_table">
+                        <thead>
+                            <tr>
+                                <th name="th_sm_name"><span t-field="partner.name"/></th>
+                                <th name="th_sm_quantity" style="white-space: nowrap; width: 10%"><strong
+                            >Qty</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="lines" t-value="o.move_ids.filtered(lambda x: x.product_uom_qty)"/>
+                            <tr t-foreach="lines" t-as="move">
+                                <td>
+                                    <span t-field="move.product_id.name"/>
+                                </td>
+                                <td style="white-space: nowrap;">
+                                    <span t-field="move.quantity_done"/>
+                                    (<span t-field="move.product_uom_qty"/>)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table
+                class="table table-sm table-bordered"
+                t-if="o.move_line_ids and o.state=='done'"
+                name="stock_move_line_table"
+            >
+                        <thead>
+                            <tr>
+                                <th name="th_sm_name"><span t-field="partner.name"/></th>
+                                <th name="th_sm_quantity" style="white-space: nowrap; width: 10%"><strong
+                            >Qty</strong></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <t t-set="lines" t-value="o.move_ids.filtered(lambda x: x.product_uom_qty)"/>
+                            <tr t-foreach="lines" t-as="move">
+                                <td>
+                                    <span t-field="move.product_id.name"/>
+                                </td>
+                                <td style="white-space: nowrap;">
+                                    <span t-field="move.quantity_done"/>
+                                    (<span t-field="move.product_uom_qty"/>)
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+    </template>
+
+    <template id="report_ekg_deliveryslip_compact">
+        <t t-call="web.basic_layout">
+            <t t-set="docs" t-value="[docs[i:i+2] for i in range(0, len(docs), 2)]"/>
+            <t t-foreach="docs" t-as="sub_doc">
+                <div class="row mb-3">
+                    <div class="col-6" style="margin-right: 1rem">
+                        <t t-set="o" t-value="sub_doc[0]"/>
+                        <t t-call="nfu_ekg_stock.report_ekg_delivery_compact_document" t-lang="o._get_report_lang()"/>
+                    </div>
+                    <t t-if="len(sub_doc)>1">
+                        <t t-set="o" t-value="sub_doc[1]"/>
+                        <div class="col-6">
+                            <t
+                                t-call="nfu_ekg_stock.report_ekg_delivery_compact_document"
+                                t-lang="o._get_report_lang()"
+                            />
+                        </div>
+                    </t>
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>
