@@ -7,12 +7,12 @@
                 <t t-set="lines" t-value="docs.filtered(lambda p:p.partner_id).mapped('move_ids').filtered(lambda x: x.product_uom_qty)"/>
                 <t t-set="products" t-value="lines.mapped('product_id')"/>
                 <t t-set="pagination" t-value="13"/>
-                <!-- <t t-foreach="partners" t-as="page"> -->
+                <t t-foreach="range(len(partners)%pagination-1)" t-as="page">
                 <table class="table table-sm" name="stock_move_table">
                     <thead>
                         <tr>
                             <th><strong>Product</strong></th>
-                            <t t-foreach="partners[:pagination]" t-as="partner">
+                            <t t-foreach="partners[page*pagination:page*pagination+pagination]" t-as="partner">
                                 <th><strong t-esc="partner.name"/></th>
                             </t>
                         </tr>
@@ -20,7 +20,7 @@
                     <t t-foreach="products" t-as="product">
                         <tr>
                             <td><strong t-esc="product.name"/></td>
-                            <t t-foreach="partners[:pagination]" t-as="partner">
+                            <t t-foreach="partners[page*pagination:page*pagination+pagination]" t-as="partner">
                                 <td>
                                     <span t-esc="sum(lines.filtered(lambda p:p.picking_id.partner_id.id == partner.id).filtered(lambda p:p.product_id.id == product.id).mapped('product_uom_qty'))"/>
                                 </td>
@@ -28,6 +28,7 @@
                         </tr>
                     </t>
                 </table>
+                </t>
             </t>
         </t>
     </template>
