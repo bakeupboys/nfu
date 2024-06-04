@@ -4,30 +4,44 @@
         <t t-call="web.html_container">
             <t t-call="web.basic_layout">
                 <t t-set="partners" t-value="docs.mapped('partner_id')"/>
-                <t t-set="lines" t-value="docs.filtered(lambda p:p.partner_id).mapped('move_ids').filtered(lambda x: x.product_uom_qty)"/>
+                <t
+                    t-set="lines"
+                    t-value="docs.filtered(lambda p:p.partner_id).mapped('move_ids').filtered(lambda x: x.product_uom_qty)"
+                />
                 <t t-set="products" t-value="lines.mapped('product_id')"/>
                 <t t-set="pagination" t-value="13"/>
-                <t t-foreach="range(len(partners)%pagination-1)" t-as="page">
-                <table class="table table-sm" name="stock_move_table">
+                <t
+                    t-set="partner_chunks"
+                    t-value="[partners[i:i+pagination] for i in range(0, len(partners), pagination)]"
+                />
+                <t t-foreach="partner_chunks" t-as="partner_chunk">
+                <div class="page" style="page-break-inside: avoid;">
+                <table class="table table-sm" name="nfu_ekg_packing_list">
                     <thead>
                         <tr>
-                            <th><strong>Product</strong></th>
-                            <t t-foreach="partners[page*pagination:page*pagination+pagination]" t-as="partner">
-                                <th><strong t-esc="partner.name"/></th>
+                            <th width="110"><strong>Product</strong></th>
+                            <t t-foreach="partner_chunk" t-as="partner">
+                                <th width="80"><strong t-esc="partner.name"/></th>
                             </t>
+                            <th/>
                         </tr>
                     </thead>
                     <t t-foreach="products" t-as="product">
                         <tr>
                             <td><strong t-esc="product.name"/></td>
-                            <t t-foreach="partners[page*pagination:page*pagination+pagination]" t-as="partner">
+                            <t t-foreach="partner_chunk" t-as="partner">
                                 <td>
-                                    <span t-esc="sum(lines.filtered(lambda p:p.picking_id.partner_id.id == partner.id).filtered(lambda p:p.product_id.id == product.id).mapped('product_uom_qty'))"/>
+                                    <span
+                                                t-esc="sum(lines.filtered(lambda p:p.picking_id.partner_id.id == partner.id).filtered(lambda p:p.product_id.id == product.id).mapped('product_uom_qty'))"
+                                            />
                                 </td>
                             </t>
+                            <td/>
                         </tr>
                     </t>
+
                 </table>
+                </div>
                 </t>
             </t>
         </t>
