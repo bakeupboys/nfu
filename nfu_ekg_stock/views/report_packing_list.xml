@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="report_ekg_packing_list">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-set="partners" t-value="docs.mapped('partner_id')"/>
+                <table class="table table-sm" name="stock_move_table">
+                    <thead>
+                        <tr>
+                            <th><strong>Product</strong></th>
+                            <t t-foreach="partners" t-as="partner">
+                                <th><strong t-esc="partner.name"/></th>
+                            </t>
+                        </tr>
+                    </thead>
+                    <tr>
+                <!-- <t t-foreach="docs" t-as="o">
+                    <t t-call="nfu_ekg_stock.report_ekg_delivery_document" t-lang="o._get_report_lang()"/>
+                </t> -->
+                    </tr>
+                </table>
+            </t>
+        </t>
+    </template>
+</odoo>
