@@ -9,7 +9,7 @@
                     t-value="docs.filtered(lambda p:p.partner_id).mapped('move_ids').filtered(lambda x: x.product_uom_qty)"
                 />
                 <t t-set="products" t-value="lines.mapped('product_id')"/>
-                <t t-set="pagination" t-value="13"/>
+                <t t-set="pagination" t-value="12"/>
                 <t
                     t-set="partner_chunks"
                     t-value="[partners[i:i+pagination] for i in range(0, len(partners), pagination)]"
@@ -19,7 +19,7 @@
                 <table class="table table-sm" name="nfu_ekg_packing_list">
                     <thead>
                         <tr>
-                            <th width="110"><strong>Product</strong></th>
+                            <th width="160"><strong>Product</strong></th>
                             <t t-foreach="partner_chunk" t-as="partner">
                                 <th width="80"><strong t-esc="partner.name"/></th>
                             </t>
