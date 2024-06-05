@@ -15,15 +15,14 @@
                     t-value="[partners[i:i+pagination] for i in range(0, len(partners), pagination)]"
                 />
                 <t t-foreach="partner_chunks" t-as="partner_chunk">
-                <div class="page" style="page-break-inside: avoid;">
-                <table class="table table-sm" name="nfu_ekg_packing_list">
+                <div style="page-break-inside: avoid;">
+                <table class="table table-bordered table-sm  w-auto" name="nfu_ekg_packing_list">
                     <thead>
                         <tr>
                             <th width="160"><strong>Product</strong></th>
                             <t t-foreach="partner_chunk" t-as="partner">
                                 <th width="80"><strong t-esc="partner.name"/></th>
                             </t>
-                            <th/>
                         </tr>
                     </thead>
                     <t t-foreach="products" t-as="product">
@@ -31,12 +30,13 @@
                             <td><strong t-esc="product.name"/></td>
                             <t t-foreach="partner_chunk" t-as="partner">
                                 <td>
-                                    <span
-                                                t-esc="sum(lines.filtered(lambda p:p.picking_id.partner_id.id == partner.id).filtered(lambda p:p.product_id.id == product.id).mapped('product_uom_qty'))"
+                                    <t
+                                                t-set="qty"
+                                                t-value="sum(lines.filtered(lambda p:p.picking_id.partner_id.id == partner.id).filtered(lambda p:p.product_id.id == product.id).mapped('product_uom_qty'))"
                                             />
+                                    <t t-if="qty" t-esc="qty"/>
                                 </td>
                             </t>
-                            <td/>
                         </tr>
                     </t>
 
