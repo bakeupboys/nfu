@@ -16,7 +16,7 @@
     <record id="action_report_ekg_packing_list" model="ir.actions.report">
         <field name="name">EKG Packing List</field>
         <field name="model">stock.picking</field>
-        <field name="report_type">qweb-html</field>
+        <field name="report_type">qweb-pdf</field>
         <field name="paperformat_id" ref="paperformat_packaging_list"/>
         <field name="report_name">nfu_ekg_stock.report_ekg_packing_list</field>
         <field name="report_file">nfu_ekg_stock.report_packing_list</field>
