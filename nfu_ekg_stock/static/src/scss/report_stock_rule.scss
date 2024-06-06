@@ -5,6 +5,17 @@ th.fit {
     min-width: fit-content;
 }
 
+th.partner {
+    min-width: 80px;
+    max-width: 80px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+td.product {
+    max-width: 160px;
+}
+
 .scissors {
     width: 100%;
     border-top: 3px dashed black;

@@ -9,25 +9,30 @@
                     t-value="docs.filtered(lambda p:p.partner_id).mapped('move_ids').filtered(lambda x: x.product_uom_qty)"
                 />
                 <t t-set="products" t-value="lines.mapped('product_id')"/>
-                <t t-set="pagination" t-value="12"/>
+                <t t-set="pagination" t-value="9"/>
                 <t
                     t-set="partner_chunks"
                     t-value="[partners[i:i+pagination] for i in range(0, len(partners), pagination)]"
                 />
                 <t t-foreach="partner_chunks" t-as="partner_chunk">
                 <div style="page-break-inside: avoid;">
-                <table class="table table-bordered table-sm  w-auto" name="nfu_ekg_packing_list">
+                <table class="table table-bordered table-sm  w-auto border-dark" name="nfu_ekg_packing_list">
                     <thead>
                         <tr>
-                            <th width="160"><strong>Product</strong></th>
+                            <th class="product align-top"><strong>Product</strong></th>
+                            <th class="partner align-top"><strong>Batch Size</strong></th>
                             <t t-foreach="partner_chunk" t-as="partner">
-                                <th width="80"><strong t-esc="partner.name"/></th>
+                                <th class="partner align-top"><div class="text-truncate"><t
+                                                    t-esc="partner.firstname"
+                                                />kjhajdshlsadh<br/>
+                                <t t-esc="partner.lastname[0]"/>.</div></th>
                             </t>
                         </tr>
                     </thead>
                     <t t-foreach="products" t-as="product">
                         <tr>
-                            <td><strong t-esc="product.name"/></td>
+                            <td class="product text-truncate"><strong t-esc="product.name"/></td>
+                            <td/>
                             <t t-foreach="partner_chunk" t-as="partner">
                                 <td>
                                     <t
