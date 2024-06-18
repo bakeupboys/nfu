@@ -1,6 +1,6 @@
 {
-    "name": "NFU Product Custom Fields",
-    "summary": """This Module Adds Custom Fields To Products""",
+    "name": "NFU BNN Attributes",
+    "summary": """This Module Adds BNN Attributes Page to Product form view""",
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Product",

@@ -1,1 +1,0 @@
-This module adds additional Fields to Products to store information from BNN

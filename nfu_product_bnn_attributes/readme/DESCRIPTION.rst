@@ -1,0 +1,1 @@
+This module adds a page to product form view to store BNN Attributes.
