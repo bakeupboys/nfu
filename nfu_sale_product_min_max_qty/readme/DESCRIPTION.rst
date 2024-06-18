@@ -1,0 +1,1 @@
+This module adds a minium and a maximum order quantity field to Sale Orders
