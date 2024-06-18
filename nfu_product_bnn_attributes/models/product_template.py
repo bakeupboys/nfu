@@ -7,4 +7,4 @@ class ProductTemplate(models.Model):
     additional_information = fields.Char()
     quality = fields.Char()
     origin = fields.Char()
-    manufacturer_abbr = fields.Char(string="Maufacturer Abbreviation")
+    manufacturer_abbr = fields.Char(string="Manufacturer Abbreviation")
