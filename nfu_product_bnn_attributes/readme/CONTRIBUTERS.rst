@@ -1,1 +1,0 @@
-Ole Jancke <mail@olejancke.com.de>

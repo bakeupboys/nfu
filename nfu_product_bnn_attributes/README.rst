@@ -53,6 +53,11 @@ Authors
 
 * BAKEUP
 
+Contributors
+~~~~~~~~~~~~
+
+* Ole Jancke <mail@olejancke.com.de>
+
 Maintainers
 ~~~~~~~~~~~
 
