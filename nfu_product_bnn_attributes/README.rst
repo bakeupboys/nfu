@@ -33,7 +33,7 @@ Changelog
 =========
 
 
-:1.0.0 Initial module.
+:1.0.0: Initial module.
 
 Bug Tracker
 ===========
