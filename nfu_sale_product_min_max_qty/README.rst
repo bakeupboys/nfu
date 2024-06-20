@@ -22,7 +22,7 @@ NFU Sale Min Max Quantitiy
 
 |badge1| |badge2| |badge3|
 
-This module adds a minium and a maximum order quantity field to Sale Orders
+This module adds a minium and a maximum order quantity field to Sale Orders and the Webshop.
 
 **Table of contents**
 
