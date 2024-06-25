@@ -10,7 +10,7 @@
             "console": "integratedTerminal",
             "args": [
                 "--database=16-nfu",
-                "--addons-path=${config:odoo.addons_path}",
+                "--addons-path=${config:odoo.addons_path},${workspaceFolder}",
                 "--limit-time-real=0",
                 "--limit-time-cpu=0",
 //              "--init=",
