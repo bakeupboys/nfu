@@ -1,0 +1,21 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "odoo-dev-16.0",
+            "type": "python",
+            "request": "launch",
+            "cwd":"${workspaceRoot}",
+            "program": "${config:odoo.path}/odoo-bin",
+            "console": "integratedTerminal",
+            "args": [
+                "--database=16-nfu",
+                "--addons-path=${config:odoo.addons_path}",
+                "--limit-time-real=0",
+                "--limit-time-cpu=0",
+//              "--init=",
+//              "--update=",
+                "--dev=xml"
+            ]
+        }    ]
+}

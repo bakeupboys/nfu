@@ -1,0 +1,5 @@
+{
+    "odoo.version": "16.0",
+    "odoo.path": "${workspaceFolder}/../../versions/${config:odoo.version}/odoo",
+    "odoo.addons_path": "${config:odoo.path}/addons",
+}
