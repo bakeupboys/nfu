@@ -9,7 +9,7 @@ class WebsiteSaleMinMax(WebsiteSale):
 
     @http.route()
     def cart_update(self, *args, min_qty=None, max_qty=None, **kw):
-        """ Override to parse to datetime optional pickup and return dates.
+        """ Override to get min_qty and max_qty from the product.
         """
         product_uom_min_qty = fields.Float(min_qty)
         product_uom_max_qty = fields.Float(max_qty)
