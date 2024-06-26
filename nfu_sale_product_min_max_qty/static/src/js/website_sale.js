@@ -38,11 +38,10 @@ odoo.define('nfu_sale_product_min_max_qty.website_min_max_qty', function (requir
         },
 
         /**
-         * Adds the stock checking to the regular  method
+         * Adds the max qty to the POST request when adding a product to the cart.
          * @override
          */
         _changeCartQuantity: function ($input, value, $dom_optional, line_id, productIDs) {
-            console.log('here2');
             _.each($dom_optional, function (elem) {
                 $(elem).find('.js_quantity').text(value);
                 productIDs.push($(elem).find('span[data-product-id]').data('product-id'));
