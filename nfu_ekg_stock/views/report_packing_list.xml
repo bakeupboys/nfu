@@ -19,9 +19,9 @@
                 <table class="table table-bordered table-sm  w-auto border-dark" name="nfu_ekg_packing_list">
                     <thead>
                         <tr>
-                            <th class="product align-top"><strong>Product</strong></th>
-                            <th class="code align-top text-truncate"><strong>Internal<br/> Reference</strong></th>
-                            <th class="partner align-top text-truncate"><strong>Batch Size</strong></th>
+                            <th class="product align-top text-start">Product</th>
+                            <th class="code align-top text-truncate">Internal<br/>Reference</th>
+                            <th class="packaging align-top text-truncate">Batch<br/>Size</th>
                             <t t-foreach="partner_chunk" t-as="partner">
                                 <th class="partner align-top"><div class="text-truncate">
                                     <t t-esc="partner.lastname"/><br/>

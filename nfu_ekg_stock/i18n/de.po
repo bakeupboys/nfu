@@ -6,16 +6,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-06 17:06+0000\n"
-"PO-Revision-Date: 2024-06-06 19:10+0200\n"
+"POT-Creation-Date: 2024-07-01 20:16+0000\n"
+"PO-Revision-Date: 2024-07-01 22:18+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: de\n"
+"Language: en\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.2\n"
+"X-Generator: Poedit 3.4.4\n"
 
 #. module: nfu_ekg_stock
 #: model:ir.actions.report,print_report_name:nfu_ekg_stock.action_report_ekg_delivery
@@ -42,17 +42,16 @@ msgstr ""
 
 #. module: nfu_ekg_stock
 #: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_delivery_document
+msgid "<strong>Available</strong>"
+msgstr "<strong>Verfügbar</strong>"
+
+#. module: nfu_ekg_stock
+#: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_delivery_document
 msgid "<strong>Batch Size</strong>"
 msgstr "<strong>Gebindegröße</strong>"
 
 #. module: nfu_ekg_stock
 #: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_delivery_document
-msgid "<strong>Ordered</strong>"
-msgstr "<strong>Bestellt</strong>"
-
-#. module: nfu_ekg_stock
-#: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_delivery_document
-#: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_packing_list
 msgid "<strong>Product</strong>"
 msgstr "<strong>Produkt</strong>"
 
@@ -65,6 +64,11 @@ msgstr "<strong>Menge</strong>"
 #: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_delivery_document
 msgid "<strong>Signature</strong>"
 msgstr "<strong>Unterschrift</strong>"
+
+#. module: nfu_ekg_stock
+#: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_packing_list
+msgid "Batch<br/>Size"
+msgstr "Gebinde<br/>größe"
 
 #. module: nfu_ekg_stock
 #: model:ir.actions.report,name:nfu_ekg_stock.action_report_ekg_delivery
@@ -80,3 +84,13 @@ msgstr "EKG kompakter Lieferschein"
 #: model:ir.actions.report,name:nfu_ekg_stock.action_report_ekg_packing_list
 msgid "EKG Packing List"
 msgstr "EKG Packliste"
+
+#. module: nfu_ekg_stock
+#: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_packing_list
+msgid "Internal<br/>Reference"
+msgstr "Artikel<br/>nummer"
+
+#. module: nfu_ekg_stock
+#: model_terms:ir.ui.view,arch_db:nfu_ekg_stock.report_ekg_packing_list
+msgid "Product"
+msgstr "Produkt"

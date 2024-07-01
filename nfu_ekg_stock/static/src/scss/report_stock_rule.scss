@@ -1,13 +1,12 @@
 td.batch,
 th.batch {
-    width: 80px;
-    max-width: 80px;
+    width: 90px;
+    max-width: 90px;
     white-space: nowrap;
 }
 
 th.qty {
-    width: 60px;
-    max-width: 60px;
+    max-width: 100px;
     white-space: nowrap;
 }
 
@@ -22,13 +21,17 @@ th.code {
     max-width: 60px;
 }
 
+th.packaging {
+    max-width: 70px;
+}
+
 td.product {
-    max-width: 160px;
+    max-width: 150px;
     font-size: smaller;
 }
 
 td.packaging {
-    max-width: 160px;
+    max-width: 70px;
     font-size: x-small;
 }
 
