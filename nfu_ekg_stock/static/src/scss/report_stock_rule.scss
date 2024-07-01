@@ -1,8 +1,14 @@
-td.fit,
-th.fit {
-    width: 0;
+td.batch,
+th.batch {
+    width: 80px;
+    max-width: 80px;
     white-space: nowrap;
-    min-width: fit-content;
+}
+
+th.qty {
+    width: 60px;
+    max-width: 60px;
+    white-space: nowrap;
 }
 
 th.partner {
