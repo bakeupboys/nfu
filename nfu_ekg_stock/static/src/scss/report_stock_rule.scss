@@ -12,8 +12,23 @@ th.partner {
     text-align: left;
 }
 
+th.code {
+    max-width: 60px;
+}
+
 td.product {
     max-width: 160px;
+    font-size: smaller;
+}
+
+td.packaging {
+    max-width: 160px;
+    font-size: x-small;
+}
+
+td.code {
+    max-width: 60px;
+    font-size: xx-small;
 }
 
 .scissors {

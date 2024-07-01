@@ -20,21 +20,23 @@
                     <thead>
                         <tr>
                             <th class="product align-top"><strong>Product</strong></th>
-                            <th class="partner align-top"><strong>Batch Size</strong></th>
+                            <th class="code align-top text-truncate"><strong>Internal<br/> Reference</strong></th>
+                            <th class="partner align-top text-truncate"><strong>Batch Size</strong></th>
                             <t t-foreach="partner_chunk" t-as="partner">
-                                <th class="partner align-top"><div class="text-truncate"><t
-                                                    t-esc="partner.firstname"
-                                                /><br/>
-                                <t t-esc="partner.lastname[0]"/>.</div></th>
+                                <th class="partner align-top"><div class="text-truncate">
+                                    <t t-esc="partner.lastname"/><br/>
+                                    <t t-esc="partner.firstname"/>
+                                </div></th>
                             </t>
                         </tr>
                     </thead>
                     <t t-foreach="products" t-as="product">
                         <tr>
-                            <td class="product text-truncate"><strong t-esc="product.name"/></td>
-                            <td>
+                            <td class="product text-truncate"><span t-esc="product.name"/></td>
+                            <td class="code text-truncate"><span t-esc="product.default_code"/></td>
+                            <td class="packaging text-truncate">
                                 <t t-foreach="product.packaging_ids" t-as="packaging">
-                                    <t t-esc="packaging.name"/>
+                                    <span t-esc="packaging.name"/>
                                 </t>
                             </td>
                             <t t-foreach="partner_chunk" t-as="partner">
