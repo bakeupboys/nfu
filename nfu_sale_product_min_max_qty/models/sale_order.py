@@ -6,6 +6,14 @@ from odoo import _, fields, models
 class SaleOrder(models.Model):
     _inherit = 'sale.order'
 
+    def action_min_max_qty_wizard(self):
+        return {
+            "name": _("Min max qty wizard"),
+            "type": "ir.actions.act_window",
+            "res_model": "sale.order.line",
+            "view_mode": "tree,form",
+            "domain": [("id", "in", self.order_line.ids)],
+        }
 
     def _prepare_order_line_values(
         self, product_id, quantity, linked_line_id=False,
