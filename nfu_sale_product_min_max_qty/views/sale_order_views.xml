@@ -14,11 +14,11 @@
         <record id="view_order_list_inherit_product_min_max_qty" model="ir.ui.view">
                 <field name="name">sale.order.list.view.inherited</field>
                 <field name="model">sale.order</field>
-                <field name="inherit_id" ref="sale.view_quotation_tree_with_onboarding"/>
+                <field name="inherit_id" ref="sale.view_quotation_tree"/>
                 <field name="arch" type="xml">
                         <xpath expr="//tree" position="inside">
                                 <header>
-                                        <button type="object" name="action_min_max_qty_wizard" string="Min/Max Wizard" class="btn btn-primary"/>
+                                        <button type="object" name="action_min_max_qty_wizard" string="Min/Max Wizard"/>
                                 </header>
                         </xpath>
                 </field>
