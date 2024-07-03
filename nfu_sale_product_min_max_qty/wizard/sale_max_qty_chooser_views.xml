@@ -11,7 +11,6 @@
                 </div>
                 <field name="sale_max_qty_ids">
                     <tree create="0">
-                        <!-- Make this field read only -->
                         <field name="product_id"/>
                         <field name="qty"/>
                         <field name="reset_to_draft"/>
@@ -19,7 +18,7 @@
                 </field>
                 <footer>
                     <button
-                        name="confirm_qty_sale_order"
+                        name="update_and_confirm_sale_order"
                         string="Confirm Sale Orders"
                         type="object"
                         class="btn-primary"

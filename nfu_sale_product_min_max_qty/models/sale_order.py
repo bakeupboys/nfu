@@ -1,5 +1,3 @@
-# Part of Odoo. See LICENSE file for full copyright and licensing details.
-
 from odoo import _, models
 
 
@@ -9,36 +7,31 @@ class SaleOrder(models.Model):
     def action_min_max_qty_wizard(self):
         """
         Here you need to create the wizzard objects first and then call the wizzard with the newly created id
-
-        sale_order_lines = self.env[sale.order.line].search[id in self.order_line.ids]
-
+        """
         sale_max_qty_chooser = self.env["sale.max.qty.chooser"].create({})
+        draft_sale_orders = self.filtered(lambda x: x.state == "draft")
+        for sale_order in draft_sale_orders:
+            sale_order_lines = self.env["sale.order.line"].search([("id", "in", sale_order.order_line.ids)])
 
-        for line in sale_order_lines:
-            if not display_type:
-                sale_max_qty_line = self.env["sale.max.qty.line"].create({"sale_line_id": self.id,
-                "sale_max_qty_chooser": sale_max_qty_chooser,
-                "qty": ....
-
-                })
+            for line in sale_order_lines:
+                if not line.display_type:
+                    self.env["sale.max.qty.line"].create(
+                        {
+                            "sale_line_id": line.id,
+                            "sale_max_qty_chooser": sale_max_qty_chooser.id,
+                            "qty": line.product_uom_qty,
+                        }
+                    )
 
         action = {
-                "name": _("Min max qty wizard"),
-                "type": "ir.actions.act_window",
-                "res_model": "sale.max.qty.chooser",
-                "view_mode": "form",
-                "target": "new",
-                "res_id": sale_max_qty_chooser.id,
-        }
-        return action
-        """
-        return {
             "name": _("Min max qty wizard"),
             "type": "ir.actions.act_window",
-            "res_model": "sale.order.line",
-            "view_mode": "tree,form",
-            "domain": [("id", "in", self.order_line.ids)],
+            "res_model": "sale.max.qty.chooser",
+            "view_mode": "form",
+            "target": "new",
+            "res_id": sale_max_qty_chooser.id,
         }
+        return action
 
     def _prepare_order_line_values(
         self,

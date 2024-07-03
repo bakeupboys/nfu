@@ -8,10 +8,10 @@ class SaleMaxQtyChooser(models.TransientModel):
     _description = "Sale Max Quantity Chhooser"
 
     # fill from init or compute from given sale order lines
-    sale_order_ids = fields.Many2many("sale.order")
-    sale_max_qty_ids = fields.One2many("sale.max.qty.line", "mrp_return_id")
+    # sale_order_ids = fields.Many2many("sale.order")
+    sale_max_qty_ids = fields.One2many("sale.max.qty.line", "sale_max_qty_chooser")
 
-    def confirm_qty_sale_order(self):
+    def update_and_confirm_sale_order(self):
         """
         Confirm sale orders where the quantity is fine. Create new Sale Orders for SO Lines with reset to draft
         Through user error when total order amount of a product is not equal to packaging size (first package in the
