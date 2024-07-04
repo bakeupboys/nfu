@@ -26,9 +26,6 @@ class SaleMaxQtyLine(models.TransientModel):
     @api.depends('packaging_size', 'qty')
     def _compute_quantity_fits_packaging(self):
         for sale_order in self:
-            order_lines = self.env['sale.max.qty.line'].search([
-                ('product_id', '=', sale_order.product_id.id),
-                ('sale_max_qty_chooser', '=', sale_order.sale_max_qty_chooser.id),
-            ])
+            order_lines = self.sale_max_qty_chooser.sale_max_qty_ids.filtered(lambda line: line.sale_line_id.product_id == sale_order.product_id)
             total_quantity = sum(order_lines.mapped('qty'))
             sale_order.quantity_fits_packaging = total_quantity % sale_order.packaging_size == 0
