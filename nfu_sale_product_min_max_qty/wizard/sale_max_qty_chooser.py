@@ -8,7 +8,7 @@ class SaleMaxQtyChooser(models.TransientModel):
     _description = "Sale Max Quantity Chhooser"
 
     # fill from init or compute from given sale order lines
-    # sale_order_ids = fields.Many2many("sale.order")
+    sale_order_ids = fields.Many2many("sale.order")
     sale_max_qty_ids = fields.One2many("sale.max.qty.line", "sale_max_qty_chooser")
 
     def update_and_confirm_sale_order(self):

@@ -11,17 +11,15 @@ class SaleOrder(models.Model):
         sale_max_qty_chooser = self.env["sale.max.qty.chooser"].create({})
         draft_sale_orders = self.filtered(lambda x: x.state == "draft")
         for sale_order in draft_sale_orders:
-            sale_order_lines = self.env["sale.order.line"].search([("id", "in", sale_order.order_line.ids)])
-
-            for line in sale_order_lines:
-                if not line.display_type:
-                    self.env["sale.max.qty.line"].create(
-                        {
-                            "sale_line_id": line.id,
-                            "sale_max_qty_chooser": sale_max_qty_chooser.id,
-                            "qty": line.product_uom_qty,
-                        }
-                    )
+            sale_max_qty_chooser.sale_order_ids += sale_order
+            for line in sale_order.order_line.filtered(lambda x: not x.display_type):
+                self.env["sale.max.qty.line"].create(
+                    {
+                        "sale_line_id": line.id,
+                        "sale_max_qty_chooser": sale_max_qty_chooser.id,
+                        "qty": line.product_uom_qty,
+                    }
+                )
 
         action = {
             "name": _("Min max qty wizard"),
@@ -32,6 +30,18 @@ class SaleOrder(models.Model):
             "res_id": sale_max_qty_chooser.id,
         }
         return action
+    
+    def action_sale_order_lines(self):
+        """
+        Here you need to create the wizzard objects first and then call the wizzard with the newly created id
+        """
+        return {
+            "name": _("Min max qty wizard"),
+            "type": "ir.actions.act_window",
+            "res_model": "sale.order.line",
+            "view_mode": "tree,form",
+            "domain": [("id", "in", self.order_line.ids)],
+        }
 
     def _prepare_order_line_values(
         self,

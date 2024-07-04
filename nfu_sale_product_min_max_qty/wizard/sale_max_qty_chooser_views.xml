@@ -8,11 +8,15 @@
             <form>
                 <div class="oe_grey">
                     <p>Headline</p>
+                    <field name="sale_order_ids" widget="many2many_tags"/>
                 </div>
                 <field name="sale_max_qty_ids">
-                    <tree create="0">
+                    <tree create="0" editable="1">
                         <field name="product_id"/>
                         <field name="qty"/>
+                        <field name="max_qty"/>
+                        <field name="packaging_size"/>
+                        <field name="quantity_fits_packaging" widget="boolean"/>
                         <field name="reset_to_draft"/>
                     </tree>
                 </field>

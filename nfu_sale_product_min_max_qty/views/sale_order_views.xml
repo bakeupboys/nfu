@@ -19,6 +19,7 @@
                         <xpath expr="//tree" position="inside">
                                 <header>
                                         <button type="object" name="action_min_max_qty_wizard" string="Min/Max Wizard"/>
+                                        <button type="object" name="action_sale_order_lines" string="Sale order lines"/>
                                 </header>
                         </xpath>
                 </field>
