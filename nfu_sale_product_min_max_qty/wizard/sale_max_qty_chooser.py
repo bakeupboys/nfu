@@ -43,3 +43,12 @@ class SaleMaxQtyChooser(models.TransientModel):
             )
             return res
         """
+
+        for sale_order in self.sale_order_ids:
+            can_confirm = True
+            for line in self.sale_max_qty_ids.filtered(lambda line: line.sale_line_id.order_id == sale_order):
+                line.sale_line_id.write({"product_uom_qty": line.qty})
+                if not line.quantity_fits_packaging:
+                    can_confirm = False
+            if can_confirm:
+                sale_order.action_confirm()
