@@ -9,6 +9,7 @@
     "data": [
         "views/sale_order_views.xml",
         "views/sale_order_line_views.xml",
+        "wizard/sale_max_qty_line_views.xml",
         "wizard/sale_max_qty_chooser_views.xml",
         "views/templates.xml",
         "security/ir.model.access.csv",

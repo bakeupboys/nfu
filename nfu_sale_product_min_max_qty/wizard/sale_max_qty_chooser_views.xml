@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id="view_sale_max_qty_chooser_form" model="ir.ui.view">
         <field name="name">Sale Max Quantity Chhooser</field>
         <field name="model">sale.max.qty.chooser</field>
         <field name="arch" type="xml">
             <form>
                 <div class="oe_grey">
-                    <p>Headline</p>
+                    <p>Sale Orders</p>
                     <field name="sale_order_ids" widget="many2many_tags"/>
                 </div>
-                <field name="sale_max_qty_ids">
-                    <tree create="0" editable="1">
-                        <field name="product_id"/>
+                <field name="sale_max_qty_ids" context="{'search_default_group_by_qty': 1}">
+                    <!-- <tree create="0" editable="1" default_order="product_id">
+                        <field name="product_id" context="{'group_by': 'product_id'}" />
                         <field name="qty"/>
                         <field name="max_qty"/>
                         <field name="packaging_size"/>
                         <field name="quantity_fits_packaging" widget="boolean"/>
                         <field name="reset_to_draft"/>
-                    </tree>
+                    </tree> -->
                 </field>
                 <footer>
                     <button
@@ -38,6 +37,11 @@
         <field name="name">Set Quantities</field>
         <field name="res_model">sale.max.qty.chooser</field>
         <field name="view_mode">form</field>
-        <field name="target">new</field>
+        <field name="target">current</field>
+        <field name="context">
+        {
+            'search_default_group_by_product': 1,
+            }
+        </field>
     </record>
 </odoo>

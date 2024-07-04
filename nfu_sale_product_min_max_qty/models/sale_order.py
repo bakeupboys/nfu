@@ -24,13 +24,15 @@ class SaleOrder(models.Model):
         action = {
             "name": _("Min max qty wizard"),
             "type": "ir.actions.act_window",
-            "res_model": "sale.max.qty.chooser",
-            "view_mode": "form",
-            "target": "new",
-            "res_id": sale_max_qty_chooser.id,
+            "res_model": "sale.max.qty.line",
+            "view_mode": "tree",
+            "target": "current",
+            "editable": True,
+            "context": {"search_default_group_by_product": 1},
+            "domain": [("id", "in", sale_max_qty_chooser.sale_max_qty_ids.ids)],
         }
         return action
-    
+
     def action_sale_order_lines(self):
         """
         Here you need to create the wizzard objects first and then call the wizzard with the newly created id
@@ -40,6 +42,8 @@ class SaleOrder(models.Model):
             "type": "ir.actions.act_window",
             "res_model": "sale.order.line",
             "view_mode": "tree,form",
+            "target": "current",
+            "context": {"group_by": "product_id"},
             "domain": [("id", "in", self.order_line.ids)],
         }
 
