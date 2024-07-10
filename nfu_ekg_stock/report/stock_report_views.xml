@@ -13,12 +13,27 @@
         <field name="margin_right">5</field>
         <field name="dpi">90</field>
     </record>
+
     <record id="action_report_ekg_packing_list" model="ir.actions.report">
         <field name="name">EKG Packing List</field>
         <field name="model">stock.picking</field>
         <field name="report_type">qweb-pdf</field>
         <field name="paperformat_id" ref="paperformat_packaging_list"/>
         <field name="report_name">nfu_ekg_stock.report_ekg_packing_list</field>
+        <field name="report_file">nfu_ekg_stock.report_packing_list</field>
+        <field
+            name="print_report_name"
+        >'EKG Packing List - %s - %s' % (object.partner_id.name or '', object.name)</field>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_ekg_packing_list_lf" model="ir.actions.report">
+        <field name="name">EKG Packing List LF</field>
+        <field name="model">stock.picking</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="paperformat_id" ref="paperformat_packaging_list"/>
+        <field name="report_name">nfu_ekg_stock.report_ekg_packing_list_lf</field>
         <field name="report_file">nfu_ekg_stock.report_packing_list</field>
         <field
             name="print_report_name"
@@ -35,7 +50,20 @@
         <field name="report_file">nfu_ekg_stock.report_deliveryslip</field>
         <field
             name="print_report_name"
-        >'EKG Delivery Slip - %s - %s' % (object.partner_id.name or '', object.name)</field>
+        >'EKG Delivery Slip -  %s, %s - %s' % (object.partner_id.lastname or '',object.partner_id.firstname or '', object.name)</field>
+        <field name="binding_model_id" ref="stock.model_stock_picking"/>
+        <field name="binding_type">report</field>
+    </record>
+
+    <record id="action_report_ekg_delivery_lf" model="ir.actions.report">
+        <field name="name">EKG Delivery Slip LF</field>
+        <field name="model">stock.picking</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">nfu_ekg_stock.report_ekg_deliveryslip_lf</field>
+        <field name="report_file">nfu_ekg_stock.report_deliveryslip</field>
+        <field
+            name="print_report_name"
+        >'EKG Delivery Slip - %s, %s - %s' % (object.partner_id.lastname or '',object.partner_id.firstname or '', object.name)</field>
         <field name="binding_model_id" ref="stock.model_stock_picking"/>
         <field name="binding_type">report</field>
     </record>
