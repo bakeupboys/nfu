@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_order_form_inherit_product_min_max_qty" model="ir.ui.view">
+                <field name="name">sale.order.form.product.min_max_qty</field>
+                <field name="model">sale.order</field>
+                <field name="inherit_id" ref="sale.view_order_form"/>
+                <field name="arch" type="xml">
+                        <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
+                                <field name="product_uom_min_qty" optional="hide"/>
+                                <field name="product_uom_max_qty"/>
+                        </xpath>
+                </field>
+        </record>
+        <record id="view_order_list_inherit_product_min_max_qty" model="ir.ui.view">
+                <field name="name">sale.order.list.view.inherited</field>
+                <field name="model">sale.order</field>
+                <field name="inherit_id" ref="sale.view_quotation_tree"/>
+                <field name="arch" type="xml">
+                        <xpath expr="//tree" position="inside">
+                                <header>
+                                        <button type="object" name="action_min_max_qty_wizard" string="Min/Max Wizard"/>
+                                        <button type="object" name="action_sale_order_lines" string="Sale order lines"/>
+                                </header>
+                        </xpath>
+                </field>
+        </record>
+</odoo>
