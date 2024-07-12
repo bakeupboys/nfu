@@ -43,6 +43,9 @@ odoo.define("nfu_sale_product_min_max_qty.website_min_max_qty", function (requir
             $input.data("update_change", true);
             var max_qty = parseInt($input.closest("tr").find('input[name="max-qty"]').val(), 10);
             var set_qty = parseInt($input.closest("tr").find('input[name!="max-qty"]').val(), 10);
+            if (max_qty < set_qty) {
+                max_qty = set_qty;
+            }
             this._rpc({
                 route: "/shop/cart/update_json",
                 params: {
