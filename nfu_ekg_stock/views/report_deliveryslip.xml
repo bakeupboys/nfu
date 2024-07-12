@@ -7,37 +7,41 @@
 
                 <div class="scissors"/>
                 <div class="page" style="page-break-inside: avoid;">
-                    <div class="row mt32">
+                    <div class="row mt16">
                         <div class="col-auto" name="div_name" t-if="partner">
-                            <strong><span t-field="partner.name"/></strong>
+                            <t t-if="last_first">
+                                <strong><span t-field="partner.lastname"/>, <span t-field="partner.firstname"/></strong>
+                            </t>
+                            <t t-else="">
+                                <strong><span t-field="partner.name"/></strong>
+                            </t>
                         </div>
                     </div>
-                    <table class="table table-sm" name="stock_move_table">
+                    <table class="table table-sm" name="stock_move_table" style="font-size: smaller">
                         <thead>
                             <tr>
-                                <th class="fit" name="th_sm_product_qty"><strong>Batch Size</strong></th>
-                                <th name="th_sm_product"><strong>Product</strong></th>
-                                <th class="fit" name="th_sm_ordered"><strong>Ordered</strong></th>
+                                <th class="batch text-start" name="th_sm_product_qty"><strong>Batch Size</strong></th>
+                                <th class="text-start" name="th_sm_product"><strong>Product</strong></th>
+                                <th class="qty text-end" name="th_sm_ordered"><strong>Available</strong></th>
                             </tr>
                         </thead>
                         <tbody>
                             <t t-set="lines" t-value="o.move_ids.filtered(lambda x: x.product_uom_qty)"/>
                             <tr t-foreach="lines" t-as="move">
-                                <td class="fit">
-                                <!-- Needs to be filled later -->
-                                    <!-- <span t-field="move.product_uom_qty"/> -->
-                                    <!-- <span t-field="move.product_uom"/> -->
+                                <td class="batch text-truncate">
+                                    <t t-foreach="move.product_id.packaging_ids" t-as="packaging">
+                                        <span t-esc="packaging.name"/>
+                                    </t>
                                 </td>
                                 <td>
-                                    <span t-field="move.product_id.name"/>
-                                    <p
+                                    <span t-field="move.product_id.name"/><br/>
+                                    <span
                                 t-if="move.description_picking != move.product_id.name and move.description_picking != move.product_id.display_name"
-                            >
-                                        <span t-field="move.description_picking"/>
-                                    </p>
+                                t-field="move.description_picking"
+                            />
                                 </td>
-                                <td class="fit">
-                                    <span t-field="move.product_uom_qty"/>
+                                <td class="text-end">
+                                    <span t-field="move.forecast_availability"/>
                                     <span t-field="move.product_uom"/>
                                 </td>
 
@@ -68,4 +72,16 @@
             </t>
         </t>
     </template>
+
+    <template id="report_ekg_deliveryslip_lf">
+        <t t-call="web.html_container">
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="o">
+                    <t t-set="last_first" t-value="True"/>
+                    <t t-call="nfu_ekg_stock.report_ekg_delivery_document" t-lang="o._get_report_lang()"/>
+                </t>
+            </t>
+        </t>
+    </template>
+
 </odoo>

@@ -1,8 +1,43 @@
-td.fit,
-th.fit {
-    width: 0;
+td.batch,
+th.batch {
+    width: 90px;
+    max-width: 90px;
     white-space: nowrap;
-    min-width: fit-content;
+}
+
+th.qty {
+    max-width: 100px;
+    white-space: nowrap;
+}
+
+th.partner {
+    min-width: 80px;
+    max-width: 80px;
+    white-space: nowrap;
+    text-align: left;
+}
+
+th.code {
+    max-width: 60px;
+}
+
+th.packaging {
+    max-width: 70px;
+}
+
+td.product {
+    max-width: 150px;
+    font-size: smaller;
+}
+
+td.packaging {
+    max-width: 70px;
+    font-size: x-small;
+}
+
+td.code {
+    max-width: 60px;
+    font-size: xx-small;
 }
 
 .scissors {
