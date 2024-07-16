@@ -7,5 +7,7 @@
 			"path": "../../../versions/16.0"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"python.languageServer": "None"
+	}
 }
