@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_order_batch_product_form" model="ir.ui.view">
+                <field name="name">sale.order.batch.product.form.nfu</field>
+                <field name="model">sale.order.batch.product</field>
+                <field name="inherit_id" ref="sale_order_batch.view_order_batch_product_form"/>
+                <field name="arch" type="xml">
+                    <xpath expr="//field[@name='batch_id']" position="after">
+                        <field name="open_packaging_qty" decoration-warning="(open_packaging_qty != 0)"/>
+                    </xpath>
+                </field>
+        </record>
+ </odoo>

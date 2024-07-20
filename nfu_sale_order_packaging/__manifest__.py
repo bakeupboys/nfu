@@ -6,6 +6,10 @@
     "category": "Stock",
     "version": "16.0.0.0.1",
     "depends": ["sale", "sale_order_batch"],
-    "data": ["views/sale_order_views.xml", "views/sale_order_batch_views.xml"],
+    "data": [
+        "views/sale_order_views.xml",
+        "views/sale_order_batch_views.xml",
+        "views/sale_order_batch_product_views.xml",
+    ],
     "license": "LGPL-3",
 }
