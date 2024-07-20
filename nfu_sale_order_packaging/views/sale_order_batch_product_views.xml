@@ -8,6 +8,13 @@
                     <xpath expr="//field[@name='batch_id']" position="after">
                         <field name="open_packaging_qty" decoration-warning="(open_packaging_qty != 0)"/>
                     </xpath>
+                    <xpath
+                expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
+                position="after"
+            >
+                            <field name="product_uom_ordered_qty" optional="hide"/>
+                            <field name="product_uom_max_qty"/>
+                    </xpath>
                 </field>
         </record>
  </odoo>

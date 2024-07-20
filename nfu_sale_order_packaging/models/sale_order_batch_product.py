@@ -9,8 +9,13 @@ class SaleOrderBatchProduct(models.Model):
     @api.depends("sale_order_line_ids.product_uom_qty")
     def _compute_open_packagin_qty(self):
         for product in self:
+            open_packaging_qty = product.product_packaging_qty - (
+                sum(product.sale_order_line_ids.mapped("product_uom_qty"))
+                % product.product_packaging_qty
+                % product.product_packaging_qty
+            )
             product.open_packaging_qty = (
-                sum(product.sale_order_line_ids.mapped("product_uom_qty")) % product.product_packaging_qty
+                0 if open_packaging_qty == product.product_packaging_qty else open_packaging_qty
             )
 
     @api.model_create_multi
