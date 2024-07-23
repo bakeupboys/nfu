@@ -5,7 +5,7 @@
                 <field name="model">sale.order.batch.product</field>
                 <field name="inherit_id" ref="sale_order_batch.view_order_batch_product_form"/>
                 <field name="arch" type="xml">
-                    <xpath expr="//field[@name='batch_id']" position="after">
+                    <xpath expr="//group[@name='product_info']" position="inside">
                         <field name="open_packaging_qty" decoration-warning="(open_packaging_qty != 0)"/>
                     </xpath>
                     <xpath
