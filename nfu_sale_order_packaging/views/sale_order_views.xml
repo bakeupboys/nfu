@@ -5,8 +5,10 @@
                 <field name="model">sale.order</field>
                 <field name="inherit_id" ref="sale.view_order_form"/>
                 <field name="arch" type="xml">
-                        <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
+                        <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="before">
                                 <field name="product_uom_ordered_qty" optional="hide"/>
+                        </xpath>
+                        <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
                                 <field name="product_uom_max_qty"/>
                         </xpath>
                 </field>

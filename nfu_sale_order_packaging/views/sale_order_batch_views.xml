@@ -7,9 +7,14 @@
                 <field name="arch" type="xml">
                         <xpath
                 expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
-                position="after"
+                position="before"
             >
                                 <field name="product_uom_ordered_qty" optional="hide"/>
+                        </xpath>
+                        <xpath
+                expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
+                position="after"
+            >
                                 <field name="product_uom_max_qty"/>
                         </xpath>
                         <xpath expr="//field[@name='product_ids']/tree" position="inside">
