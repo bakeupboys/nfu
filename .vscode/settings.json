@@ -1,5 +1,6 @@
 {
     "odoo.version": "16.0",
-    "odoo.path": "${workspaceFolder}/../../versions/${config:odoo.version}/odoo",
+    "odoo.path": "../../versions/${config:odoo.version}/odoo",
     "odoo.addons_path": "${config:odoo.path}/addons",
+    "python.analysis.extraPaths": ["../../versions/16.0/odoo", "../../versions/16.0/OCA"]
 }

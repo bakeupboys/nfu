@@ -2,20 +2,39 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "odoo-dev-16.0",
+            "name": "odoo-dev",
             "type": "python",
             "request": "launch",
-            "cwd":"${workspaceRoot}",
+            "cwd": "${workspaceRoot}",
             "program": "${config:odoo.path}/odoo-bin",
             "console": "integratedTerminal",
             "args": [
-                "--database=16-nfu",
+                "--database=nfu_sale_order_batch",
                 "--addons-path=${config:odoo.addons_path},${workspaceFolder}",
                 "--limit-time-real=0",
                 "--limit-time-cpu=0",
-//              "--init=",
-//              "--update=",
+                "--init=sale_order_batch",
+                //              "--update=",
                 "--dev=xml"
             ]
-        }    ]
+        },
+        {
+            "name": "odoo-scratch",
+            "type": "python",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "program": "${config:odoo.path}/odoo-bin",
+            "console": "integratedTerminal",
+            "args": [
+                "--database=odoo-scratch",
+                "--http-port=9069",
+                "--addons-path=${config:odoo.addons_path}",
+                "--limit-time-real=0",
+                "--limit-time-cpu=0",
+                "--init=sale_order_batch",
+                //              "--update=",
+                "--dev=xml"
+            ]
+        }
+    ]
 }
