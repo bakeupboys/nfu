@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Product",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "depends": ["product"],
     "data": ["views/product_bnn_views.xml"],
     "assets": {},

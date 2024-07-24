@@ -1,4 +1,4 @@
-from odoo import fields, models
+from odoo import api, fields, models
 
 
 class ProductTemplate(models.Model):
@@ -11,3 +11,39 @@ class ProductTemplate(models.Model):
     origin = fields.Char()
     packaging_qty = fields.Float(string="Packaging Quantity")
     packaging_name = fields.Char()
+
+    @api.depends("packaging_qty", "packaging_name")
+    def generate_packaging_from_bnn(self):
+        for product in self:
+            qty = product.packaging_qty
+            name = product.packaging_name
+            if qty and name:
+                packagings = (
+                    self.env["product.packaging"]
+                    .search([("product_id", "=", product.id)])
+                    .filtered(lambda p: p.qty == qty)
+                )
+                if packagings:
+                    packagings[0].write({"name": name})
+                else:
+                    self.env["product.packaging"].create({"name": name, "qty": qty, "product_id": product.id})
+
+    def write(self, vals):
+        res = super().write(vals)
+        if vals.get("packaging_qty"):
+            for product in self:
+                qty = vals.get("packaging_qty")
+                name = vals.get("packaging_name") if vals.get("packaging_name") else product.packaging_name
+                if qty and name:
+                    packagings = (
+                        self.env["product.packaging"]
+                        .search([("product_id", "=", product.id)])
+                        .filtered(lambda p: p.qty == qty)
+                    )
+                    if packagings:
+                        packagings[0].write({"name": name})
+                    else:
+                        self.env["product.packaging"].create(
+                            {"name": name, "qty": qty, "product_id": product.id, "sales": True}
+                        )
+        return res
