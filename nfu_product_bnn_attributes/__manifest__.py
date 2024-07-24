@@ -6,7 +6,7 @@
     "category": "Product",
     "version": "16.0.1.0.0",
     "depends": ["product"],
-    "data": ["views/product_template_bnn_view.xml"],
+    "data": ["views/product_bnn_views.xml"],
     "assets": {},
     "license": "LGPL-3",
     "installable": True,
