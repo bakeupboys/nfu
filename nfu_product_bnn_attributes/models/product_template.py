@@ -4,7 +4,30 @@ from odoo import fields, models
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
+    manufacturer_abbr = fields.Char(string="Manufacturer Abbreviation")
+    # Should be moved to product.product at some point
     additional_information = fields.Char()
     quality = fields.Char()
     origin = fields.Char()
-    manufacturer_abbr = fields.Char(string="Manufacturer Abbreviation")
+    packaging_qty = fields.Float(string="Packaging Quantity")
+    packaging_name = fields.Char()
+
+    def write(self, vals):
+        res = super().write(vals)
+        if vals.get("packaging_qty") or vals.get("packaging_name"):
+            for product in self:
+                qty = vals.get("packaging_qty") or product.packaging_qty
+                name = vals.get("packaging_name") or product.packaging_name
+                product_products = self.env["product.product"].search([("product_tmpl_id", "=", product.id)])
+                if qty and name:
+                    for product_product in product_products:
+                        packagings = self.env["product.packaging"].search(
+                            [("product_id", "=", product_product.id)], limit=1
+                        )
+                        if packagings:
+                            packagings.write({"name": name, "qty": qty, "sales": True})
+                        else:
+                            self.env["product.packaging"].create(
+                                {"name": name, "qty": qty, "product_id": product_product.id, "sales": True}
+                            )
+        return res

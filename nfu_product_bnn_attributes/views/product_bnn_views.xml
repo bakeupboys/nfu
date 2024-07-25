@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<odoo>
+    <record id="product_template_form_view" model="ir.ui.view">
+        <field name="name">product.template.view.inherit.bnn</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <page name="general_information" position="after">
+                <page name="bnn" string="BNN Information">
+                    <group>
+                        <group name="bnn_information">
+                            <field name="manufacturer_abbr"/>
+                            <field name="additional_information"/>
+                            <field name="quality"/>
+                            <field name="origin"/>
+                        </group>
+                        <group name="bnn_packaging">
+                            <field name="packaging_name"/>
+                            <field name="packaging_qty"/>
+                        </group>
+                    </group>
+                </page>
+            </page>
+        </field>
+    </record>
+    <!--
+    Should be moved to product.product at some point
+     <record id="product_normal_form_view" model="ir.ui.view">
+        <field name="name">product.product.form.inherit.bnn</field>
+        <field name="model">product.product</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="nfu_product_bnn_attributes.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <group name="bnn_information" position="inside">
+                <field name="additional_information"/>
+                <field name="quality"/>
+                <field name="origin"/>
+            </group>
+            <page name="bnn" position="inside">
+                <group name="bnn_packaging">
+                    <field name="packaging_name"/>
+                    <field name="packaging_qty"/>
+                </group>
+            </page>
+        </field>
+    </record> -->
+</odoo>
