@@ -21,9 +21,11 @@ class ProductTemplate(models.Model):
                 product_products = self.env["product.product"].search([("product_tmpl_id", "=", product.id)])
                 if qty and name:
                     for product_product in product_products:
-                        packagings = self.env["product.packaging"].search([("product_id", "=", product_product.id)])
+                        packagings = self.env["product.packaging"].search(
+                            [("product_id", "=", product_product.id)], limit=1
+                        )
                         if packagings:
-                            packagings[0].write({"name": name, "qty": qty, "sales": True})
+                            packagings.write({"name": name, "qty": qty, "sales": True})
                         else:
                             self.env["product.packaging"].create(
                                 {"name": name, "qty": qty, "product_id": product_product.id, "sales": True}
