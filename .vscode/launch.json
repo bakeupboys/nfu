@@ -9,12 +9,12 @@
             "program": "${config:odoo.path}/odoo-bin",
             "console": "integratedTerminal",
             "args": [
-                "--database=nfu_sale_order_batch",
+                "--database=nfu_sale_order_batch_packaging",
                 "--addons-path=${config:odoo.addons_path},${workspaceFolder}",
                 "--limit-time-real=0",
                 "--limit-time-cpu=0",
-                "--init=sale_order_batch",
-                //              "--update=",
+                "--update=sale_order_batch_stock",
+                // "--update=",
                 "--dev=xml"
             ]
         },
@@ -31,8 +31,8 @@
                 "--addons-path=${config:odoo.addons_path}",
                 "--limit-time-real=0",
                 "--limit-time-cpu=0",
-                "--init=sale_order_batch",
-                //              "--update=",
+                // "--init=",
+                // "--update=",
                 "--dev=xml"
             ]
         }

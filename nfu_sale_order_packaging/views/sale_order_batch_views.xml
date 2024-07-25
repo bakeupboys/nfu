@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+        <record id="view_order_batch_form" model="ir.ui.view">
+                <field name="name">sale.order.batch.form.product.min_max_qty</field>
+                <field name="model">sale.order.batch</field>
+                <field name="inherit_id" ref="sale_order_batch.view_order_batch_form"/>
+                <field name="arch" type="xml">
+                        <xpath
+                expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
+                position="before"
+            >
+                                <field name="product_uom_ordered_qty" optional="hide"/>
+                        </xpath>
+                        <xpath
+                expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
+                position="after"
+            >
+                                <field name="product_uom_max_qty"/>
+                        </xpath>
+                        <xpath expr="//field[@name='product_ids']/tree" position="inside">
+                                <field name="open_packaging_qty" invisiable="True"/>
+                        </xpath>
+                        <xpath
+                expr="//field[@name='product_ids']/tree/field[@name='product_template_id']"
+                position="attributes"
+            >
+                                <attribute name="decoration-warning">(open_packaging_qty != 0)</attribute>
+                        </xpath>
+                </field>
+        </record>
+ </odoo>

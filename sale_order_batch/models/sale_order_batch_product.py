@@ -14,16 +14,19 @@ class SaleOrderBatchProduct(models.Model):
         ondelete="cascade",
         index=True,
         copy=False,
+        readonly=True,
     )
 
-    product_id = fields.Many2one(comodel_name="product.product", required=True, readonly=False)
+    product_id = fields.Many2one(comodel_name="product.product", required=True, readonly=True)
 
     product_template_id = fields.Many2one(
         "product.template", related="product_id.product_tmpl_id", string="Product Template"
     )
-    sale_order_line_ids = fields.Many2many("sale.order.line", compute="_compute_sale_order_line_ids")
+    sale_order_line_ids = fields.Many2many(
+        "sale.order.line", compute="_compute_sale_order_line_ids", store=True, readonly=False
+    )
     product_uom_category_id = fields.Many2one(related="product_id.uom_id.category_id", depends=["product_id"])
-    product_uom_qty = fields.Float(compute="_compute_uom_qty")
+    product_uom_qty = fields.Float(compute="_compute_uom_qty", string="Quantity")
     product_uom = fields.Many2one(related="product_id.uom_id")
     product_packaging_id = fields.Many2one("product.packaging")
     product_packaging_qty = fields.Float(compute="_compute_product_packaging_qty")
@@ -35,7 +38,7 @@ class SaleOrderBatchProduct(models.Model):
                 lambda o: o.product_id == product.product_id
             )
 
-    @api.depends("batch_id.sale_order_line_ids")
+    @api.depends("sale_order_line_ids.product_uom_qty")
     def _compute_uom_qty(self):
         for product in self:
             product.product_uom_qty = sum(product.sale_order_line_ids.mapped("product_uom_qty"))
