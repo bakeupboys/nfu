@@ -1,1 +1,0 @@
-This module adds a minium and a maximum order quantity field to Sale Orders and adds it to checkout of the website shop.
