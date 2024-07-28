@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="cart_lines_min_max_qty" inherit_id="website_sale.cart_lines" name="Shopping Cart Lines">
+    <template id="cart_lines_max_qty" inherit_id="website_sale.cart_lines" name="Shopping Cart Lines">
         <xpath expr="//th[hasclass('td-qty')]" position="after">
             <th class="text-center td-qty">
                 <t t-if="show_qty">
-                    <span>Max qty.</span>
+                    <span>Max Qty</span>
                 </t>
             </th>
         </xpath>
@@ -74,9 +74,9 @@
             </td>
         </xpath>
     </template>
-    <template id="cart_summary_min_max_qty" inherit_id="website_sale.cart_summary" name="Cart right column">
+    <template id="cart_summary_max_qty" inherit_id="website_sale.cart_summary" name="Cart right column">
         <xpath expr="//th[hasclass('td-qty')]" position="after">
-            <th class="border-top-0 td-qty">Max qty.</th>
+            <th class="border-top-0 td-qty">Max Qty</th>
         </xpath>
         <xpath expr="//td[hasclass('td-qty')]" position="after">
              <td class='td-qty'>

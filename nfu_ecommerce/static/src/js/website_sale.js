@@ -1,36 +1,10 @@
-odoo.define("nfu_ecommerce.website_min_max_qty", function (require) {
+odoo.define("nfu_ecommerce.website_max_qty", function (require) {
     "use strict";
     var core = require("web.core");
-    var _t = core._t;
     var wSaleUtils = require("website_sale.utils");
     var publicWidget = require("web.public.widget");
     require("website_sale.website_sale");
     publicWidget.registry.WebsiteSale.include({
-        onClickAddCartJSON: function (ev) {
-            ev.preventDefault();
-            $(".css_quantity").popover("dispose");
-            var $link = $(ev.currentTarget);
-            var $input = $link.closest(".input-group").find("input");
-            var min = parseFloat($input.data("min") || 0);
-            var previousQty = parseFloat($input.val() || 0, 10);
-            var quantity = ($link.has(".fa-minus").length ? -1 : 1) + previousQty;
-            if (quantity < min) {
-                $input.closest(".css_quantity").popover({
-                    content: _t(`Minimum Quantity is ${min}.`),
-                    title: _t("Warning"),
-                    placement: "left",
-                    trigger: "focus",
-                    html: true,
-                });
-                $input.closest(".css_quantity").popover("show");
-
-                setTimeout(function () {
-                    $(".css_quantity").popover("dispose");
-                }, 3000);
-            }
-            this._super(ev);
-        },
-
         /**
          * Adds the max qty to the POST request when adding a product to the cart.
          * @override
