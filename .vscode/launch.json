@@ -9,12 +9,12 @@
             "program": "${config:odoo.path}/odoo-bin",
             "console": "integratedTerminal",
             "args": [
-                "--database=nfu_ecommerce",
+                "--database=nfu_",
                 "--addons-path=${config:odoo.addons_path},${workspaceFolder}",
                 "--limit-time-real=0",
                 "--limit-time-cpu=0",
                 // "--init=",
-                "--update=nfu_ecommerce",
+                // "--update=",
                 "--dev=xml"
             ]
         },
