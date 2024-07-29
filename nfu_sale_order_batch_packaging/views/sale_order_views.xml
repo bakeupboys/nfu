@@ -10,6 +10,7 @@
                         </xpath>
                         <xpath expr="//field[@name='order_line']/tree/field[@name='product_uom_qty']" position="after">
                                 <field name="product_uom_max_qty"/>
+                                <field name="batch_uom_qty"/>
                         </xpath>
                 </field>
         </record>

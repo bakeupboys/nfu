@@ -47,3 +47,11 @@ class SaleOrder(models.Model):
             values["product_uom_max_qty"] = max_qty
 
         return values
+
+    @api.model_create_multi
+    def create(self, vals_list):
+        orders = super().create(vals_list)
+        for order in orders:
+            if order.website_id:
+                order.action_add_to_batch()
+        return orders
