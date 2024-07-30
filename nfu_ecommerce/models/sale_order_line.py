@@ -6,5 +6,6 @@ class SaleOrderLine(models.Model):
 
     def compute_open_packages(self):
         self.ensure_one()
-        open_qty = self.batch_uom_qty % self.product_packaging_id.qty
+        qty_of_last_pack = self.batch_uom_qty % self.product_packaging_id.qty
+        open_qty = self.product_packaging_id.qty - qty_of_last_pack
         return open_qty

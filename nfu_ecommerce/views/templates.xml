@@ -6,7 +6,7 @@
                 <span>Open Package: <t t-esc="line.compute_open_packages()"/>/<t
                         t-esc="line.product_packaging_id.qty"
                     /><br/></span>
-                <span>Total Ordered Quantity: <t t-esc="line.batch_uom_qty"/></span>
+                <span>Ordered Quantity: <t t-esc="line.batch_uom_max_qty"/></span>
             </div>
         </xpath>
         <xpath expr="//th[hasclass('td-qty')]" position="after">
