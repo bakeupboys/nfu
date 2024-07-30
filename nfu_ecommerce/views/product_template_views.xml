@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_tree_view" model="ir.ui.view">
+        <field name="name">product.template.product.tree.inherit.website</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button string="Publish on Website" type="object" name="action_publish_on_website"/>
+                <button string="Unpublish on Website" type="object" name="action_unpublish_on_website"/>
+
+            </xpath>
+        </field>
+    </record>
+</odoo>
