@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <template id="cart_lines_max_qty" inherit_id="website_sale.cart_lines" name="Shopping Cart Lines">
+    <template id="cart_lines_packaging" inherit_id="website_sale.cart_lines" name="Shopping Cart Lines">
+        <xpath expr="//td[hasclass('td-product_name')]" position="inside">
+            <div t-if="line.product_packaging_id and (line.product_packaging_id.qty != 1)">
+                <span>Open Package: <t t-esc="line.compute_open_packages()"/>/<t
+                        t-esc="line.product_packaging_id.qty"
+                    /><br/></span>
+                <span>Total Ordered Quantity: <t t-esc="line.batch_uom_qty"/></span>
+            </div>
+        </xpath>
         <xpath expr="//th[hasclass('td-qty')]" position="after">
             <th class="text-center td-qty">
                 <t t-if="show_qty">
@@ -74,7 +82,15 @@
             </td>
         </xpath>
     </template>
-    <template id="cart_summary_max_qty" inherit_id="website_sale.cart_summary" name="Cart right column">
+
+    <template id="cart_summary_packaging" inherit_id="website_sale.cart_summary" name="Cart right column">
+        <xpath expr="//td[hasclass('td-product_name')]" position="inside">
+            <div>
+                <span t-if="line.product_packaging_id">Open Package: <t t-esc="line.product_packaging_id.qty"/><br
+                    /></span>
+                <span t-if="line.batch_uom_qty &gt; 0">Ordered Quantity: <t t-esc="line.batch_uom_qty"/></span>
+            </div>
+        </xpath>
         <xpath expr="//th[hasclass('td-qty')]" position="after">
             <th class="border-top-0 td-qty">Max Qty</th>
         </xpath>
