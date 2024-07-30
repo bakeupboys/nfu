@@ -9,6 +9,7 @@ class SaleOrderLine(models.Model):
     product_uom_ordered_qty = fields.Float(string="Ordered Qty", digits="Product Unit of Measure", default=1.0)
     product_uom_max_qty = fields.Float(string="Max Qty", digits="Product Unit of Measure")
     batch_uom_qty = fields.Float(compute="_compute_batch_uom_qty")
+    batch_uom_max_qty = fields.Float(compute="_compute_batch_uom_qty")
 
     @api.constrains("product_uom_qty", "product_uom_max_qty")
     def _check_product_uom_qty(self):
@@ -21,20 +22,21 @@ class SaleOrderLine(models.Model):
                     )
                 )
 
-    @api.depends("product_uom_qty")
+    @api.depends("product_uom_qty", "product_uom_max_qty")
     def _compute_batch_uom_qty(self):
         for line in self:
             if line.order_id.batch_id:
                 batch_id = line.batch_id
                 product_id = line.product_id
-                batch_uom_qtys = (
+                batch_lines = (
                     self.env["sale.order.line"]
                     .sudo()
                     .search([("batch_id", "=", batch_id.id), ("product_id", "=", product_id.id)])
-                ).mapped("product_uom_qty")
-                line.batch_uom_qty = sum(batch_uom_qtys)
+                )
+                line.batch_uom_qty = sum(batch_lines.mapped("product_uom_qty"))
+                line.batch_uom_max_qty = sum(batch_lines.mapped("product_uom_max_qty"))
             else:
-                line.batch_uom_qty = 0
+                line.batch_uom_max_qty = line.batch_uom_qty = 0
 
     @api.depends("product_packaging_id", "product_uom", "product_uom_qty", "batch_id")
     def _compute_product_packaging_qty(self):
