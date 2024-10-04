@@ -14,6 +14,11 @@ class WebsiteSaleMinMax(WebsiteSale):
 
 
 class WebsiteSale(WebsiteSale):
+    def _get_additional_shop_values(self, values):
+        new_values = super()._get_additional_shop_values(values)
+        new_values["open_packagings"] = True if request.httprequest.args.get("open_packagings") else False
+        return new_values
+
     def _get_search_options(
         self, category=None, attrib_values=None, pricelist=None, min_price=0.0, max_price=0.0, conversion_rate=1, **post
     ):
@@ -41,7 +46,8 @@ class WebsiteSale(WebsiteSale):
         website=True,
     )
     def shop(self, page=0, category=None, search="", min_price=0.0, max_price=0.0, ppg=False, **post):
-        if post.get("open_packagings"):
+        open_packages = bool(post.get("open_packagings"))
+        if open_packages:
             batch = request.website.sale_get_order(force_create=True).batch_id
             open_product_ids = (
                 batch.product_ids.filtered(lambda p: p.open_packaging_qty > 0).mapped("product_template_id").ids

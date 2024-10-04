@@ -3,8 +3,11 @@
 
     <template id="products_open_packaging" inherit_id="website_sale.products">
         <xpath expr="//aside[@id='products_grid_before']/div[1]/div[1]" position="before">
-            <a t-att-href="keep('/shop',open_packagings = True)">
-                <h6 t-attf-class="o_packaging_collapse_title mb-3 {{_titleClasses}}"><b>Open Packagings</b></h6>
+            <a t-att-href="keep('/shop',open_packagings = False if open_packagings else True)">
+                <h6 t-attf-class="o_packaging_collapse_title mb-3 {{_titleClasses}}"><b>
+                <span t-if="open_packagings">All Products</span>
+                <span t-else="">Open Packagings</span>
+                </b></h6>
             </a>
         </xpath>
     </template>
@@ -12,8 +15,11 @@
     <template id="o_wsale_offcanvas" name="Open Packagings" inherit_id="website_sale.o_wsale_offcanvas">
         <xpath expr="//div[@id='o_wsale_offcanvas_content']/div[1]" position="before">
         <div class="position-relative o_wsale_offcanvas_title px-4 border-top">
-            <a t-att-href="keep('/shop',open_packagings = True)">
-                <h6 t-attf-class="o_packaging_collapse_title mb-3 pt-3 {{_titleClasses}}"><b>Open Packagings</b></h6>
+            <a t-att-href="keep('/shop',open_packagings =  False if open_packagings else True)">
+                <h6 t-attf-class="o_packaging_collapse_title mb-3 pt-3 {{_titleClasses}}"><b>
+                <span t-if="open_packagings">All Products</span>
+                <span t-else="">Open Packagings</span>
+                </b></h6>
             </a>
         </div>
         </xpath>
