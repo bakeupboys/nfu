@@ -16,6 +16,6 @@ class ProductTemplate(models.Model):
         search_details = super()._search_get_detail(website, order, options)
         open_product_ids = options.get("open_product_ids")
         domain = search_details["base_domain"]
-        if len(open_product_ids):
+        if open_product_ids is not None:
             domain.append([("id", "in", tuple(open_product_ids))])
         return search_details
