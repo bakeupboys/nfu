@@ -1,4 +1,5 @@
 from odoo import fields, http
+from odoo.http import request
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
@@ -10,3 +11,43 @@ class WebsiteSaleMinMax(WebsiteSale):
         product_uom_ordered_qty = fields.Float(ordered_qty)
         product_uom_max_qty = fields.Float(max_qty)
         return super().cart_update(*args, ordered_qty=product_uom_ordered_qty, max_qty=product_uom_max_qty, **kw)
+
+
+class WebsiteSale(WebsiteSale):
+    def _get_search_options(
+        self, category=None, attrib_values=None, pricelist=None, min_price=0.0, max_price=0.0, conversion_rate=1, **post
+    ):
+        res = super()._get_search_options(
+            category=category,
+            attrib_values=attrib_values,
+            pricelist=pricelist,
+            min_price=min_price,
+            max_price=max_price,
+            conversion_rate=conversion_rate,
+            **post
+        )
+        res["open_product_ids"] = post.get("open_product_ids")
+        return res
+
+    @http.route(
+        [
+            "/shop",
+            "/shop/page/<int:page>",
+            '/shop/category/<model("product.public.category"):category>',
+            '/shop/category/<model("product.public.category"):category>/page/<int:page>',
+        ],
+        type="http",
+        auth="public",
+        website=True,
+    )
+    def shop(self, page=0, category=None, search="", min_price=0.0, max_price=0.0, ppg=False, **post):
+        if post.get("open_packagings"):
+            batch = request.website.sale_get_order(force_create=True).batch_id
+            open_product_ids = (
+                batch.product_ids.filtered(lambda p: p.open_packaging_qty > 0).mapped("product_template_id").ids
+            )
+            post["open_product_ids"] = open_product_ids
+        else:
+            post["open_product_ids"] = []
+        res = super().shop(page=0, category=None, search="", min_price=0.0, max_price=0.0, ppg=False, **post)
+        return res

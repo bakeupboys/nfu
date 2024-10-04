@@ -11,3 +11,11 @@ class ProductTemplate(models.Model):
     def action_unpublish_on_website(self):
         for product in self:
             product.is_published = False
+
+    def _search_get_detail(self, website, order, options):
+        search_details = super()._search_get_detail(website, order, options)
+        open_product_ids = options.get("open_product_ids")
+        domain = search_details["base_domain"]
+        if len(open_product_ids):
+            domain.append([("id", "in", tuple(open_product_ids))])
+        return search_details
