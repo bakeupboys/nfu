@@ -1,0 +1,120 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* nfu_ecommerce
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-04 19:54+0000\n"
+"PO-Revision-Date: 2024-10-04 19:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+msgid "<span>Max Qty</span>"
+msgstr "<span>Max Menge</span>"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+msgid "Add one"
+msgstr "Einen hinzufügen"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.o_wsale_offcanvas
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.products_open_packaging
+msgid "All Products"
+msgstr "Alle Produkte"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_sale_order__balance
+msgid "Balance"
+msgstr "Guthaben"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.total
+msgid "Balance:"
+msgstr "Aktuelles Guthaben:"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_summary_packaging
+msgid "Max Ordered Quantity:"
+msgstr "Max Menge"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_summary_packaging
+msgid "Max Qty"
+msgstr "Max Menge:"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.total
+msgid "New balance:"
+msgstr "Neues Guthaben:"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+msgid "No open package available"
+msgstr "Keine offenen Gebinde"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_summary_packaging
+msgid "Open Package:"
+msgstr "Offenes Gebinde:"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.o_wsale_offcanvas
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.products_open_packaging
+msgid "Open Packagings"
+msgstr "Offene Gebinde"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_sale_order_line__open_qty
+msgid "Open Qty"
+msgstr "Offene Menge"
+
+#. module: nfu_ecommerce
+#: model:ir.model,name:nfu_ecommerce.model_product_template
+msgid "Product"
+msgstr "Produkt"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.product_template_tree_view
+msgid "Publish on Website"
+msgstr "Veröffentlichen"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+msgid "Remove one"
+msgstr "Eins entfernen"
+
+#. module: nfu_ecommerce
+#: model:ir.model,name:nfu_ecommerce.model_sale_order
+msgid "Sales Order"
+msgstr "Verkaufsauftrag"
+
+#. module: nfu_ecommerce
+#: model:ir.model,name:nfu_ecommerce.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkaufsauftragszeile"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.product_template_tree_view
+msgid "Unpublish on Website"
+msgstr "Von Website entfernen"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_sale_order__updated_balance
+msgid "Updated Balance"
+msgstr "Zukünftiges Guthaben"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+msgid "Warning"
+msgstr "Warnung"

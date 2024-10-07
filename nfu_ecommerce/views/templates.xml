@@ -28,8 +28,12 @@
     <template id="cart_lines_packaging" inherit_id="website_sale.cart_lines" name="Shopping Cart Lines">
         <xpath expr="//td[hasclass('td-product_name')]" position="inside">
             <div t-if="line.product_packaging_id and (line.product_packaging_id.qty != 1)">
-                <span>Open Package: <t t-esc="line.compute_open_packages()"/>/<t t-esc="line.product_packaging_id.qty"/>
-                    </span><br/>
+                <span t-if="line.open_qty > 0">Open Package: <t t-esc="line.open_qty"/>/<t
+                        t-esc="line.product_packaging_id.qty"
+                    />
+                    </span>
+                    <span t-else="">No open package available</span>
+                <br/>
                 <span>Max Ordered Quantity: <span
                         t-esc="line.batch_uom_max_qty"
                         t-attf-class="#{'text-danger' if line.batch_uom_max_qty &lt; line.product_packaging_id.qty else ''}"
