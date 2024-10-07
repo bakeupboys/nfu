@@ -28,13 +28,15 @@ class SaleOrderLine(models.Model):
             if line.order_id.batch_id:
                 batch_id = line.batch_id
                 product_id = line.product_id
+                precision_rounding = line.product_id.uom_id.rounding
+                precision_digits = len(str(precision_rounding).split(".")[1])
                 batch_lines = (
                     self.env["sale.order.line"]
                     .sudo()
                     .search([("batch_id", "=", batch_id.id), ("product_id", "=", product_id.id)])
                 )
                 line.batch_uom_qty = sum(batch_lines.mapped("product_uom_qty"))
-                line.batch_uom_max_qty = sum(batch_lines.mapped("product_uom_max_qty"))
+                line.batch_uom_max_qty = round(sum(batch_lines.mapped("product_uom_max_qty")), precision_digits)
             else:
                 line.batch_uom_max_qty = line.batch_uom_qty = 0
 

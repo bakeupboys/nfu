@@ -1,5 +1,5 @@
 from odoo import fields, models
-from odoo.tools import float_is_zero, float_repr, float_round
+from odoo.tools import float_is_zero, float_round
 
 
 class SaleOrderLine(models.Model):
@@ -16,12 +16,7 @@ class SaleOrderLine(models.Model):
                     line.batch_uom_qty % line.product_packaging_id.qty, precision_rounding=precision_rounding
                 )
                 if not float_is_zero(qty_of_last_pack, precision_rounding=precision_rounding):
-                    open_qty = float_round(
-                        line.product_packaging_id.qty - qty_of_last_pack, precision_rounding=precision_rounding
-                    )
-                    # somehow float_rounding() does not capture all cases ex. float_rounding(2-1.1)
-                    # this is a samll workaround
-                    line.open_qty = float(float_repr(open_qty, precision_digits))
+                    line.open_qty = round(line.product_packaging_id.qty - qty_of_last_pack, precision_digits)
                 else:
                     line.open_qty = 0.0
             else:
