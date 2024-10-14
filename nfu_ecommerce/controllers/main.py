@@ -55,5 +55,7 @@ class WebsiteSale(WebsiteSale):
             post["open_product_ids"] = open_product_ids
         else:
             post["open_product_ids"] = None
-        res = super().shop(page=0, category=None, search="", min_price=0.0, max_price=0.0, ppg=False, **post)
+        res = super().shop(
+            page=page, category=category, search=search, min_price=min_price, max_price=max_price, ppg=ppg, **post
+        )
         return res
