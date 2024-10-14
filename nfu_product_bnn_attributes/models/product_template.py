@@ -28,6 +28,12 @@ class ProductTemplate(models.Model):
                             packagings.write({"name": name, "qty": qty, "sales": True})
                         else:
                             self.env["product.packaging"].create(
-                                {"name": name, "qty": qty, "product_id": product_product.id, "sales": True}
+                                {
+                                    "name": name,
+                                    "qty": qty,
+                                    "product_id": product_product.id,
+                                    "sales": True,
+                                    "company_id": product_product.company_id.id,
+                                }
                             )
         return res
