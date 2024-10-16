@@ -7,9 +7,9 @@
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
                 <button
-                    name="export_grell_csv"
+                    name="export_wholesaler_csv"
                     type="object"
-                    string="Export Grell CSV"
+                    string="Export Wholesaler CSV"
                     class="oe_highlight"
                     attrs="{'invisible': [('state', '=','open')]}"
                 />

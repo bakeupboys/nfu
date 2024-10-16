@@ -6,7 +6,7 @@ from odoo import models
 class SaleOrderBatch(models.Model):
     _inherit = "sale.order.batch"
 
-    def export_grell_csv(self):
+    def export_wholesaler_csv(self):
         self.ensure_one()
         # Prepare CSV content
         csv_content = "Artnr,Menge\n"
@@ -20,7 +20,7 @@ class SaleOrderBatch(models.Model):
         # Create attachment
         attachment = self.env["ir.attachment"].create(
             {
-                "name": f"grell-{self.name}.csv",
+                "name": f"wholesaler-{self.name}.csv",
                 "type": "binary",
                 "datas": csv_base64,
                 "res_model": self._name,
