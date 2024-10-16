@@ -373,6 +373,21 @@ ul.auto-toc {
 <p>This module adds a CSV exporter action to Sale Order Batch module.
 It exports the article number (default_code) and the qty of the Sale Order Batch
 Product view.</p>
+<p>Grell bietet die Möglichkeit Bestellungen als CSV hochzuladen. Dafür werden lediglich 2 Spalten benötigt
+|Artnr|Menge|</p>
+<ul class="simple">
+<li><dl class="first docutils">
+<dt>Artnr</dt>
+<dd>Artikelnummer beim Hersteller also Grell
+Das ist aktuell der default_code, falls wir den mal prefixen, muss das hier angepasst werden oder wir gehen auf Das Lieferantenmodel</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>Menge</dt>
+<dd>Bestellmenge/Gebindegröße</dd>
+</dl>
+</li>
+</ul>
 <p><strong>Table of contents</strong></p>
 <div class="contents local topic" id="contents">
 <ul class="simple">
@@ -393,6 +408,8 @@ Product view.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field"><th class="field-name">0.0.1:</th><td class="field-body">Initial module.</td>
+</tr>
+<tr class="field"><th class="field-name">1.0.0:</th><td class="field-body">Adjust to Grell format specification</td>
 </tr>
 </tbody>
 </table>
