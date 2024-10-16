@@ -11,8 +11,8 @@ class SaleOrderBatch(models.Model):
         # Prepare CSV content
         csv_content = "Artnr,Menge\n"
         for product in self.product_ids.filtered(lambda p: p.product_id.default_code):
-            grell_qty = int(product.product_uom_qty / product.product_packaging_qty)
-            csv_content += f"{product.product_id.default_code},{grell_qty}\n"
+            wholesaler_qty = int(product.product_uom_qty / product.product_packaging_qty)
+            csv_content += f"{product.product_id.default_code},{wholesaler_qty}\n"
 
         # Encode CSV content to base64
         csv_base64 = base64.b64encode(csv_content.encode("utf-8"))
