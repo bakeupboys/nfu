@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sale_order_batch_form_inherit" model="ir.ui.view">
+        <field name="name">sale.order.batch.form.inherit</field>
+        <field name="model">sale.order.batch</field>
+        <field name="inherit_id" ref="sale_order_batch.view_order_batch_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button
+                    name="export_wholesaler_csv"
+                    type="object"
+                    string="Export Wholesaler CSV"
+                    class="oe_highlight"
+                    attrs="{'invisible': [('state', '=','open')]}"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
