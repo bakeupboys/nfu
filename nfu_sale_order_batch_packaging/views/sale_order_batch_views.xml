@@ -30,6 +30,9 @@
                         <xpath expr="//field[@name='product_ids']/tree" position="inside">
                                 <field name="open_packaging_qty" invisiable="True"/>
                         </xpath>
+                        <xpath expr="//field[@name='product_ids']/tree/field[@name='product_uom_qty']" position="after">
+                                <field name="product_uom_max_qty" invisiable="True"/>
+                        </xpath>
                         <xpath
                 expr="//field[@name='product_ids']/tree/field[@name='product_template_id']"
                 position="attributes"

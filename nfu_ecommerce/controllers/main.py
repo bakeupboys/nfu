@@ -1,5 +1,6 @@
 from odoo import fields, http
 from odoo.http import request
+from odoo.tools import lazy
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
 
@@ -17,6 +18,46 @@ class WebsiteSale(WebsiteSale):
     def _get_additional_shop_values(self, values):
         new_values = super()._get_additional_shop_values(values)
         new_values["open_packagings"] = True if request.httprequest.args.get("open_packagings") else False
+        # ToDo: Add batch qtys if open batch
+        batch = request.website.sale_get_order(force_create=True).batch_id
+        batch_products = batch.product_ids.filtered(lambda p: p.product_packaging_id)
+        packaging_info = {}
+        for product in values.get("products").sudo().filtered(lambda p: p.packaging_ids):
+            batch_product = batch_products.filtered(lambda p: p.product_template_id == product)
+            if batch_product:
+                batch_product = batch_product[0]
+                packaging_info[product.id] = {
+                    "state": batch_product.open_packaging_state,
+                    "open_qty": batch_product.open_packaging_qty,
+                    "package_qty": batch_product.product_packaging_qty,
+                }
+            else:
+                packaging = product.sudo()._get_nfu_packaging()
+                if packaging and packaging.qty > 1:
+                    packaging_info[product.id] = {"state": False, "open_qty": 0, "package_qty": packaging.qty}
+        new_values["packaging_info"] = packaging_info
+        new_values["get_product_packagings"] = lambda product: lazy(lambda: packaging_info.get(product.id, False))
+        return new_values
+
+    def _prepare_product_values(self, product, category, search, **kwargs):
+        new_values = super()._prepare_product_values(product, category, search, **kwargs)
+        batch = request.website.sale_get_order(force_create=True).batch_id
+        batch_product = batch.product_ids.filtered(
+            lambda p: p.product_template_id == product and p.product_packaging_id
+        )
+        packaging_info = {}
+        if batch_product:
+            batch_product = batch_product[0]
+            packaging_info = {
+                "state": batch_product.open_packaging_state,
+                "open_qty": batch_product.open_packaging_qty,
+                "package_qty": batch_product.product_packaging_qty,
+            }
+        else:
+            packaging = product.sudo()._get_nfu_packaging()
+            if packaging and packaging.qty > 1:
+                packaging_info = {"state": False, "open_qty": 0, "package_qty": packaging.qty}
+        new_values["packaging_info"] = packaging_info
         return new_values
 
     def _get_search_options(
