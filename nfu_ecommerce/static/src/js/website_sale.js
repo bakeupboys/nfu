@@ -4,6 +4,11 @@ odoo.define("nfu_ecommerce.website_max_qty", function (require) {
     var wSaleUtils = require("website_sale.utils");
     var publicWidget = require("web.public.widget");
     require("website_sale.website_sale");
+
+    /**
+     * ToDO att_submitForm methode overwrite
+     * see Cybros addon for example
+     */
     publicWidget.registry.WebsiteSale.include({
         /**
          * Adds the max qty to the POST request when adding a product to the cart.
@@ -15,8 +20,8 @@ odoo.define("nfu_ecommerce.website_max_qty", function (require) {
                 productIDs.push($(elem).find("span[data-product-id]").data("product-id"));
             });
             $input.data("update_change", true);
-            var max_qty = parseFloat($input.closest("tr").find('input[name="max-qty"]').val(), 10);
-            var set_qty = parseFloat($input.closest("tr").find('input[name!="max-qty"]').val(), 10);
+            var max_qty = parseFloat($input.closest("tr").find('input[name="max-qty"]').val());
+            var set_qty = parseFloat($input.closest("tr").find('input[name!="max-qty"]').val());
             if (max_qty < set_qty) {
                 max_qty = set_qty;
             }
@@ -30,7 +35,7 @@ odoo.define("nfu_ecommerce.website_max_qty", function (require) {
                 },
             }).then(function (data) {
                 $input.data("update_change", false);
-                var check_value = parseFloat($input.val() || 0, 10);
+                var check_value = parseFloat($input.val() || 0);
                 if (isNaN(check_value)) {
                     check_value = 1;
                 }
@@ -44,9 +49,9 @@ odoo.define("nfu_ecommerce.website_max_qty", function (require) {
                 }
                 $input.val(data.quantity);
                 $(".js_quantity[data-line-id=" + line_id + "]")
-                .val(data.quantity)
-                .text(data.quantity);
-                
+                    .val(data.quantity)
+                    .text(data.quantity);
+
                 wSaleUtils.updateCartNavBar(data);
                 wSaleUtils.showWarning(data.warning);
                 // Propagating the change to the express checkout forms
