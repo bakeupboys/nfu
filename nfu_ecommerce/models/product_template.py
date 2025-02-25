@@ -1,8 +1,12 @@
-from odoo import models
+from odoo import fields, models
 
 
 class ProductTemplate(models.Model):
     _inherit = "product.template"
+
+    is_published = fields.Boolean(
+        copy=False, default=lambda self: self._default_is_published(), index=True, company_dependent=True
+    )
 
     def action_publish_on_website(self):
         for product in self:
