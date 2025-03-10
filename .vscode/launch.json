@@ -13,8 +13,8 @@
                 "--addons-path=${config:odoo.addons_path},${workspaceFolder}",
                 "--limit-time-real=0",
                 "--limit-time-cpu=0",
-                // "--init=stock",
-                "--update=sale_order_batch,sale_order_batch_stock",
+                // "--init=sale_management,sale_order_batch",
+                "--update=sale_order_batch",
                 "--dev=xml"
             ]
         },
