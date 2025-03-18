@@ -25,25 +25,18 @@ class SaleOrderLine(models.Model):
     @api.depends("product_uom_qty", "product_uom_max_qty")
     def _compute_batch_uom_qty(self):
         for line in self:
-            if line.order_id.batch_id:
-                batch_id = line.batch_id
-                product_id = line.product_id
-                precision_rounding = line.product_id.uom_id.rounding
-                precision_digits = len(str(precision_rounding).split(".")[1])
-                batch_lines = (
-                    self.env["sale.order.line"]
-                    .sudo()
-                    .search([("batch_id", "=", batch_id.id), ("product_id", "=", product_id.id)])
-                )
-                line.batch_uom_qty = sum(batch_lines.mapped("product_uom_qty"))
-                line.batch_uom_max_qty = round(sum(batch_lines.mapped("product_uom_max_qty")), precision_digits)
+            if line.batch_product_id:
+                line.batch_uom_qty = line.batch_product_id.product_uom_qty
+                line.batch_uom_max_qty = line.batch_product_id.product_uom_max_qty
             else:
                 line.batch_uom_max_qty = line.batch_uom_qty = 0
 
     @api.depends("product_packaging_id", "product_uom", "product_uom_qty", "batch_id")
     def _compute_product_packaging_qty(self):
         for line in self:
-            if line.batch_id and line.product_packaging_id:
+            if not line.product_packaging_id:
+                line.product_packaging_qty = False
+            elif line.batch_id:
                 packaging_uom = line.product_packaging_id.product_uom_id
                 batch_uom_qty = line.product_uom._compute_quantity(line.batch_uom_qty, packaging_uom)
                 line.product_packaging_qty = float_round(
