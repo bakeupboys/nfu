@@ -11,6 +11,14 @@ class SaleOrderBatchProduct(models.Model):
     open_packaging_qty = fields.Float(compute="_compute_open_packagin_qty", store=True)
     open_packaging_state = fields.Selection(selection=PACKAGING_STATES, compute="_compute_open_packagin_state")
 
+    @api.depends("sale_order_line_ids.product_uom_max_qty")
+    def _compute_product_uom_max_qty(self):
+        for product in self:
+            if product.sale_order_line_ids:
+                product.product_uom_max_qty = sum(product.sale_order_line_ids.mapped("product_uom_max_qty"))
+            else:
+                product.product_uom_max_qty = False
+
     @api.depends("sale_order_line_ids.product_uom_qty")
     def _compute_open_packagin_qty(self):
         for product in self:
@@ -20,14 +28,6 @@ class SaleOrderBatchProduct(models.Model):
             product.open_packaging_qty = (
                 0 if open_packaging_qty == product.product_packaging_qty else open_packaging_qty
             )
-
-    @api.depends("sale_order_line_ids.product_uom_max_qty")
-    def _compute_product_uom_max_qty(self):
-        for product in self:
-            if product.sale_order_line_ids:
-                product.product_uom_max_qty = sum(product.sale_order_line_ids.mapped("product_uom_max_qty"))
-            else:
-                product.product_uom_max_qty = 0
 
     @api.depends("open_packaging_qty", "product_packaging_qty")
     def _compute_open_packagin_state(self):
