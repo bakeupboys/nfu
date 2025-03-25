@@ -1,6 +1,5 @@
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
-from odoo.tools import float_round
 
 
 class SaleOrderLine(models.Model):
@@ -8,8 +7,8 @@ class SaleOrderLine(models.Model):
 
     product_uom_ordered_qty = fields.Float(string="Ordered Qty", digits="Product Unit of Measure", default=1.0)
     product_uom_max_qty = fields.Float(string="Max Qty", digits="Product Unit of Measure")
-    batch_uom_qty = fields.Float(compute="_compute_batch_uom_qty")
-    batch_uom_max_qty = fields.Float(compute="_compute_batch_uom_qty")
+    # batch_uom_qty = fields.Float(compute="_compute_batch_uom_qty")
+    # batch_uom_max_qty = fields.Float(compute="_compute_batch_uom_qty")
 
     @api.constrains("product_uom_qty", "product_uom_max_qty")
     def _check_product_uom_qty(self):
@@ -22,29 +21,29 @@ class SaleOrderLine(models.Model):
                     )
                 )
 
-    @api.depends("product_uom_qty", "product_uom_max_qty")
-    def _compute_batch_uom_qty(self):
-        for line in self:
-            if line.batch_product_id:
-                line.batch_uom_qty = line.batch_product_id.product_uom_qty
-                line.batch_uom_max_qty = line.batch_product_id.product_uom_max_qty
-            else:
-                line.batch_uom_max_qty = line.batch_uom_qty = 0
+    # @api.depends("product_uom_qty", "product_uom_max_qty")
+    # def _compute_batch_uom_qty(self):
+    #     for line in self:
+    #         if line.batch_product_id:
+    #             line.batch_uom_qty = line.batch_product_id.product_uom_qty
+    #             line.batch_uom_max_qty = line.batch_product_id.product_uom_max_qty
+    #         else:
+    #             line.batch_uom_max_qty = line.batch_uom_qty = 0
 
-    @api.depends("product_packaging_id", "product_uom", "product_uom_qty", "batch_id")
-    def _compute_product_packaging_qty(self):
-        for line in self:
-            if not line.product_packaging_id:
-                line.product_packaging_qty = False
-            elif line.batch_id:
-                packaging_uom = line.product_packaging_id.product_uom_id
-                batch_uom_qty = line.product_uom._compute_quantity(line.batch_uom_qty, packaging_uom)
-                line.product_packaging_qty = float_round(
-                    batch_uom_qty / line.product_packaging_id.qty, precision_rounding=packaging_uom.rounding
-                )
-            else:
-                super()._compute_product_packaging_qty()
-        return True
+    # @api.depends("product_packaging_id", "product_uom", "product_uom_qty", "batch_id")
+    # def _compute_product_packaging_qty(self):
+    #     for line in self:
+    #         if not line.product_packaging_id:
+    #             line.product_packaging_qty = False
+    #         elif line.batch_id:
+    #             packaging_uom = line.product_packaging_id.product_uom_id
+    #             batch_uom_qty = line.product_uom._compute_quantity(line.batch_uom_qty, packaging_uom)
+    #             line.product_packaging_qty = float_round(
+    #                 batch_uom_qty / line.product_packaging_id.qty, precision_rounding=packaging_uom.rounding
+    #             )
+    #         else:
+    #             super()._compute_product_packaging_qty()
+    #     return True
 
     @api.model_create_multi
     def create(self, vals_list):
