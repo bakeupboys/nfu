@@ -7,7 +7,7 @@ readme-template-url="https://github.com/OCA/maintainer-tools/blob/master/templat
 manifest-required-authors=BAKEUP
 manifest-required-keys=license
 manifest-deprecated-keys=description,active
-license-allowed=LGPL-3,OPL-1
+license-allowed=LGPL-3,OPL-1,AGPL-3
 valid-odoo-versions=16.0
 
 [MESSAGES CONTROL]
