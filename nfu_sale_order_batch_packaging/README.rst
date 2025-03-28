@@ -38,7 +38,8 @@ Changelog
 :1.1.0: Live
 :1.2.0: Add regeneration action for batch products
 :1.2.1: refactoring
-:1.3.0: add packagin states
+:1.3.0: add packaging states
+:1.3.1: add open_max_qty
 
 Bug Tracker
 ===========
