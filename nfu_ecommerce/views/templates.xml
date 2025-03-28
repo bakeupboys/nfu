@@ -39,20 +39,6 @@
         active="True"
         name="Show Extra Fields"
     >
-        <xpath expr="//div[hasclass('oe_product_image')]" position="before">
-            <t t-set="template_packaging_vals" t-value="get_product_packagings(product)"/>
-            <t t-if="template_packaging_vals">
-                <t
-                    t-set="packaging_ribbon_color"
-                    t-value="'green' if template_packaging_vals['state'] == 'full'
-                     else 'red'"
-                />
-                <span
-                    t-attf-class="o_ribbon o_not_editable o_ribbon_right"
-                    t-att-style="'color: white; background-color: %s;' % packaging_ribbon_color"
-                >+5/+3</span>
-            </t>
-        </xpath>
         <xpath expr="//div[hasclass('o_wsale_product_information_text')]" position="after">
             <t t-if="any([product[field.name] for field in website.shop_extra_field_ids])">
                 <p class="text-muted">
@@ -132,16 +118,7 @@
     <template id="cart_lines_packaging" inherit_id="website_sale.cart_lines" name="Shopping Cart Lines">
         <xpath expr="//td[hasclass('td-product_name')]" position="inside">
             <div t-if="line.product_packaging_id and (line.product_packaging_id.qty != 1)">
-                <span t-if="line.open_qty > 0">Open Package: <t t-esc="line.open_qty"/>/<t
-                        t-esc="line.product_packaging_id.qty"
-                    />
-                    </span>
-                    <span t-else="">No open package available</span>
-                <br/>
-                <span>Max Ordered Quantity: <span
-                        t-esc="line.batch_uom_max_qty"
-                        t-attf-class="#{'text-danger' if line.batch_uom_max_qty &lt; line.product_packaging_id.qty else ''}"
-                    /></span>
+                <span>Packaging Size: <t t-esc="line.product_packaging_id.qty"/></span>
             </div>
         </xpath>
         <xpath expr="//th[hasclass('td-qty')]" position="after">
@@ -150,6 +127,24 @@
                     <span>Max Qty</span>
                 </t>
             </th>
+        </xpath>
+        <xpath expr="//td[hasclass('td-qty')]" position="attributes">
+            <!-- TODO: Fix if-statement -->
+            <attribute
+                t-if="line.batch_product_id.open_packaging_state == 'open'"
+                name="style"
+            >background-color: red;</attribute>
+            <attribute
+                t-if="line.batch_product_id.open_packaging_state == 'last_open'"
+                name="style"
+            >background-color: orange;</attribute>
+
+        </xpath>
+
+        <xpath expr="//td[hasclass('td-qty')]" position="inside">
+            <div>
+                &#40;+ <t t-out="line.batch_product_id.open_packaging_qty"/>&#41;
+            </div>
         </xpath>
         <xpath expr="//td[hasclass('td-qty')]" position="after">
             <td class="text-center td-qty">
@@ -214,6 +209,9 @@
                         />
                     </t>
                 </div>
+                <div>
+                    &#40;+ <t t-out="line.batch_product_id.open_packaging_max_qty"/>&#41;
+                </div>
             </td>
         </xpath>
     </template>
@@ -230,16 +228,6 @@
     </template>
 
     <template id="cart_summary_packaging" inherit_id="website_sale.cart_summary" name="Cart right column">
-        <xpath expr="//td[hasclass('td-product_name')]" position="inside">
-            <div t-if="line.product_packaging_id and (line.product_packaging_id.qty != 1)">
-                <span>Open Package: <t t-esc="line.compute_open_packages()"/>/<t t-esc="line.product_packaging_id.qty"/>
-                    </span><br/>
-                <span>Max Ordered Quantity: <span
-                        t-esc="line.batch_uom_max_qty"
-                        t-attf-class="#{'text-danger' if line.batch_uom_max_qty &lt; line.product_packaging_id.qty else ''}"
-                    /></span>
-            </div>
-        </xpath>
         <xpath expr="//th[hasclass('td-qty')]" position="after">
             <th class="border-top-0 td-qty">Max Qty</th>
         </xpath>
