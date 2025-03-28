@@ -29,6 +29,7 @@ class WebsiteSale(WebsiteSale):
                 packaging_info[product.id] = {
                     "state": batch_product.open_packaging_state,
                     "open_qty": batch_product.open_packaging_qty,
+                    "open_max_qty": batch_product.open_packaging_max_qty,
                     "package_qty": batch_product.product_packaging_qty,
                 }
             else:

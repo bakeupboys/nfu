@@ -27,12 +27,32 @@
         </xpath>
     </template>
 
+    <template id="products" inherit_id="website_sale.products">
+        <xpath expr="//div[contains(@t-attf-class, 'o_wsale_product_grid_wrapper')]" position="attributes">
+            <attribute name="t-attf-class" add="overflow-hidden" separator=" "/>
+        </xpath>
+    </template>
+
     <template
         id="ecom_show_extra_fields_products_item"
         inherit_id="website_sale.products_item"
         active="True"
         name="Show Extra Fields"
     >
+        <xpath expr="//div[hasclass('oe_product_image')]" position="before">
+            <t t-set="template_packaging_vals" t-value="get_product_packagings(product)"/>
+            <t t-if="template_packaging_vals">
+                <t
+                    t-set="packaging_ribbon_color"
+                    t-value="'green' if template_packaging_vals['state'] == 'full'
+                     else 'red'"
+                />
+                <span
+                    t-attf-class="o_ribbon o_not_editable o_ribbon_right"
+                    t-att-style="'color: white; background-color: %s;' % packaging_ribbon_color"
+                >+5/+3</span>
+            </t>
+        </xpath>
         <xpath expr="//div[hasclass('o_wsale_product_information_text')]" position="after">
             <t t-if="any([product[field.name] for field in website.shop_extra_field_ids])">
                 <p class="text-muted">
@@ -51,7 +71,6 @@
                         </t>
                         <br/>
                     </t>
-                    <t t-set="template_packaging_vals" t-value="get_product_packagings(product)"/>
                     <t t-if="template_packaging_vals">
                         <b>Open Qty: </b><span t-esc="template_packaging_vals['open_qty']"/>/<span
                             t-esc="template_packaging_vals['package_qty']"
