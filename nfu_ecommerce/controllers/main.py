@@ -26,16 +26,18 @@ class WebsiteSale(WebsiteSale):
             batch_product = batch_products.filtered(lambda p: p.product_template_id == product)
             if batch_product:
                 batch_product = batch_product[0]
+                if batch_product.open_packaging_state == "full":
+                    state_color = "green"
+                elif batch_product.open_packaging_state == "last_open":
+                    state_color = "#ff6700"
+                else:
+                    state_color = "red"
                 packaging_info[product.id] = {
-                    "state": batch_product.open_packaging_state,
+                    "state_color": state_color,
                     "open_qty": batch_product.open_packaging_qty,
                     "open_max_qty": batch_product.open_packaging_max_qty,
                     "package_qty": batch_product.product_packaging_qty,
                 }
-            else:
-                packaging = product.sudo()._get_nfu_packaging()
-                if packaging and packaging.qty > 1:
-                    packaging_info[product.id] = {"state": False, "open_qty": 0, "package_qty": packaging.qty}
         new_values["packaging_info"] = packaging_info
         new_values["get_product_packagings"] = lambda product: lazy(lambda: packaging_info.get(product.id, False))
         return new_values
