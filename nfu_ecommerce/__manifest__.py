@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "website",
-    "version": "16.0.1.2.0",
+    "version": "16.0.1.3.0",
     "depends": [
         "sale_product_configurator",
         "website_sale",

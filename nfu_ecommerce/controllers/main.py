@@ -26,12 +26,9 @@ class WebsiteSale(WebsiteSale):
             batch_product = batch_products.filtered(lambda p: p.product_template_id == product)
             if batch_product:
                 batch_product = batch_product[0]
-                if batch_product.open_packaging_state == "full":
+                state_color = batch_product.get_state_color()
+                if state_color == "inherit":
                     state_color = "green"
-                elif batch_product.open_packaging_state == "last_open":
-                    state_color = "#ff6700"
-                else:
-                    state_color = "red"
                 packaging_info[product.id] = {
                     "state_color": state_color,
                     "open_qty": batch_product.open_packaging_qty,
@@ -51,15 +48,13 @@ class WebsiteSale(WebsiteSale):
         packaging_info = {}
         if batch_product:
             batch_product = batch_product[0]
+            state_color = batch_product.get_state_color()
             packaging_info = {
-                "state": batch_product.open_packaging_state,
+                "state_color": state_color,
                 "open_qty": batch_product.open_packaging_qty,
+                "open_max_qty": batch_product.open_packaging_max_qty,
                 "package_qty": batch_product.product_packaging_qty,
             }
-        else:
-            packaging = product.sudo()._get_nfu_packaging()
-            if packaging and packaging.qty > 1:
-                packaging_info = {"state": False, "open_qty": 0, "package_qty": packaging.qty}
         new_values["packaging_info"] = packaging_info
         return new_values
 
@@ -103,3 +98,9 @@ class WebsiteSale(WebsiteSale):
             page=page, category=category, search=search, min_price=min_price, max_price=max_price, ppg=ppg, **post
         )
         return res
+
+    # ToDo: add qntitiy do confiuration modal
+    # def show_advanced_configurator(self, product_id, variant_values, pricelist_id, **kw):
+    #     batch = request.website.sale_get_order(force_create=True).batch_id
+    #     kw['custom_attribute'] = {'batch_id': batch.id}
+    #     return super().show_advanced_configurator(product_id, variant_values, pricelist_id, **kw)
