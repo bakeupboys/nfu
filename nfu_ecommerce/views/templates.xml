@@ -79,11 +79,12 @@
             </t>
         </xpath>
         <xpath expr="//div[contains(@t-attf-class,'css_quantity')]" position="attributes">
+                <!-- Todo: catch if not set -->
                 <attribute
+                t-if="packaging_info"
                 name="t-attf-style"
                 add="background-color: {{packaging_info['state_color']}};"
                 separator=" "
-                t-if="packaging_info"
             />
 
         </xpath>
