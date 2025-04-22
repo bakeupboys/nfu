@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_packaging_tree_view" model="ir.ui.view">
+        <field name="name">product.packaging.tree.inherit.companies</field>
+        <field name="model">product.packaging</field>
+        <field name="inherit_id" ref="product.product_packaging_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='company_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//field[@name='company_id']" position="after">
+                <field
+                    name="company_ids"
+                    options="{'no_create': True}"
+                    groups="base.group_multi_company"
+                    optional="hide"
+                    widget="many2many_tags"
+                />
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_packaging_form_view" model="ir.ui.view">
+        <field name="name">product.packaging.form.inherit.companies</field>
+        <field name="model">product.packaging</field>
+        <field name="inherit_id" ref="product.product_packaging_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='qty']/field[@name='company_id']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="////group[@name='qty']/field[@name='company_id']" position="after">
+                <field
+                    name="company_ids"
+                    options="{'no_create': True}"
+                    groups="base.group_multi_company"
+                    widget="many2many_tags"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>
