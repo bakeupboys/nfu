@@ -33,7 +33,7 @@ class ProductTemplate(models.Model):
                                     "qty": qty,
                                     "product_id": product_product.id,
                                     "sales": True,
-                                    "company_id": product_product.company_id.id,
+                                    "company_ids": product_product.company_ids.ids,
                                 }
                             )
         return res

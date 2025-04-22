@@ -4,8 +4,12 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "product",
-    "version": "16.0.1.0.0",
-    "depends": ["product", "product_multi_company"],
-    "data": ["views/product_product_views.xml", "views/product_template_views.xml"],
+    "version": "16.0.1.1.0",
+    "depends": ["product_multi_company"],
+    "data": [
+        "views/product_packaging_views.xml",
+        "views/product_product_views.xml",
+        "views/product_template_views.xml",
+    ],
     "license": "LGPL-3",
 }
