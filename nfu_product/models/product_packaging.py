@@ -7,8 +7,8 @@ class ProductPackaging(models.Model):
 
     @api.model_create_multi
     def create(self, vals_list):
+        for vals in vals_list:
+            product = self.env["product.product"].browse(vals.get("product_id"))
+            vals["company_ids"] = [(6, 0, product.company_ids.ids)]
         res = super().create(vals_list)
-        for packaging in res:
-            product = packaging.product_id
-            packaging.company_ids = product.company_ids
         return res

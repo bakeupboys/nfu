@@ -25,7 +25,14 @@ class ProductTemplate(models.Model):
                             [("product_id", "=", product_product.id)], limit=1
                         )
                         if packagings:
-                            packagings.write({"name": name, "qty": qty, "sales": True})
+                            packagings.write(
+                                {
+                                    "name": name,
+                                    "qty": qty,
+                                    "sales": True,
+                                    "company_ids": product_product.company_ids.ids,
+                                }
+                            )
                         else:
                             self.env["product.packaging"].create(
                                 {
