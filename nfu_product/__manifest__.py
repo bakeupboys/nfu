@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "product",
-    "version": "16.0.1.1.0",
+    "version": "16.0.1.1.1",
     "depends": ["product_multi_company"],
     "data": [
         "views/product_packaging_views.xml",
