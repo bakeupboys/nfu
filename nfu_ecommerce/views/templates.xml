@@ -213,25 +213,27 @@
     </template>
 
     <template id="configure_optional_products" inherit_id="sale_product_configurator.configure_optional_products">
-        <xpath expr="//td[hasclass('css_quantity')]" position="before">
         <!-- TODO: Add Batch qtys to order modal
+        <xpath expr="//td[hasclass('css_quantity')]" position="before">
             <div>
                 <t t-out="custom_attribute.batch_id.id"/>
                             &#40;+<t t-out="round(line.batch_product_id.open_packaging_qty*10)/10"/>&#41;
             </div>
-            -->
         </xpath>
+        -->
 
-        <!--  TODO: Add JS part
         <xpath expr="//th[hasclass('td-qty')]" position="after">
+        <!--  TODO: Add JS part
             <th class="text-center td-max-qty"><span class='label'>Max Quantity</span></th>
+        -->
         </xpath>
          <xpath expr="//td[hasclass('td-qty')]" position="after">
+         <!--  TODO: Add JS part
             <td class="text-center td-max-qty">
                 <t t-call='nfu_ecommerce.product_max_quantity_config'/>
             </td>
-        </xpath>
          -->
+        </xpath>
     </template>
     <template id="cart_hide_checkout_button" inherit_id="website_sale.cart">
         <!-- TODO: Introduce flag -->
