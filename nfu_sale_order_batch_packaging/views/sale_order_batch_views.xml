@@ -23,10 +23,7 @@
                         <xpath expr="//field[@name='product_ids']/tree/field[@name='product_uom_qty']" position="after">
                                 <field name="product_uom_max_qty"/>
                         </xpath>
-                        <xpath
-                expr="//field[@name='product_ids']/tree/field[@name='product_template_id']"
-                position="attributes"
-            >
+                        <xpath expr="//field[@name='product_ids']/tree/field[@name='product_id']" position="attributes">
                                 <attribute name="decoration-warning">(open_packaging_qty != 0)</attribute>
                         </xpath>
                 </field>
