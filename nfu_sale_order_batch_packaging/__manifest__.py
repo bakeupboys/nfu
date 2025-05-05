@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Sale",
-    "version": "16.0.1.3.1",
+    "version": "16.0.1.3.2",
     "depends": ["sale", "sale_order_batch"],
     "data": [
         "views/sale_order_views.xml",

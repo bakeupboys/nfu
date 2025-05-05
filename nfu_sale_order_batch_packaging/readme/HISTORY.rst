@@ -5,4 +5,4 @@
 :1.2.1: refactoring
 :1.3.0: add packaging states
 :1.3.1: add open_max_qty
-:1.3.1: fix color indicator
+:1.3.2: fix color indicator
