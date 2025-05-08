@@ -43,6 +43,7 @@ Changelog
 :1.2.0: Add Open Packages to Product list
 :1.3.0: Adapt new Open Packages format and add indicators
 :1.3.1: Remove Max Qty from first page
+:1.3.2: Add decimal to ribbon
 
 Bug Tracker
 ===========

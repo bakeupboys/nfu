@@ -45,7 +45,7 @@
                 <span
                     t-attf-class="o_ribbon o_not_editable o_ribbon_right"
                     t-att-style="'color: white; background-color: %s;' % template_packaging_vals['state_color']"
-                    t-out="'+%d'%(template_packaging_vals['open_qty'])"
+                    t-out="'+%.1f'%(template_packaging_vals['open_qty'])"
                 />
             </t>
         </xpath>
