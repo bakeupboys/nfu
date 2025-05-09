@@ -13,7 +13,7 @@ class SaleOrderLine(models.Model):
     @api.constrains("product_uom_qty", "product_uom_max_qty")
     def _check_product_uom_qty(self):
         for order_line in self:
-            if order_line.product_uom_max_qty != 0 and order_line.product_uom_qty > order_line.product_uom_max_qty:
+            if order_line.product_uom_qty > order_line.product_uom_max_qty:
                 raise UserError(
                     _(
                         f"{order_line.order_id.name},{order_line.product_id.name}:"
@@ -24,6 +24,9 @@ class SaleOrderLine(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
+            if not vals.get("product_uom_max_qty") or vals.get("product_uom_max_qty") == 0:
+                product_qty = vals.get("product_uom_qty")
+                vals["product_uom_max_qty"] = product_qty
             if vals.get("product_id") and not vals.get("product_packaging_id"):
                 product_id = vals.get("product_id")
                 packaging = self.env["product.packaging"].search([("product_id", "=", product_id)], limit=1)
