@@ -8,7 +8,7 @@ class SaleOrderBatchProduct(models.Model):
     _inherit = "sale.order.batch.product"
 
     product_uom_max_qty = fields.Float("Max Qty", compute="_compute_product_uom_max_qty")
-    open_packaging_qty = fields.Float(compute="_compute_open_packaging_qty")
+    open_packaging_qty = fields.Float(compute="_compute_open_packaging_qty", store=True)
     open_packaging_max_qty = fields.Float(compute="_compute_open_packaging_max_qty")
     open_packaging_state = fields.Selection(selection=PACKAGING_STATES, compute="_compute_open_packaging_state")
 
