@@ -32,3 +32,14 @@ class SaleOrderLine(models.Model):
                 packaging = self.env["product.packaging"].search([("product_id", "=", product_id)], limit=1)
                 vals["product_packaging_id"] = packaging.id
         return super().create(vals_list)
+
+    def write(self, vals):
+        product_qty = vals.get("product_uom_qty")
+        product_max_qty = vals.get("product_uom_max_qty")
+        if product_qty and product_max_qty and product_qty > product_max_qty:
+            vals["product_uom_max_qty"] = product_qty
+        elif product_qty:
+            for line in self:
+                if product_qty > line.product_uom_max_qty:
+                    line["product_uom_max_qty"] = product_qty
+        return super().write(vals)
