@@ -7,9 +7,11 @@ PACKAGING_STATES = [("open", "Open"), ("full", "Full"), ("last_open", "Last pack
 class SaleOrderBatchProduct(models.Model):
     _inherit = "sale.order.batch.product"
 
-    product_uom_max_qty = fields.Float("Max Qty", compute="_compute_product_uom_max_qty")
-    open_packaging_qty = fields.Float(compute="_compute_open_packaging_qty", store=True)
-    open_packaging_max_qty = fields.Float(compute="_compute_open_packaging_max_qty")
+    product_uom_max_qty = fields.Float(
+        "Max Qty", compute="_compute_product_uom_max_qty", precompute=True, store=True, digits=[12, 3]
+    )
+    open_packaging_qty = fields.Float(compute="_compute_open_packaging_qty", store=True, digits=[12, 3])
+    open_packaging_max_qty = fields.Float(compute="_compute_open_packaging_max_qty", store=True, digits=[12, 3])
     open_packaging_state = fields.Selection(selection=PACKAGING_STATES, compute="_compute_open_packaging_state")
 
     @api.depends("sale_order_line_ids.product_uom_max_qty")
@@ -21,11 +23,11 @@ class SaleOrderBatchProduct(models.Model):
     def _compute_open_packaging_qty(self):
         for product in self:
             if product.product_packaging_id:
-                open_packaging_qty = product.product_packaging_qty - (
-                    product.product_uom_qty % product.product_packaging_qty
+                open_packaging_qty = product.product_packaging_qty - round(
+                    product.product_uom_qty % product.product_packaging_qty, 3
                 )
                 product.open_packaging_qty = (
-                    0 if open_packaging_qty == product.product_packaging_qty else open_packaging_qty
+                    0.0 if open_packaging_qty == product.product_packaging_qty else open_packaging_qty
                 )
             else:
                 product.open_packaging_qty = 0.0
@@ -35,8 +37,8 @@ class SaleOrderBatchProduct(models.Model):
         for product in self:
             if product.product_packaging_id:
                 if product.product_uom_max_qty < product.product_uom_qty + product.open_packaging_qty:
-                    product.open_packaging_max_qty = product.product_packaging_qty - (
-                        product.product_uom_max_qty % product.product_packaging_qty
+                    product.open_packaging_max_qty = product.product_packaging_qty - round(
+                        product.product_uom_max_qty % product.product_packaging_qty, 3
                     )
                 else:
                     product.open_packaging_max_qty = 0.0

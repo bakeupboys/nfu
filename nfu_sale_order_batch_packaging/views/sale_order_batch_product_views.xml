@@ -9,10 +9,10 @@
                         <field name="product_uom_max_qty"/>
                         <field
                     name="open_packaging_qty"
-                    decoration-warning="(open_packaging_state != 0) and not (open_packaging_max_qty != 0)"
-                    decoration-danger="(open_packaging_max_qty != 0)"
+                    decoration-warning="open_packaging_qty != 0.0 and open_packaging_max_qty == 0.0"
+                    decoration-danger="open_packaging_max_qty != 0.0"
                 />
-                        <field name="open_packaging_max_qty" decoration-danger="(open_packaging_max_qty != 0)"/>
+                        <field name="open_packaging_max_qty" decoration-danger="(open_packaging_max_qty != 0.0)"/>
                         <field name="open_packaging_state"/>
                     </xpath>
                     <xpath
