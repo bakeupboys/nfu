@@ -47,6 +47,7 @@ Changelog
     - remove zero exception for max_qty
     - store open_packaging_qty on batch product module to make it sortable
     - always adjust max_qty to be at least uom_qty except you only set max qty
+:1.3.4: store all quantities and round open values
 
 Bug Tracker
 ===========
