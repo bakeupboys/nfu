@@ -22,10 +22,17 @@ NFU eCommerce
 
 |badge1| |badge2| |badge3|
 
-This module adds a maximum order quantity field to Website Sale Orders. It also adds
-an ordered qantitiy field to store the original ordered quantity in case a manager
-adjustes the uom quantitiy. In webshop checkout it adds the customer balance to before
-and after the current order.
+This module adds 
+
+- a maximum order quantity field to Website Sale Orders
+- ordered qantitiy field to store the original ordered quantity in case a manager
+  adjustes the uom quantitiy
+
+In webshop checkout it adds
+
+- the customer balance to before and after the current order
+- a configuration to warn when credit is low
+- a possibility to only use credit for ordering
 
 **Table of contents**
 
@@ -44,6 +51,7 @@ Changelog
 :1.3.0: Adapt new Open Packages format and add indicators
 :1.3.1: Remove Max Qty from first page
 :1.3.2: Add decimal to ribbon
+:1.4.0: Add credit warning and avoid debts option
 
 Bug Tracker
 ===========

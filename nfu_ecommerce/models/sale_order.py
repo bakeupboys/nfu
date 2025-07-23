@@ -1,4 +1,5 @@
-from odoo import api, fields, models
+from odoo import _, api, fields, models
+from odoo.exceptions import ValidationError
 
 
 class SaleOrder(models.Model):
@@ -17,6 +18,14 @@ class SaleOrder(models.Model):
             order.updated_balance = order.balance - (
                 order.amount_total / order.currency_rate
             )
+
+    @api.constrains("amount_total")
+    def _check_amount_total(self):
+        for order in self:
+            if order.state != "draft" or not order.website_id:
+                continue
+            if order.website_id.avoid_depts and order.updated_balance < 0:
+                raise ValidationError(_("You don't have enough credit."))
 
     def _prepare_order_line_values(
         self,

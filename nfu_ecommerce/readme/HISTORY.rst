@@ -7,3 +7,4 @@
 :1.3.0: Adapt new Open Packages format and add indicators
 :1.3.1: Remove Max Qty from first page
 :1.3.2: Add decimal to ribbon
+:1.4.0: Add credit warning and avoid debts option
