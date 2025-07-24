@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template
+        id="portal_invoice_list_inherit_amount_total"
+        inherit_id="account.portal_my_invoices"
+        name="Portal Invoice List: Add Amount Total"
+    >
+        <xpath expr="//t[@t-if='invoices']//thead/tr" position="inside">
+            <th class="text-end">
+                <span>Amount Total</span>
+            </th>
+        </xpath>
+        <xpath expr="//t[@t-if='invoices']/tbody//tr" position="inside">
+            <td class="text-end">
+                <span
+                    t-field="invoice.amount_total"
+                    t-options="{'widget': 'monetary', 'display_currency': invoice.currency_id}"
+                />
+            </td>
+        </xpath>
+    </template>
+</odoo>
