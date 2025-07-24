@@ -13,12 +13,23 @@ class SaleOrderBatch(models.Model):
         # Prepare CSV content
         csv_content = "Artnr,Menge\n"
         for product in self.product_ids.filtered(lambda p: p.product_id.default_code):
-            if not float_is_zero(product.product_uom_qty, precision_rounding=product.product_id.uom_id.rounding):
+            if not float_is_zero(
+                product.product_uom_qty,
+                precision_rounding=product.product_id.uom_id.rounding,
+            ):
                 # We think 10g variance is okay
-                if not float_is_zero(product.open_packaging_qty, precision_rounding=0.01):
-                    raise UserError(_(f"Packaging is still open for product {product.product_id.name}"))
-                wholesaler_qty = int(round(product.product_uom_qty / product.product_packaging_qty))
-                csv_content += f"{product.product_id.default_code},{wholesaler_qty}\n"
+                if not float_is_zero(
+                    product.open_packaging_qty, precision_rounding=0.01
+                ):
+                    raise UserError(
+                        _(
+                            f"Packaging is still open for product {product.product_id.name}"
+                        )
+                    )
+                wholesaler_qty = int(
+                    round(product.product_uom_qty / product.product_packaging_qty)
+                )
+                csv_content += f"{product.product_id.default_code},{wholesaler_qty}\n"  # noqa: E231
 
         # Encode CSV content to base64
         csv_base64 = base64.b64encode(csv_content.encode("utf-8"))
@@ -34,4 +45,8 @@ class SaleOrderBatch(models.Model):
             }
         )
 
-        return {"type": "ir.actions.act_url", "url": f"/web/content/{attachment.id}?download=true", "target": "self"}
+        return {
+            "type": "ir.actions.act_url",
+            "url": f"/web/content/{attachment.id}?download=true",
+            "target": "self",
+        }

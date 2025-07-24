@@ -36,10 +36,16 @@ class SaleOrder(models.Model):
         to represent it in decimal values
         """
         for order in self:
-            order.cart_quantity = sum(order.mapped("website_order_line.product_uom_qty"))
-            order.only_services = all(line.product_id.type == "service" for line in order.website_order_line)
+            order.cart_quantity = sum(
+                order.mapped("website_order_line.product_uom_qty")
+            )
+            order.only_services = all(
+                line.product_id.type == "service" for line in order.website_order_line
+            )
 
-    def _cart_update(self, product_id, line_id=None, add_qty=0, set_qty=0, **kwargs):  # noqa: C901
+    def _cart_update(  # noqa: C901
+        self, product_id, line_id=None, add_qty=0, set_qty=0, **kwargs
+    ):
         """Add or set product quantity, add_qty can be negative.
 
         Making add_qty and set_qty integer are avoided in order
@@ -49,12 +55,24 @@ class SaleOrder(models.Model):
         if self.state != "draft":
             request.session.pop("sale_order_id", None)
             request.session.pop("website_sale_cart_quantity", None)
-            raise UserError(_("It is forbidden to modify a sales order which is not in draft status."))
+            raise UserError(
+                _(
+                    "It is forbidden to modify a sales order which is not in draft status."
+                )
+            )
         product = self.env["product.product"].browse(product_id).exists()
         if not product or not product._is_add_to_cart_allowed():
-            raise UserError(_("The given product does not exist therefore it cannot be added to cart."))
+            raise UserError(
+                _(
+                    "The given product does not exist therefore it cannot be added to cart."
+                )
+            )
         if product.lst_price == 0 and product.website_id.prevent_zero_price_sale:
-            raise UserError(_("The given product does not have a price therefore it cannot be added to cart."))
+            raise UserError(
+                _(
+                    "The given product does not have a price therefore it cannot be added to cart."
+                )
+            )
         if line_id is not False:
             order_line = self._cart_find_product_line(product_id, line_id, **kwargs)[:1]
         else:
@@ -78,7 +96,9 @@ class SaleOrder(models.Model):
             else:
                 quantity = add_qty or 0
         if quantity > 0:
-            quantity, warning = self._verify_updated_quantity(order_line, product_id, quantity, **kwargs)
+            quantity, warning = self._verify_updated_quantity(
+                order_line, product_id, quantity, **kwargs
+            )
         else:
             # If the line will be removed anyway, there is no need to verify
             # the requested quantity update.
@@ -89,18 +109,26 @@ class SaleOrder(models.Model):
             order_line = self.env["sale.order.line"]
         elif order_line:
             # Update existing line
-            update_values = self._prepare_order_line_update_values(order_line, quantity, **kwargs)
+            update_values = self._prepare_order_line_update_values(
+                order_line, quantity, **kwargs
+            )
             if update_values:
                 self._update_cart_line_values(order_line, update_values)
         elif quantity >= 0:
             # Create new line
-            order_line_values = self._prepare_order_line_values(product_id, quantity, **kwargs)
+            order_line_values = self._prepare_order_line_values(
+                product_id, quantity, **kwargs
+            )
             order_line = self.env["sale.order.line"].sudo().create(order_line_values)
         return {
             "line_id": order_line.id,
             "quantity": quantity,
             "option_ids": list(
-                set(order_line.option_line_ids.filtered(lambda l: l.order_id == order_line.order_id).ids)
+                set(
+                    order_line.option_line_ids.filtered(
+                        lambda l: l.order_id == order_line.order_id
+                    ).ids
+                )
             ),
             "warning": warning,
         }

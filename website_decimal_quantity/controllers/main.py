@@ -51,21 +51,35 @@ class WebsiteSaleDecimal(WebsiteSale):
 
         values = {}
         if access_token:
-            abandoned_order = request.env["sale.order"].sudo().search([("access_token", "=", access_token)], limit=1)
+            abandoned_order = (
+                request.env["sale.order"]
+                .sudo()
+                .search([("access_token", "=", access_token)], limit=1)
+            )
             if not abandoned_order:
                 raise NotFound()
             if abandoned_order.state != "draft":
                 values.update({"abandoned_proceed": True})
-            elif revive == "squash" or (revive == "merge" and not request.session.get("sale_order_id")):
+            elif revive == "squash" or (
+                revive == "merge" and not request.session.get("sale_order_id")
+            ):
                 request.session["sale_order_id"] = abandoned_order.id
                 return request.redirect("/shop/cart")
             elif revive == "merge":
-                abandoned_order.order_line.write({"order_id": request.session["sale_order_id"]})
+                abandoned_order.order_line.write(
+                    {"order_id": request.session["sale_order_id"]}
+                )
                 abandoned_order.action_cancel()
             elif abandoned_order.id != request.session.get("sale_order_id"):
                 values.update({"access_token": abandoned_order.access_token})
 
-        values.update({"website_sale_order": order, "date": fields.Date.today(), "suggested_products": []})
+        values.update(
+            {
+                "website_sale_order": order,
+                "date": fields.Date.today(),
+                "suggested_products": [],
+            }
+        )
         if order:
             order.order_line.filtered(lambda l: not l.product_id.active).unlink()
             values["suggested_products"] = order._cart_accessories()
@@ -73,7 +87,11 @@ class WebsiteSaleDecimal(WebsiteSale):
 
         if post.get("type") == "popover":
             # force no-cache so IE11 doesn't cache this XHR
-            return request.render("website_sale.cart_popover", values, headers={"Cache-Control": "no-cache"})
+            return request.render(
+                "website_sale.cart_popover",
+                values,
+                headers={"Cache-Control": "no-cache"},
+            )
 
         return request.render("website_sale.cart", values)
 
@@ -95,10 +113,14 @@ class WebsiteSaleDecimal(WebsiteSale):
             sale_order = request.website.sale_get_order(force_create=True)
 
         if product_custom_attribute_values:
-            product_custom_attribute_values = json_scriptsafe.loads(product_custom_attribute_values)
+            product_custom_attribute_values = json_scriptsafe.loads(
+                product_custom_attribute_values
+            )
 
         if no_variant_attribute_values:
-            no_variant_attribute_values = json_scriptsafe.loads(no_variant_attribute_values)
+            no_variant_attribute_values = json_scriptsafe.loads(
+                no_variant_attribute_values
+            )
 
         sale_order._cart_update(
             product_id=int(product_id),
@@ -145,10 +167,14 @@ class WebsiteSaleDecimal(WebsiteSale):
                 return {}
 
         if product_custom_attribute_values:
-            product_custom_attribute_values = json_scriptsafe.loads(product_custom_attribute_values)
+            product_custom_attribute_values = json_scriptsafe.loads(
+                product_custom_attribute_values
+            )
 
         if no_variant_attribute_values:
-            no_variant_attribute_values = json_scriptsafe.loads(no_variant_attribute_values)
+            no_variant_attribute_values = json_scriptsafe.loads(
+                no_variant_attribute_values
+            )
 
         values = order._cart_update(
             product_id=product_id,
@@ -167,8 +193,14 @@ class WebsiteSaleDecimal(WebsiteSale):
             request.website.sale_reset()
             return values
 
-        values["cart_quantity"] = round(sum(order.mapped("website_order_line.product_uom_qty")), 1)
-        values["minor_amount"] = (payment_utils.to_minor_currency_units(order.amount_total, order.currency_id),)
+        values["cart_quantity"] = round(
+            sum(order.mapped("website_order_line.product_uom_qty")), 1
+        )
+        values["minor_amount"] = (
+            payment_utils.to_minor_currency_units(
+                order.amount_total, order.currency_id
+            ),
+        )
         values["amount"] = order.amount_total
 
         if not display:
@@ -176,9 +208,15 @@ class WebsiteSaleDecimal(WebsiteSale):
 
         values["website_sale.cart_lines"] = request.env["ir.ui.view"]._render_template(
             "website_sale.cart_lines",
-            {"website_sale_order": order, "date": fields.Date.today(), "suggested_products": order._cart_accessories()},
+            {
+                "website_sale_order": order,
+                "date": fields.Date.today(),
+                "suggested_products": order._cart_accessories(),
+            },
         )
-        values["website_sale.short_cart_summary"] = request.env["ir.ui.view"]._render_template(
+        values["website_sale.short_cart_summary"] = request.env[
+            "ir.ui.view"
+        ]._render_template(
             "website_sale.short_cart_summary", {"website_sale_order": order}
         )
         return values
@@ -189,5 +227,7 @@ class WebsiteSaleDecimal(WebsiteSale):
         This method updates the cart quantity count in the session based on the order's website order lines.
         """
         if "website_sale_cart_quantity" not in request.session:
-            return request.website.sale_get_order().mapped("website_order_line.product_uom_qty")
+            return request.website.sale_get_order().mapped(
+                "website_order_line.product_uom_qty"
+            )
         return request.session["website_sale_cart_quantity"]

@@ -12,7 +12,11 @@
         "views/report_packing_list.xml",
         "report/stock_report_views.xml",
     ],
-    "assets": {"web.report_assets_common": ["nfu_ekg_stock/static/src/scss/report_stock_rule.scss"]},
+    "assets": {
+        "web.report_assets_common": [
+            "nfu_ekg_stock/static/src/scss/report_stock_rule.scss"
+        ]
+    },
     "license": "LGPL-3",
     "application": True,
 }

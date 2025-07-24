@@ -32,7 +32,9 @@ class WebsiteSaleDecimal(WebsiteSale):
     """
 
     @http.route()
-    def cart_options_update_json(self, product_and_options, goto_shop=None, lang=None, **kwargs):
+    def cart_options_update_json(
+        self, product_and_options, goto_shop=None, lang=None, **kwargs
+    ):
         """This route is called when submitting the optional product modal.
         The product without parent is the main product, the other are
         options.
@@ -64,7 +66,9 @@ class WebsiteSaleDecimal(WebsiteSale):
             value = order._cart_update(
                 product_id=main_product["product_id"],
                 add_qty=main_product["quantity"],
-                product_custom_attribute_values=main_product["product_custom_attribute_values"],
+                product_custom_attribute_values=main_product[
+                    "product_custom_attribute_values"
+                ],
                 no_variant_attribute_values=main_product["no_variant_attribute_values"],
                 **kwargs
             )
@@ -78,8 +82,12 @@ class WebsiteSaleDecimal(WebsiteSale):
                         product_id=option["product_id"],
                         set_qty=option["quantity"],
                         linked_line_id=option_parent[parent_unique_id],
-                        product_custom_attribute_values=option["product_custom_attribute_values"],
-                        no_variant_attribute_values=option["no_variant_attribute_values"],
+                        product_custom_attribute_values=option[
+                            "product_custom_attribute_values"
+                        ],
+                        no_variant_attribute_values=option[
+                            "no_variant_attribute_values"
+                        ],
                         **kwargs
                     )
                     option_parent[option["unique_id"]] = option_value["line_id"]

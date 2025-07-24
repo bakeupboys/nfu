@@ -18,7 +18,9 @@ class ProductTemplate(models.Model):
             for product in self:
                 qty = vals.get("packaging_qty") or product.packaging_qty
                 name = vals.get("packaging_name") or product.packaging_name
-                product_products = self.env["product.product"].search([("product_tmpl_id", "=", product.id)])
+                product_products = self.env["product.product"].search(
+                    [("product_tmpl_id", "=", product.id)]
+                )
                 if qty and name:
                     for product_product in product_products:
                         packagings = self.env["product.packaging"].search(

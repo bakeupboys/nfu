@@ -14,7 +14,9 @@ class SaleOrder(models.Model):
     @api.depends("amount_total")
     def _compute_updated_balance(self):
         for order in self:
-            order.updated_balance = order.balance - (order.amount_total / order.currency_rate)
+            order.updated_balance = order.balance - (
+                order.amount_total / order.currency_rate
+            )
 
     def _prepare_order_line_values(
         self,
@@ -33,10 +35,17 @@ class SaleOrder(models.Model):
             product_custom_attribute_values=product_custom_attribute_values,
             **kwargs
         )
-        values.update({"product_uom_ordered_qty": quantity, "product_uom_max_qty": kwargs.get("max_qty", quantity)})
+        values.update(
+            {
+                "product_uom_ordered_qty": quantity,
+                "product_uom_max_qty": kwargs.get("max_qty", quantity),
+            }
+        )
         return values
 
-    def _prepare_order_line_update_values(self, order_line, quantity, linked_line_id=False, **kwargs):
+    def _prepare_order_line_update_values(
+        self, order_line, quantity, linked_line_id=False, **kwargs
+    ):
         values = super()._prepare_order_line_update_values(
             order_line, quantity, linked_line_id=linked_line_id, **kwargs
         )
