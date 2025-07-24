@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 16.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-04 19:54+0000\n"
-"PO-Revision-Date: 2024-10-04 19:54+0000\n"
+"POT-Creation-Date: 2025-07-24 18:34+0000\n"
+"PO-Revision-Date: 2025-07-24 18:34+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -22,6 +22,7 @@ msgstr "<span>Max Menge</span>"
 
 #. module: nfu_ecommerce
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.product_max_quantity_config
 msgid "Add one"
 msgstr "Einen hinzufügen"
 
@@ -30,6 +31,12 @@ msgstr "Einen hinzufügen"
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.products_open_packaging
 msgid "All Products"
 msgstr "Alle Produkte"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_res_config_settings__website_avoid_depts
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_website__avoid_depts
+msgid "Avoid depths"
+msgstr "Schulden verhindern"
 
 #. module: nfu_ecommerce
 #: model:ir.model.fields,field_description:nfu_ecommerce.field_sale_order__balance
@@ -42,10 +49,22 @@ msgid "Balance:"
 msgstr "Aktuelles Guthaben:"
 
 #. module: nfu_ecommerce
-#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
-#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_summary_packaging
-msgid "Max Ordered Quantity:"
-msgstr "Max Menge"
+#: model:ir.model,name:nfu_ecommerce.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_res_config_settings__website_credit_warning_level
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_website__credit_warning_level
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.res_config_settings_view_form
+msgid "Credit Warning"
+msgstr "Guthabenwarnung"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_product_product__is_published
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_product_template__is_published
+msgid "Is Published"
+msgstr "Ist veröffentlicht"
 
 #. module: nfu_ecommerce
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_summary_packaging
@@ -58,26 +77,20 @@ msgid "New balance:"
 msgstr "Neues Guthaben:"
 
 #. module: nfu_ecommerce
-#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
-msgid "No open package available"
-msgstr "Keine offenen Gebinde"
-
-#. module: nfu_ecommerce
-#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
-#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_summary_packaging
-msgid "Open Package:"
-msgstr "Offenes Gebinde:"
-
-#. module: nfu_ecommerce
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.o_wsale_offcanvas
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.products_open_packaging
 msgid "Open Packagings"
 msgstr "Offene Gebinde"
 
 #. module: nfu_ecommerce
-#: model:ir.model.fields,field_description:nfu_ecommerce.field_sale_order_line__open_qty
-msgid "Open Qty"
-msgstr "Offene Menge"
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+msgid "Packaging Size:"
+msgstr "Verpackungsgröße:"
+
+#. module: nfu_ecommerce
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.res_config_settings_view_form
+msgid "Prevent Customers from Ordering more than their Credit."
+msgstr "Verhindere das Kunden mehr Kaufen als mit ihrem Guthaben möglich"
 
 #. module: nfu_ecommerce
 #: model:ir.model,name:nfu_ecommerce.model_product_template
@@ -91,18 +104,19 @@ msgstr "Veröffentlichen"
 
 #. module: nfu_ecommerce
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_ecommerce.product_max_quantity_config
 msgid "Remove one"
 msgstr "Eins entfernen"
+
+#. module: nfu_ecommerce
+#: model:ir.model,name:nfu_ecommerce.model_sale_order_batch_product
+msgid "Sale Order Batch Product"
+msgstr ""
 
 #. module: nfu_ecommerce
 #: model:ir.model,name:nfu_ecommerce.model_sale_order
 msgid "Sales Order"
 msgstr "Verkaufsauftrag"
-
-#. module: nfu_ecommerce
-#: model:ir.model,name:nfu_ecommerce.model_sale_order_line
-msgid "Sales Order Line"
-msgstr "Verkaufsauftragszeile"
 
 #. module: nfu_ecommerce
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.product_template_tree_view
@@ -118,3 +132,25 @@ msgstr "Zukünftiges Guthaben"
 #: model_terms:ir.ui.view,arch_db:nfu_ecommerce.cart_lines_packaging
 msgid "Warning"
 msgstr "Warnung"
+
+#. module: nfu_ecommerce
+#: model:ir.model,name:nfu_ecommerce.model_website
+msgid "Website"
+msgstr ""
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,help:nfu_ecommerce.field_res_config_settings__website_credit_warning_level
+#: model:ir.model.fields,help:nfu_ecommerce.field_website__credit_warning_level
+msgid ""
+"When the credit of a customer is lower than the warning level the credit is "
+"shown in red on the website."
+msgstr ""
+"Wenn das Guthaben niedriger ist als die Guthabenswarnung wird das Guthaben "
+"auf der website in rot angezeigt."
+
+#. module: nfu_ecommerce
+#. odoo-python
+#: code:addons/nfu_ecommerce/models/sale_order.py:0
+#, python-format
+msgid "You don't have enough credit."
+msgstr "Du hast nicht genug Guthaben."
