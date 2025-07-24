@@ -264,7 +264,7 @@
                       <td class="text-xl-end border-0">
                           <span
                         t-field="website_sale_order.balance"
-                        class="monetary_field"
+                        t-att-class="'monetary_field' + (' text-danger' if website_sale_order.balance &lt; website.credit_warning_level else '')"
                         style="white-space: nowrap;"
                         t-options="{'widget': 'monetary', 'display_currency': website_sale_order.currency_id}"
                     />
@@ -275,22 +275,12 @@
                   <tr id="updated_balance">
                       <td class="text-end border-0">New balance:</td>
                       <td class="text-xl-end border-0">
-                        <t t-if="website_sale_order.updated_balance &lt; 0">
-                          <span
-                            t-field="website_sale_order.updated_balance"
-                            class="monetary_field text-danger"
-                            style="white-space: nowrap;"
-                            t-options="{'widget': 'monetary', 'display_currency': website_sale_order.currency_id}"
-                        />
-                        </t>
-                        <t t-else="">
-                          <span
-                            t-field="website_sale_order.updated_balance"
-                            t-att-class="monetary_field"
-                            style="white-space: nowrap;"
-                            t-options="{'widget': 'monetary', 'display_currency': website_sale_order.currency_id}"
-                        />
-                        </t>
+                        <span
+                        t-field="website_sale_order.updated_balance"
+                        t-att-class="'monetary_field' + (' text-danger' if website_sale_order.updated_balance &lt; website.credit_warning_level else '')"
+                        style="white-space: nowrap;"
+                        t-options="{'widget': 'monetary', 'display_currency': website_sale_order.currency_id}"
+                    />
                       </td>
                   </tr>
         </xpath>
