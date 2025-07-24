@@ -4,10 +4,11 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Stock",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.1.0",
     "depends": ["account"],
     "data": [
         "views/account_move_views.xml",
+        "views/template.xml",
     ],
     "license": "LGPL-3",
     "application": True,
