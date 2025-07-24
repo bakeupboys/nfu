@@ -48,7 +48,7 @@
                 </tr>
             </thead>
             <tbody>
-                <t t-foreach="payment" t-as="payment">
+                <t t-foreach="payments" t-as="payment">
                     <tr>
                         <td>
                             <t t-esc="payment.name"/>
@@ -64,7 +64,7 @@
                                         /><span class="d-none d-md-inline"> Posted</span></span>
                             </t>
                             <t t-if="payment.state == 'draft'">
-                                <span class="badge rounded-pill text-bg-success"><i
+                                <span class="badge rounded-pill text-bg-info"><i
                                             class="fa fa-fw fa-check"
                                             aria-label="Reversed"
                                             title="Reversed"
@@ -80,10 +80,12 @@
                                         /><span class="d-none d-md-inline"> Cancelled</span></span>
                             </t>
                         </td>
-                        <td class="text-end"><span
+                        <td class="text-end">
+                            <span
                                     t-out="payment.amount_signed"
                                     t-options='{"widget": "monetary", "display_currency": payment.currency_id}'
-                                /></td>
+                                />
+                        </td>
                     </tr>
                 </t>
             </tbody>

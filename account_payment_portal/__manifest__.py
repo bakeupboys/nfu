@@ -6,6 +6,10 @@
     "category": "Accounting",
     "version": "16.0.1.0.0",
     "depends": ["account", "portal"],
-    "data": ["security/account_security.xml", "views/portal_templates.xml"],
+    "data": [
+        "security/ir.model.access.csv",
+        "security/account_security.xml",
+        "views/portal_templates.xml",
+    ],
     "license": "LGPL-3",
 }

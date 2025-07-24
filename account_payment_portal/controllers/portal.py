@@ -11,7 +11,9 @@ class AccountPaymentPortal(CustomerPortal):
         if "payment_count" in counters:
             payment_count = (
                 request.env["account.payment"].search_count(self._get_payment_domain())
-                if request.env["account.move"].check_access_rights("read", raise_exception=False)
+                if request.env["account.payment"].check_access_rights(
+                    "read", raise_exception=False
+                )
                 else 0
             )
             values["payment_count"] = payment_count
@@ -23,7 +25,9 @@ class AccountPaymentPortal(CustomerPortal):
 
     def _payment_get_page_view_values(self, payment, access_token, **kwargs):
         values = {"page_name": "payment", "payment": payment}
-        return self._get_page_view_values(payment, access_token, values, "my_invoices_history", False, **kwargs)
+        return self._get_page_view_values(
+            payment, access_token, values, "my_invoices_history", False, **kwargs
+        )
 
     def _get_payment_domain(self):
         return [("is_internal_transfer", "=", False)]
@@ -39,13 +43,28 @@ class AccountPaymentPortal(CustomerPortal):
         # Add filter for paymetns and credit notes?
         return {
             "all": {"label": _("All"), "domain": []},
-            "invoices": {"label": _("Invoices"), "domain": [("move_type", "in", ("out_invoice", "out_refund"))]},
-            "bills": {"label": _("Bills"), "domain": [("move_type", "in", ("in_invoice", "in_refund"))]},
+            "invoices": {
+                "label": _("Invoices"),
+                "domain": [("move_type", "in", ("out_invoice", "out_refund"))],
+            },
+            "bills": {
+                "label": _("Bills"),
+                "domain": [("move_type", "in", ("in_invoice", "in_refund"))],
+            },
         }
 
-    @http.route(["/my/payments", "/my/payments/page/<int:page>"], type="http", auth="user", website=True)
-    def portal_my_payments(self, page=1, date_begin=None, date_end=None, sortby=None, filterby=None, **kw):
-        values = self._prepare_my_payments_values(page, date_begin, date_end, sortby, filterby)
+    @http.route(
+        ["/my/payments", "/my/payments/page/<int:page>"],
+        type="http",
+        auth="user",
+        website=True,
+    )
+    def portal_my_payments(
+        self, page=1, date_begin=None, date_end=None, sortby=None, filterby=None, **kw
+    ):
+        values = self._prepare_my_payments_values(
+            page, date_begin, date_end, sortby, filterby
+        )
 
         # pager
         pager = portal_pager(**values["pager"])
@@ -59,7 +78,14 @@ class AccountPaymentPortal(CustomerPortal):
         return request.render("account_payment_portal.portal_my_payments", values)
 
     def _prepare_my_payments_values(
-        self, page, date_begin, date_end, sortby, filterby, domain=None, url="/my/payments"
+        self,
+        page,
+        date_begin,
+        date_end,
+        sortby,
+        filterby,
+        domain=None,
+        url="/my/payments",
     ):
         values = self._prepare_portal_layout_values()
         AccountPayment = request.env["account.payment"]
@@ -80,7 +106,10 @@ class AccountPaymentPortal(CustomerPortal):
         # domain += searchbar_filters[filterby]['domain']
 
         if date_begin and date_end:
-            domain += [("create_date", ">", date_begin), ("create_date", "<=", date_end)]
+            domain += [
+                ("create_date", ">", date_begin),
+                ("create_date", "<=", date_end),
+            ]
 
         values.update(
             {
@@ -88,14 +117,23 @@ class AccountPaymentPortal(CustomerPortal):
                 # content according to pager and archive selected
                 # lambda function to get the invoices recordset when the pager will be defined in the main method of a route
                 "payments": lambda pager_offset: (
-                    AccountPayment.search(domain, order=order, limit=self._items_per_page, offset=pager_offset)
+                    AccountPayment.search(
+                        domain,
+                        order=order,
+                        limit=self._items_per_page,
+                        offset=pager_offset,
+                    )
                     if AccountPayment.check_access_rights("read", raise_exception=False)
                     else AccountPayment
                 ),
                 "page_name": "payments",
                 "pager": {  # vals to define the pager.
                     "url": url,
-                    "url_args": {"date_begin": date_begin, "date_end": date_end, "sortby": sortby},
+                    "url_args": {
+                        "date_begin": date_begin,
+                        "date_end": date_end,
+                        "sortby": sortby,
+                    },
                     "total": AccountPayment.search_count(domain)
                     if AccountPayment.check_access_rights("read", raise_exception=False)
                     else 0,

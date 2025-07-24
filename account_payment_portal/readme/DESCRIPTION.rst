@@ -1,1 +1,1 @@
-Add Payments to Portal
+Add a Portal View for Customer Payments
