@@ -1,0 +1,16 @@
+.o_portal_wrap {
+    .o_portal_my_details_credit {
+        position: relative;
+        .fa {
+            @include o-position-absolute(0, $left: 0);
+            line-height: $line-height-base;
+
+            + span,
+            + div {
+                display: block;
+                // FontAwesome '.fa-fw' fixed-with + margin
+                padding-left: 1.28571429em + 0.5em;
+            }
+        }
+    }
+}

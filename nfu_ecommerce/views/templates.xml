@@ -285,4 +285,18 @@
                   </tr>
         </xpath>
    </template>
+   <template id="portal_layout_inherit" name="Portal Layout" inherit_id="portal.portal_layout">
+        <xpath expr="//div[hasclass('o_portal_my_details')]" position="inside">
+            <div class="o_portal_my_details_credit">
+                <i class="fa fa-credit-card fa-fw" role="img" aria-label="credit" title="Credit">
+                </i>
+                <span
+                    itemprop="credit"
+                    t-field="user_id.partner_id.nfu_credit"
+                    t-att-class="'monetary_field' + (' text-danger' if user_id.partner_id.nfu_credit &lt; website.credit_warning_level else '')"
+                    t-options='{"widget": "monetary" , "display_currency": website.currency_id}'
+                />
+            </div>
+        </xpath>
+   </template>
 </odoo>
