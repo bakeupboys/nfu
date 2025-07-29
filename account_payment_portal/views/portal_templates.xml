@@ -15,7 +15,7 @@
 
     <template
         id="portal_my_home_payment"
-        name="Show Paymentss"
+        name="Show Payments"
         inherit_id="portal.portal_my_home"
         customize_show="True"
         priority="35"
@@ -58,16 +58,16 @@
                             <t t-if="payment.state == 'posted'">
                                 <span class="badge rounded-pill text-bg-success"><i
                                             class="fa fa-fw fa-check"
-                                            aria-label="Paid"
-                                            title="Paid"
+                                            aria-label="Posted"
+                                            title="Posted"
                                             role="img"
                                         /><span class="d-none d-md-inline"> Posted</span></span>
                             </t>
                             <t t-if="payment.state == 'draft'">
                                 <span class="badge rounded-pill text-bg-info"><i
                                             class="fa fa-fw fa-check"
-                                            aria-label="Reversed"
-                                            title="Reversed"
+                                            aria-label="Draft"
+                                            title="Draft"
                                             role="img"
                                         /><span class="d-none d-md-inline"> Draft</span></span>
                             </t>

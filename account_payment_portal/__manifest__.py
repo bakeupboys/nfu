@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Accounting",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.2",
     "depends": ["account", "portal"],
     "data": [
         "security/ir.model.access.csv",

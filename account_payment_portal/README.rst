@@ -32,7 +32,9 @@ Add a Portal View for Customer Payments
 Changelog
 =========
 
-- 16.0.1.0.1: Initial module
+- 16.0.1.0.0: Initial module
+- 16.0.1.0.1: Fix security rules
+- 16.0.1.0.2: Add tests
 
 Bug Tracker
 ===========

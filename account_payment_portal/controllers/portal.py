@@ -1,3 +1,5 @@
+from collections import OrderedDict
+
 from odoo import _, http
 from odoo.http import request
 from odoo.osv import expression
@@ -40,16 +42,16 @@ class AccountPaymentPortal(CustomerPortal):
         }
 
     def _get_account_searchbar_filters(self):
-        # Add filter for paymetns and credit notes?
+        # Add filter for payments and credit notes?
         return {
             "all": {"label": _("All"), "domain": []},
-            "invoices": {
-                "label": _("Invoices"),
-                "domain": [("move_type", "in", ("out_invoice", "out_refund"))],
+            "sent": {
+                "label": _("Sent"),
+                "domain": [("payment_type", "=", "inbound")],
             },
-            "bills": {
-                "label": _("Bills"),
-                "domain": [("move_type", "in", ("in_invoice", "in_refund"))],
+            "received": {
+                "label": _("Received"),
+                "domain": [("payment_type", "=", "outbound")],
             },
         }
 
@@ -98,12 +100,11 @@ class AccountPaymentPortal(CustomerPortal):
             sortby = "date"
         order = searchbar_sortings[sortby]["order"]
 
-        # TODO: Add filter for paymetns and credit notes?
-        # searchbar_filters = self._get_account_searchbar_filters()
-        # # default filter by value
-        # if not filterby:
-        #     filterby = 'all'
-        # domain += searchbar_filters[filterby]['domain']
+        searchbar_filters = self._get_account_searchbar_filters()
+        # default filter by value
+        if not filterby:
+            filterby = "all"
+        domain += searchbar_filters[filterby]["domain"]
 
         if date_begin and date_end:
             domain += [
@@ -126,7 +127,7 @@ class AccountPaymentPortal(CustomerPortal):
                     if AccountPayment.check_access_rights("read", raise_exception=False)
                     else AccountPayment
                 ),
-                "page_name": "payments",
+                "page_name": "payment",
                 "pager": {  # vals to define the pager.
                     "url": url,
                     "url_args": {
@@ -143,9 +144,8 @@ class AccountPaymentPortal(CustomerPortal):
                 "default_url": url,
                 "searchbar_sortings": searchbar_sortings,
                 "sortby": sortby,
-                # Todo: Add filter for paymetns and credit notes?
-                # 'searchbar_filters': OrderedDict(sorted(searchbar_filters.items())),
-                # 'filterby': filterby,
+                "searchbar_filters": OrderedDict(sorted(searchbar_filters.items())),
+                "filterby": filterby,
             }
         )
         return values
