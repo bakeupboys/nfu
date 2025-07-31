@@ -20,7 +20,7 @@
 #############################################################################
 {
     "name": "Website Decimal Quantity",
-    "version": "16.0.1.0.0",
+    "version": "16.0.1.0.1",
     "category": "Website/Website",
     "author": "Cybrosys Techno Solutions,BAKEUP",
     "company": "Cybrosys Techno Solutions",
