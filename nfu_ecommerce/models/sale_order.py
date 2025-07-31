@@ -44,10 +44,11 @@ class SaleOrder(models.Model):
             product_custom_attribute_values=product_custom_attribute_values,
             **kwargs
         )
+        max_qty = float(kwargs.get("max_qty")) if kwargs.get("max_qty") else quantity
         values.update(
             {
                 "product_uom_ordered_qty": quantity,
-                "product_uom_max_qty": kwargs.get("max_qty", quantity),
+                "product_uom_max_qty": max_qty,
             }
         )
         return values

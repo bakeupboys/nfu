@@ -52,7 +52,8 @@ Changelog
 :1.3.1: Remove Max Qty from first page
 :1.3.2: Add decimal to ribbon
 :1.4.0: Add credit warning and avoid debts option
-:1.4.0: Add credit to portal details
+:1.4.1: Add credit to portal details
+:1.4.2: Catch unescaped float values
 
 Bug Tracker
 ===========
