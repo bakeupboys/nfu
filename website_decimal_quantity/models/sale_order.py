@@ -89,12 +89,12 @@ class SaleOrder(models.Model):
             set_qty = 0
         quantity = 0
         if set_qty:
-            quantity = int(set_qty)
+            quantity = float(set_qty)
         elif add_qty is not None:
             if order_line:
-                quantity = order_line.product_uom_qty + (int(add_qty) or 0)
+                quantity = order_line.product_uom_qty + (float(add_qty) or 0)
             else:
-                quantity = int(add_qty) or 0
+                quantity = float(add_qty) or 0
         if quantity > 0:
             quantity, warning = self._verify_updated_quantity(
                 order_line, product_id, quantity, **kwargs
