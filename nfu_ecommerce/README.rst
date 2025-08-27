@@ -54,6 +54,7 @@ Changelog
 :1.4.0: Add credit warning and avoid debts option
 :1.4.1: Add credit to portal details
 :1.4.2: Catch unescaped float values
+:1.4.3: Drop session if SO belongs to another website (Odoo 16 bug)
 
 Bug Tracker
 ===========
