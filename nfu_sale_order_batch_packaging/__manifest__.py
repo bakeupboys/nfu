@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Sale",
-    "version": "16.0.1.3.5",
+    "version": "16.0.1.3.6",
     "depends": ["sale", "sale_order_batch"],
     "data": [
         "data/ir_config_parameter.xml",
