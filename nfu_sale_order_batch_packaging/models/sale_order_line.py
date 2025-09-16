@@ -40,8 +40,12 @@ class SaleOrderLine(models.Model):
                 vals["product_uom_max_qty"] = product_qty
             if vals.get("product_id") and not vals.get("product_packaging_id"):
                 product_id = vals.get("product_id")
-                packaging = self.env["product.packaging"].search(
-                    [("product_id", "=", product_id)], limit=1
+                # Make sure we're not sudo
+                # e.x. when comming from webshop
+                packaging = (
+                    self.env["product.packaging"]
+                    .with_user(self.env.user)
+                    .search([("product_id", "=", product_id)], limit=1)
                 )
                 vals["product_packaging_id"] = packaging.id
         return super().create(vals_list)
