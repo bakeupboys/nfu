@@ -1,0 +1,17 @@
+<odoo>
+    <record id="view_product_variant_bulk_upload_wizard_form" model="ir.ui.view">
+        <field name="name">product.variant.bulk.upload.wizard.form</field>
+        <field name="model">product.variant.bulk.upload.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Bulk Upload Images">
+                <group>
+                    <field name="file" filename="filename" widget="binary"/>
+                </group>
+                <footer>
+                    <button string="Upload" type="object" name="action_upload_images" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

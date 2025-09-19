@@ -19,4 +19,27 @@
             </xpath>
         </field>
     </record>
+
+    <record id="action_product_variant_bulk_upload" model="ir.actions.act_window">
+        <field name="name">Bulk Upload Images</field>
+        <field name="res_model">product.variant.bulk.upload.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+    <record id="action_product_upload_images" model="ir.actions.server">
+        <field name="name">Upload images</field>
+        <field name="model_id" ref="product.model_product_product"/>
+        <field name="binding_model_id" ref="product.model_product_product"/>
+        <field name="state">code</field>
+        <field name="code">
+            action = {
+                "type": "ir.actions.act_window",
+                "res_model": "product.variant.bulk.upload.wizard",
+                "view_mode": "form",
+                "target": "new",
+                "context": {"active_ids": records.ids},
+            }
+        </field>
+    </record>
 </odoo>
