@@ -42,10 +42,12 @@ class SaleOrderLine(models.Model):
                 product_id = vals.get("product_id")
                 # Make sure we're not sudo
                 # e.x. when comming from webshop
-                packaging = (
-                    self.env["product.packaging"]
-                    .with_user(self.env.user)
-                    .search([("product_id", "=", product_id)], limit=1)
+                packaging = self.env["product.packaging"].search(
+                    [
+                        ("product_id", "=", product_id),
+                        ("company_id", "in", [False, self.env.company.id]),
+                    ],
+                    limit=1,
                 )
                 vals["product_packaging_id"] = packaging.id
         return super().create(vals_list)
