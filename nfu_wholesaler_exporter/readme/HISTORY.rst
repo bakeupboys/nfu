@@ -1,4 +1,5 @@
-:0.0.1: Initial module.
-:1.0.0: Adjust to Grell format specification
-:1.0.1: Rename to CSV Exporter
-:1.1.0: Add rounding for float values and remove zero lines
+- 16.0.0.0.1: Initial module.
+- 16.0.1.0.0: Adjust to Grell format specification
+- 16.0.1.0.1: Rename to CSV Exporter
+- 16.0.1.1.0: Add rounding for float values and remove zero lines
+- 16.0.1.2.0: Change limiter to ";" and only show exporter in closed state

@@ -11,7 +11,7 @@
                     type="object"
                     string="Export Wholesaler CSV"
                     class="oe_highlight"
-                    attrs="{'invisible': [('state', '=','open')]}"
+                    attrs="{'invisible': [('state', '!=','closed')]}"
                 />
             </xpath>
         </field>
