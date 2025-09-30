@@ -51,7 +51,7 @@ repos:
         args:
           - --addons-dir=.
           - --branch=16.0
-          - --org-name=bruecksen
+          - --org-name=bakeupboys
           - --repo-name=nfu
           - --if-source-changed
           - --keep-source-digest
