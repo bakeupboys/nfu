@@ -11,7 +11,7 @@ class SaleOrderBatch(models.Model):
     def export_wholesaler_csv(self):
         self.ensure_one()
         # Prepare CSV content
-        csv_content = "Artnr,Menge\n"
+        csv_content = "Artnr;Menge\n"
         for product in self.product_ids.filtered(lambda p: p.product_id.default_code):
             if not float_is_zero(
                 product.product_uom_qty,
@@ -29,7 +29,7 @@ class SaleOrderBatch(models.Model):
                 wholesaler_qty = int(
                     round(product.product_uom_qty / product.product_packaging_qty)
                 )
-                csv_content += f"{product.product_id.default_code},{wholesaler_qty}\n"  # noqa: E231
+                csv_content += f"{product.product_id.default_code};{wholesaler_qty}\n"  # noqa: E702,E231
 
         # Encode CSV content to base64
         csv_base64 = base64.b64encode(csv_content.encode("utf-8"))

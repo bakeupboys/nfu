@@ -3,7 +3,7 @@ It exports the article number (default_code) and the qty of the Sale Order Batch
 Product view.
 
 Großhändler bieten die Möglichkeit Bestellungen als CSV hochzuladen. Dafür werden lediglich 2 Spalten benötigt
-\|Artnr\|Menge\|
+\|Artnr\|Menge\|. Als Trennezeichen dient das ";"
 
 * Artnr
     Artikelnummer beim Hersteller
