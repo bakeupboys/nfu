@@ -1,0 +1,29 @@
+<odoo>
+    <record id="view_res_config_settings_datanature" model="ir.ui.view">
+        <field name="name">res.config.settings.datanature.form</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="base_setup.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='integration']" position="inside">
+                <div class="col-12 col-lg-6 o_setting_box" id="datanature_integration">
+                    <div class="o_setting_right_pane" id="nfu_data_nature_settings">
+                        <span class="o_form_label">
+                                            DATA Nature Integration
+                                        </span>
+                        <div class="text-muted">
+                            Enrich your product data from DATA Nature.
+                        </div>
+                        <div class="content-group mt16">
+                            <label for="data_nature_username" class="o_light_label"/>
+                            <field name="data_nature_username"/>
+                        </div>
+                        <div class="content-group">
+                            <label for="data_nature_key" class="o_light_label"/>
+                            <field name="data_nature_key"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>
