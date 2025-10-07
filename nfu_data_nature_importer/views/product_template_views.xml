@@ -1,0 +1,18 @@
+<odoo>
+
+    <record id="product_template_action_menu" model="ir.ui.view">
+        <field name="name">product.template.action.menu</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <button
+                    name="action_sync_datanature_image"
+                    type="object"
+                    string="Sync DataNature Image"
+                    class="oe_highlight"
+                />
+            </xpath>
+        </field>
+    </record>
+</odoo>

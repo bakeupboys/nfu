@@ -1,0 +1,1037 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<warengruppen>
+	<warengruppe name="Frische" nr="01000000">
+		<warengruppe name="Theke, Großgebinde Backwaren" nr="01010000">
+			<warengruppe name="Brot" nr="01010100">
+				<warengruppe name="Brot (tiefgekühlt)" nr="01010101"/>
+				<warengruppe name="Brot (Bäckerware)" nr="01010102"/>
+			</warengruppe>
+			<warengruppe name="Brötchen, Kleingebäck " nr="01010300">
+				<warengruppe name="Brötchen, Kleingebäck (tiefgekühlt)" nr="01010301"/>
+				<warengruppe name="Brötchen, Kleingebäck (Bäckerware)" nr="01010302"/>
+			</warengruppe>
+			<warengruppe name="Kuchen, Feingebäck" nr="01010400">
+				<warengruppe name="Kuchen, Feingebäck (tiefgekühlt)" nr="01010401"/>
+				<warengruppe name="Kuchen, Feingebäck (Bäckerware)" nr="01010402"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Theke, Großgebinde Käse" nr="01020000">
+			<warengruppe name="Frischkäse, Milchmischerzeugnisse" nr="01020100">
+				<warengruppe name="Frischkäse" nr="01020101"/>
+				<warengruppe name="Milchmischerzeugnisse" nr="01020102"/>
+				<warengruppe name="Zubereitung mit Käse" nr="01020103"/>
+			</warengruppe>
+			<warengruppe name="Pasta Filata (Mozzarella, usw.)" nr="01020200"/>
+			<warengruppe name="Käse in Lake, Feta" nr="01020300"/>
+			<warengruppe name="Weichkäse" nr="01020400">
+				<warengruppe name="Weichkäse mit weißem Edelschimmel (Camembert, Brie, usw.) " nr="01020401"/>
+				<warengruppe name="Weichkäse mit Rotkultur" nr="01020402"/>
+				<warengruppe name="Weichkäse mit blauem Edelschimmel (Gorgonzola, usw.)" nr="01020403"/>
+				<warengruppe name="Weichkäse (diverse Affinitäten)" nr="01020404"/>
+			</warengruppe>
+			<warengruppe name="Halbfester Schnittkäse" nr="01020500"/>
+			<warengruppe name="Schnittkäse" nr="01020600"/>
+			<warengruppe name="Hartkäse" nr="01020700"/>
+			<warengruppe name="Sauermilchkäse" nr="01020800"/>
+			<warengruppe name="Schmelzkäse" nr="01020900"/>
+			<warengruppe name="Reibekäse, Pastakäse" nr="01021000"/>
+			<warengruppe name="Brat-, Grillkäse" nr="01021100"/>
+			<warengruppe name="Käsealternativen (vegan, vegetarisch) " nr="01021200"/>
+			<warengruppe name="Käse (rechtlich ohne Käsegruppen-Zuordnung)" nr="01021300"/>
+		</warengruppe>
+		<warengruppe name="Theke, Großgebinde Feinkost, Teige, Convenience" nr="01030000">
+			<warengruppe name="Frisches Sauerkraut (Großgebinde)" nr="01030300"/>
+			<warengruppe name="Feinkostsalate" nr="01030400">
+				<warengruppe name="Feinkostsalate (mit Fleisch)" nr="01030401"/>
+				<warengruppe name="Feinkostsalate (mit Fisch)" nr="01030402"/>
+				<warengruppe name="Feinkostsalate (vegetarisch, vegan)" nr="01030403"/>
+				<warengruppe name="Feinkostsalate (mit Fleisch und Fisch)" nr="01030404"/>
+			</warengruppe>
+			<warengruppe name="Antipasti (Oliven, Tofu, Seitan, Lopino, usw.)" nr="01030500"/>
+			<warengruppe name="Frische Teigwaren (Pasta, usw.)" nr="01030600"/>
+			<warengruppe name="Frisches Pesto, Würzsaucen (gekühlt)" nr="01030700"/>
+			<warengruppe name="Frische Suppen, Fertiggerichte (gekühlt)" nr="01030800"/>
+			<warengruppe name="Frische Brotaufstriche" nr="01030900"/>
+		</warengruppe>
+		<warengruppe name="Theke, Großgebinde Wurst, Aufschnitt, Fleischerzeugnisse" nr="01040000">
+			<warengruppe name="Würstchen (Wiener, usw.) (am Stück) " nr="01040100"/>
+			<warengruppe name="Bratwurst, Grillwurst " nr="01040300"/>
+			<warengruppe name="Snackwurst (aus Rohwurst) " nr="01040400"/>
+			<warengruppe name="Rohschinken, Rohpökelwaren, Räucherschinken, Speck" nr="01040500">
+				<warengruppe name="THEKE (am Stück) - Rohschinken, Rohpökelwaren, Räucherschinken, Speck" nr="01040501"/>
+				<warengruppe name="THEKE (Aufschnitt) - Rohschinken, Rohpökelwaren, Räucherschinken, Speck" nr="01040502"/>
+			</warengruppe>
+			<warengruppe name="Garschinken, Garpökelware" nr="01040600">
+				<warengruppe name="THEKE (am Stück) - Kochschinken, Putenbrust, usw." nr="01040601"/>
+				<warengruppe name="THEKE (Aufschnitt) - Kochschinken, Putenbrust, usw." nr="01040602"/>
+				<warengruppe name="THEKE (am Stück) - Kasseler" nr="01040603"/>
+				<warengruppe name="THEKE (Aufschnitt) - Kasseler" nr="01040604"/>
+			</warengruppe>
+			<warengruppe name="Rohwurst (schnittfähig, streichfähig)" nr="01040700">
+				<warengruppe name="THEKE (am Stück) - Rohwurst schnittfähig (Salami, usw.)" nr="01040701"/>
+				<warengruppe name="THEKE (Aufschnitt) - Rohwurst schnittfähig (Salami, usw.)" nr="01040702"/>
+				<warengruppe name="THEKE (am Stück) - Rohwurst streichfähig (Teewurst, Zwiebelmett, usw.)" nr="01040703"/>
+			</warengruppe>
+			<warengruppe name="Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)" nr="01040800">
+				<warengruppe name="THEKE (am Stück) - Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)" nr="01040801"/>
+				<warengruppe name="THEKE (Aufschnitt) - Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)" nr="01040802"/>
+			</warengruppe>
+			<warengruppe name="Kochwurst " nr="01040900">
+				<warengruppe name="THEKE (am Stück) - Kochwurst (Leberwurst, Blutwurst, Sülzen, usw.)" nr="01040901"/>
+				<warengruppe name="THEKE (Aufschnitt) - Kochwurst (Sülzen, Zungenwurst, usw.) " nr="01040902"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Theke, Großgebinde Fleisch" nr="01050000">
+			<warengruppe name="Hackfleisch" nr="01050100"/>
+			<warengruppe name="Schweinefleisch" nr="01050200">
+				<warengruppe name="Schweinefleisch (mariniert, zubereitet)" nr="01050201"/>
+				<warengruppe name="Schweinefleisch (Natur)" nr="01050202"/>
+			</warengruppe>
+			<warengruppe name="Rindfleisch" nr="01050300">
+				<warengruppe name="Rindfleisch (mariniert, zubereitet)" nr="01050301"/>
+				<warengruppe name="Rindfleisch (Natur)" nr="01050302"/>
+			</warengruppe>
+			<warengruppe name="Lammfleisch" nr="01050400">
+				<warengruppe name="Lammfleisch (mariniert, zubereitet)" nr="01050401"/>
+				<warengruppe name="Lammfleisch (Natur)" nr="01050402"/>
+			</warengruppe>
+			<warengruppe name="Geflügelfleisch" nr="01050500">
+				<warengruppe name="Geflügelfleisch (mariniert, zubereitet)" nr="01050501"/>
+				<warengruppe name="Geflügelfleisch (Natur)" nr="01050502"/>
+			</warengruppe>
+			<warengruppe name="Wild, Spezialitäten" nr="01050600">
+				<warengruppe name="Wild, Spezialitäten (mariniert, zubereitet)" nr="01050601"/>
+				<warengruppe name="Wild, Spezialitäten (Natur)" nr="01050602"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Theke, Großgebinde Frischfisch, Meeresfrüchte" nr="01060000">
+			<warengruppe name="Seefisch (Natur, mariniert, zubereitet)" nr="01060100"/>
+			<warengruppe name="Süßwasserfisch (Natur, mariniert, zubereitet)" nr="01060200"/>
+			<warengruppe name="Meeresfrüchte (Natur, mariniert, zubereitet)" nr="01060300"/>
+			<warengruppe name="Räucherfisch" nr="01060400"/>
+			<warengruppe name="Fischnebenerzeugnisse" nr="01060500"/>
+		</warengruppe>
+		<warengruppe name="Mopro" nr="01140000">
+			<warengruppe name="Milch" nr="01140100">
+				<warengruppe name="Frischmilch" nr="01140101"/>
+				<warengruppe name="ESL-Milch" nr="01140102"/>
+				<warengruppe name="H-Milch" nr="01140103"/>
+			</warengruppe>
+			<warengruppe name="Trinkmilch, Molkedrinks, Milchmischgetränke, Trinkjoghurt" nr="01140200"/>
+			<warengruppe name="Rahmprodukte (Sahne, Sauerrahm, Crème fraîche) " nr="01140300"/>
+			<warengruppe name="Joghurt" nr="01140400">
+				<warengruppe name="Naturjoghurt" nr="01140401"/>
+				<warengruppe name="Fruchtjoghurt (Obst, Vanille, Nüsse, Schokolade, usw.)" nr="01140402"/>
+				<warengruppe name="Joghurt (Schaf, Ziege, usw.)" nr="01140403"/>
+			</warengruppe>
+			<warengruppe name="Quark" nr="01140500">
+				<warengruppe name="Naturquark" nr="01140501"/>
+				<warengruppe name="Kräuterquark " nr="01140502"/>
+				<warengruppe name="Fruchtquark" nr="01140503"/>
+			</warengruppe>
+			<warengruppe name="Dessert (Pudding, Milchreis, usw.)" nr="01140600"/>
+			<warengruppe name="Butter, Butterschmalz, usw." nr="01140700"/>
+		</warengruppe>
+		<warengruppe name="Margarine, Fette, Schmalz" nr="01150000">
+			<warengruppe name="Margarine" nr="01150100"/>
+			<warengruppe name="Fette" nr="01150200"/>
+			<warengruppe name="Schmalz (weiterverarbeitetes Schlachtfett)" nr="01150300"/>
+		</warengruppe>
+		<warengruppe name="Tofu-, Seitan-, Lupinenprodukte, usw." nr="01160000">
+			<warengruppe name="Tofu, Seitan, Lopino, usw." nr="01160100"/>
+			<warengruppe name="Rollen, Burger, Bratlinge, Snacks (Fleischalternativen)" nr="01160200"/>
+			<warengruppe name="Würstchen (vegan, vegetarisch)" nr="01160300"/>
+			<warengruppe name="Fertiggerichte, Beilagen-Convenience (vegan, vegetarisch)" nr="01160400"/>
+			<warengruppe name="Aufschnitt, Aufstrich (vegan, vegetarisch)" nr="01160500"/>
+		</warengruppe>
+		<warengruppe name="Milchalternativen (auch ungekühlt)" nr="01170000">
+			<warengruppe name="Drinks (Soja, Reis, Hafer, usw.) " nr="01170100"/>
+			<warengruppe name="Sahnealternativen" nr="01170200"/>
+			<warengruppe name="Joghurtalternativen" nr="01170300"/>
+			<warengruppe name="Quarkalternativen" nr="01170400"/>
+			<warengruppe name="Pflanzliche Desserts" nr="01170500"/>
+		</warengruppe>
+		<warengruppe name="Eier" nr="01180000">
+			<warengruppe name="Eier (abgepackt, auch gegarte Eier, bunte Eier)" nr="01180100"/>
+			<warengruppe name="Eier (lose, auch gegarte Eier, bunte Eier)" nr="01180200"/>
+			<warengruppe name="Flüssigei" nr="01180300"/>
+		</warengruppe>
+		<warengruppe name="Obst, Gemüse, Kräuter, Pflanzen" nr="01190000">
+			<warengruppe name="Beerenobst" nr="01190100"/>
+			<warengruppe name="Kernobst" nr="01190200">
+				<warengruppe name="Äpfel" nr="01190201"/>
+				<warengruppe name="Birnen" nr="01190202"/>
+				<warengruppe name="Sonstiges Kernobst" nr="01190209"/>
+			</warengruppe>
+			<warengruppe name="Steinobst" nr="01190300">
+				<warengruppe name="Kirschen" nr="01190301"/>
+				<warengruppe name="Pflaumen, Zwetschgen, Mirabellen" nr="01190302"/>
+				<warengruppe name="Pfirsiche, Nektarinen" nr="01190303"/>
+				<warengruppe name="Aprikosen" nr="01190304"/>
+				<warengruppe name="Sonstiges Steinobst" nr="01190309"/>
+			</warengruppe>
+			<warengruppe name="Zitrusfrüchte" nr="01190400">
+				<warengruppe name="Orangen" nr="01190401"/>
+				<warengruppe name="Clementinen, usw." nr="01190402"/>
+				<warengruppe name="Zitronen" nr="01190403"/>
+				<warengruppe name="Grapefruits" nr="01190404"/>
+				<warengruppe name="Sonstige Zitrusfrüchte" nr="01190409"/>
+			</warengruppe>
+			<warengruppe name="Weintrauben" nr="01190500">
+				<warengruppe name="Weintrauben (mit Kernen)" nr="01190501"/>
+				<warengruppe name="Weintrauben (kernarm, kernlos)" nr="01190502"/>
+			</warengruppe>
+			<warengruppe name="Kiwis" nr="01190600"/>
+			<warengruppe name="Bananen" nr="01190700"/>
+			<warengruppe name="Melonen" nr="01190800">
+				<warengruppe name="Wassermelonen" nr="01190801"/>
+				<warengruppe name="Honig-, Zuckermelonen" nr="01190802"/>
+			</warengruppe>
+			<warengruppe name="Exoten" nr="01190900">
+				<warengruppe name="Mangos" nr="01190901"/>
+				<warengruppe name="Avocados" nr="01190902"/>
+				<warengruppe name="Ananas" nr="01190903"/>
+				<warengruppe name="Feigen (frisch)" nr="01190904"/>
+				<warengruppe name="Datteln (für Obst-, Gemüse-Bereich)" nr="01190905"/>
+				<warengruppe name="Physalis" nr="01190906"/>
+				<warengruppe name="Papayas" nr="01190907"/>
+				<warengruppe name="Kakis" nr="01190908"/>
+				<warengruppe name="Ingwer" nr="01190909"/>
+				<warengruppe name="Kurkumas" nr="01190910"/>
+				<warengruppe name="Sonstige Exoten" nr="01190919"/>
+			</warengruppe>
+			<warengruppe name="Nüsse, Maronen, usw. (in der Schale)" nr="01192000">
+				<warengruppe name="Erdnüsse" nr="01192001"/>
+				<warengruppe name="Haselnüsse" nr="01192002"/>
+				<warengruppe name="Walnüsse" nr="01192003"/>
+				<warengruppe name="Kokosnüsse" nr="01192004"/>
+				<warengruppe name="Maronen" nr="01192005"/>
+				<warengruppe name="Sonstige Nüsse" nr="01192009"/>
+			</warengruppe>
+			<warengruppe name="Rhabarber" nr="01192100"/>
+			<warengruppe name="Salate" nr="01192200">
+				<warengruppe name="Blattsalate" nr="01192201"/>
+				<warengruppe name="Sonstige Salate" nr="01192209"/>
+			</warengruppe>
+			<warengruppe name="Stiel-, Blatt-, Blütengemüse" nr="01192300">
+				<warengruppe name="Blattspinat" nr="01192301"/>
+				<warengruppe name="Wurzelspinat" nr="01192302"/>
+				<warengruppe name="Mangold (rot, grün, bunt)" nr="01192303"/>
+				<warengruppe name="Pac Choi" nr="01192304"/>
+				<warengruppe name="Artischocken" nr="01192305"/>
+				<warengruppe name="Sonstige Stiel-, Blatt-, Blütengemüse" nr="01192306"/>
+			</warengruppe>
+			<warengruppe name="Spargel" nr="01192400"/>
+			<warengruppe name="Kohlgemüse" nr="01192500">
+				<warengruppe name="Weißkohl, Spitzkohl" nr="01192501"/>
+				<warengruppe name="Rotkohl" nr="01192502"/>
+				<warengruppe name="Chinakohl" nr="01192503"/>
+				<warengruppe name="Grünkohl, Braunkohl, Schwarzkohl" nr="01192504"/>
+				<warengruppe name="Blumenkohl, Romanesco" nr="01192505"/>
+				<warengruppe name="Rosenkohl" nr="01192506"/>
+				<warengruppe name="Broccoli" nr="01192507"/>
+				<warengruppe name="Wirsing" nr="01192508"/>
+				<warengruppe name="Kohlrabi" nr="01192509"/>
+				<warengruppe name="Sonstiges Kohlgemüse" nr="01192519"/>
+			</warengruppe>
+			<warengruppe name="Wurzel-, Knollengemüse" nr="01192600">
+				<warengruppe name="Möhren" nr="01192601"/>
+				<warengruppe name="Schwarzwurzeln" nr="01192602"/>
+				<warengruppe name="Rote Bete" nr="01192603"/>
+				<warengruppe name="Radieschen" nr="01192604"/>
+				<warengruppe name="Pastinaken, Petersilienwurzeln" nr="01192605"/>
+				<warengruppe name="Rettiche" nr="01192606"/>
+				<warengruppe name="Fenchel" nr="01192607"/>
+				<warengruppe name="Sellerie" nr="01192608"/>
+				<warengruppe name="Steckrüben" nr="01192609"/>
+				<warengruppe name="Sonstiges Wurzel-, Knollengemüse" nr="01192619"/>
+			</warengruppe>
+			<warengruppe name="Zwiebelgemüse" nr="01192700">
+				<warengruppe name="Zwiebeln, Schalotten, Frühlingszwiebeln" nr="01192701"/>
+				<warengruppe name="Lauch, Porree" nr="01192702"/>
+				<warengruppe name="Knoblauch" nr="01192703"/>
+				<warengruppe name="Sonstiges Zwiebelgemüse" nr="01192709"/>
+			</warengruppe>
+			<warengruppe name="Kartoffeln, Süßkartoffeln" nr="01192800">
+				<warengruppe name="Kartoffeln (festkochend)" nr="01192801"/>
+				<warengruppe name="Kartoffeln (vorwiegend festkochend)" nr="01192802"/>
+				<warengruppe name="Kartoffeln (mehligkochend)" nr="01192803"/>
+				<warengruppe name="Süßkartoffeln" nr="01192804"/>
+			</warengruppe>
+			<warengruppe name="Fruchtgemüse" nr="01192900">
+				<warengruppe name="Tomaten" nr="01192901"/>
+				<warengruppe name="Paprikas, Chillis, usw." nr="01192902"/>
+				<warengruppe name="Kürbisse" nr="01192903"/>
+				<warengruppe name="Zucchinis" nr="01192904"/>
+				<warengruppe name="Auberginen" nr="01192905"/>
+				<warengruppe name="Gurken" nr="01192906"/>
+			</warengruppe>
+			<warengruppe name="Zuckermais" nr="01193000"/>
+			<warengruppe name="Hülsenfrüchte" nr="01193100">
+				<warengruppe name="Erbsen" nr="01193101"/>
+				<warengruppe name="Bohnen" nr="01193102"/>
+				<warengruppe name="Sonstige Hülsenfrüchte" nr="01193109"/>
+			</warengruppe>
+			<warengruppe name="Kräuter (Schnittkräuter)" nr="01194000"/>
+			<warengruppe name="Keime, Sprossen (Sämlinge)" nr="01194100">
+				<warengruppe name="Keimsprossen (Sojabohnen, Mungobohnen, Gerste, usw.)" nr="01194101"/>
+				<warengruppe name="Kressen (Gartenkresse, Rettich, Radieschen, usw.)" nr="01194102"/>
+			</warengruppe>
+			<warengruppe name="Pilze" nr="01194200">
+				<warengruppe name="Wild-, Waldpilze" nr="01194201"/>
+				<warengruppe name="Kultur-, Speisepilze" nr="01194202"/>
+			</warengruppe>
+			<warengruppe name="Mischprodukte (Suppengrün, Ratatouille-Mix, usw.)" nr="01194300"/>
+			<warengruppe name="verarbeitete Produkte (Großverbraucher, Gastro)" nr="01194400">
+				<warengruppe name="verarbeitete Kartoffeln" nr="01194401"/>
+				<warengruppe name="verarbeitetes Gemüse (rote Beete, frisches Sauerkraut, usw.)" nr="01194402"/>
+				<warengruppe name="verarbeitetes Obst (gekochte Maronen, usw.)" nr="01194403"/>
+			</warengruppe>
+			<warengruppe name="Pflanzen (Lebensmittel im Topf, z.B. Kräuter)" nr="01195000"/>
+		</warengruppe>
+		<warengruppe name="Tiefkühlprodukte (auch Großgebinde)" nr="01200000">
+			<warengruppe name="TK Gemüse, Kräuter, Obst" nr="01200100">
+				<warengruppe name="TK Gemüse" nr="01200101"/>
+				<warengruppe name="TK Kräuter" nr="01200102"/>
+				<warengruppe name="TK Obst" nr="01200103"/>
+			</warengruppe>
+			<warengruppe name="TK Kartoffelprodukte" nr="01200200"/>
+			<warengruppe name="TK Pizza" nr="01200300">
+				<warengruppe name="TK Pizza (vegan, vegetarisch)" nr="01200301"/>
+				<warengruppe name="TK Pizza mit Fisch" nr="01200302"/>
+				<warengruppe name="TK Pizza mit Fleisch" nr="01200303"/>
+				<warengruppe name="TK Pizza mit Fleisch und Fisch" nr="01200304"/>
+			</warengruppe>
+			<warengruppe name="TK Backwaren, Teige" nr="01200400">
+				<warengruppe name="TK Teige (backfertig)" nr="01200401"/>
+				<warengruppe name="TK Brot" nr="01200402"/>
+				<warengruppe name="TK Klein-, Frühstücksgebäck (Brötchen, Brezeln, Laugengebäck, usw.)" nr="01200403"/>
+				<warengruppe name="TK Torten, Kuchen" nr="01200404"/>
+				<warengruppe name="TK Süßspeisen, Dessert" nr="01200405"/>
+			</warengruppe>
+			<warengruppe name="TK Eis" nr="01200500">
+				<warengruppe name="Speiseeis (Familienpackungen) " nr="01200501"/>
+				<warengruppe name="Speiseeis (Portionsware, Impulsware)" nr="01200502"/>
+			</warengruppe>
+			<warengruppe name="TK Fisch, Meeresfrüchte, Schalentiere, usw." nr="01200600"/>
+			<warengruppe name="TK Fleisch" nr="01200700"/>
+			<warengruppe name="TK Fertig-, Halbfertiggerichte" nr="01200800">
+				<warengruppe name="TK Fertig-, Halbfertiggerichte (vegan, vegetarisch)" nr="01200801"/>
+				<warengruppe name="TK Fertig-, Halbfertiggerichte mit Fisch" nr="01200802"/>
+				<warengruppe name="TK Fertig-, Halbfertiggerichte mit Fleisch" nr="01200803"/>
+				<warengruppe name="TK Fertig-, Halbfertiggerichte mit Fleisch und Fisch" nr="01200804"/>
+			</warengruppe>
+			<warengruppe name="TK Suppen, Eintöpfe" nr="01200900">
+				<warengruppe name="TK Suppen, Eintöpfe (vegan, vegetarisch)" nr="01200901"/>
+				<warengruppe name="TK Suppen, Eintöpfe mit Fisch" nr="01200902"/>
+				<warengruppe name="TK Suppen, Eintöpfe mit Fleisch" nr="01200903"/>
+				<warengruppe name="TK Suppen, Eintöpfe mit Fleisch und Fisch" nr="01200904"/>
+			</warengruppe>
+			<warengruppe name="TK Babykost" nr="01201000">
+				<warengruppe name="TK Babykost (vegan, vegetarisch)" nr="01201001"/>
+				<warengruppe name="TK Babykost mit Fisch" nr="01201002"/>
+				<warengruppe name="TK Babykost mit Fleisch" nr="01201003"/>
+			</warengruppe>
+			<warengruppe name="TK Snacks " nr="01201100"/>
+			<warengruppe name="TK Eier, Eiprodukte (pur)" nr="01201200"/>
+		</warengruppe>
+		<warengruppe name="SB Backwaren" nr="01510000">
+			<warengruppe name="Brot" nr="01510100">
+				<warengruppe name="Brot SB (Bäckerware)" nr="01510102"/>
+			</warengruppe>
+			<warengruppe name="Toastbrot" nr="01510200">
+				<warengruppe name="Toastbrot SB (Bäckerware)" nr="01510202"/>
+			</warengruppe>
+			<warengruppe name="Brötchen, Kleingebäck" nr="01510300">
+				<warengruppe name="Brötchen, Kleingebäck SB (Bäckerware)" nr="01510302"/>
+			</warengruppe>
+			<warengruppe name="Kuchen, Feingebäck" nr="01510400">
+				<warengruppe name="Kuchen, Feingebäck SB (Bäckerware)" nr="01510402"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="SB Käse" nr="01520000">
+			<warengruppe name="Frischkäse, Milchmischerzeugnisse" nr="01520100">
+				<warengruppe name="Frischkäse" nr="01520101"/>
+				<warengruppe name="Milchmischerzeugnisse" nr="01520102"/>
+				<warengruppe name="Zubereitung mit Käse" nr="01520103"/>
+			</warengruppe>
+			<warengruppe name="Pasta Filata (Mozzarella, usw.)" nr="01520200"/>
+			<warengruppe name="Käse in Lake, Feta" nr="01520300"/>
+			<warengruppe name="Weichkäse" nr="01520400">
+				<warengruppe name="Weichkäse mit weißem Edelschimmel (Camembert, Brie, usw.) " nr="01520401"/>
+				<warengruppe name="Weichkäse mit Rotkultur " nr="01520402"/>
+				<warengruppe name="Weichkäse mit blauem Edelschimmel (Gorgonzola, usw.)" nr="01520403"/>
+				<warengruppe name="Weichkäse (diverse Affinitäten)" nr="01520404"/>
+			</warengruppe>
+			<warengruppe name="Halbfester Schnittkäse" nr="01520500"/>
+			<warengruppe name="Schnittkäse" nr="01520600"/>
+			<warengruppe name="Hartkäse" nr="01520700"/>
+			<warengruppe name="Sauermilchkäse" nr="01520800"/>
+			<warengruppe name="Schmelzkäse" nr="01520900"/>
+			<warengruppe name="Reibekäse, Pastakäse" nr="01521000"/>
+			<warengruppe name="Brat-, Grillkäse" nr="01521100"/>
+			<warengruppe name="Käsealternativen (vegan, vegetarisch)" nr="01521200"/>
+			<warengruppe name="Käse (rechtlich ohne Käsegruppen-Zuordnung)" nr="01521300"/>
+		</warengruppe>
+		<warengruppe name="SB Feinkost, Teige, Convenience" nr="01530000">
+			<warengruppe name="Frische Algen" nr="01530200"/>
+			<warengruppe name="Fermentiertes Gemüse (Sauerkraut, Kimchi, usw.)" nr="01530300"/>
+			<warengruppe name="Feinkostsalate" nr="01530400">
+				<warengruppe name="Feinkostsalate (mit Fleisch)" nr="01530401"/>
+				<warengruppe name="Feinkostsalate (mit Fisch)" nr="01530402"/>
+				<warengruppe name="Feinkostsalate (vegetarisch, vegan)" nr="01530403"/>
+				<warengruppe name="Feinkostsalate (mit Fleisch und Fisch)" nr="01530404"/>
+			</warengruppe>
+			<warengruppe name="Antipasti, Oliven" nr="01530500"/>
+			<warengruppe name="Frische Teigwaren (Pasta, usw.)" nr="01530600"/>
+			<warengruppe name="Frisches Pesto, Würzsaucen (gekühlt)" nr="01530700"/>
+			<warengruppe name="Frische Suppen, Fertiggerichte" nr="01530800"/>
+			<warengruppe name="Frische Brotaufstriche" nr="01530900"/>
+			<warengruppe name="Frische Dressings, Cremes, Dips (Meerrettich, usw.)" nr="01531000"/>
+			<warengruppe name="Frische Teige" nr="01531100"/>
+			<warengruppe name="Frische Hefe" nr="01531200"/>
+		</warengruppe>
+		<warengruppe name="SB Wurst, Aufschnitt, Fleischerzeugnisse" nr="01540000">
+			<warengruppe name="Würstchen (Wiener, usw.) (am Stück) " nr="01540100"/>
+			<warengruppe name="Bratwurst, Grillwurst" nr="01540300"/>
+			<warengruppe name="Snackwurst (aus Rohwurst)" nr="01540400"/>
+			<warengruppe name="Rohschinken, Rohpökelwaren, Räucherschinken, Speck" nr="01540500">
+				<warengruppe name="Rohschinken, Rohpökelwaren, Räucherschinken, Speck (am Stück)" nr="01540501"/>
+				<warengruppe name="Rohschinken, Rohpökelwaren, Räucherschinken, Speck (Aufschnitt)" nr="01540502"/>
+			</warengruppe>
+			<warengruppe name="Garschinken, Garpökelware" nr="01540600">
+				<warengruppe name="Kochschinken, Putenbrust (am Stück)" nr="01540601"/>
+				<warengruppe name="Kochschinken, Putenbrust (Aufschnitt)" nr="01540602"/>
+				<warengruppe name="Kasseler (am Strück)" nr="01540603"/>
+				<warengruppe name="Kasseler (Aufschnitt)" nr="01540604"/>
+			</warengruppe>
+			<warengruppe name="Rohwurst (schnittfähig, streichfähig)" nr="01540700">
+				<warengruppe name="Rohwurst schnittfähig (Salami, usw.) (am Stück)" nr="01540701"/>
+				<warengruppe name="Rohwurst schnittfähig (Salami, usw.) (Aufschnitt)" nr="01540702"/>
+				<warengruppe name="Rohwurst streichfähig (Teewurst, Zwiebelmett, usw.)" nr="01540703"/>
+			</warengruppe>
+			<warengruppe name="Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)" nr="01540800">
+				<warengruppe name="Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.) (am Stück)" nr="01540801"/>
+				<warengruppe name="Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.) (Aufschnitt)" nr="01540802"/>
+			</warengruppe>
+			<warengruppe name="Kochwurst " nr="01540900">
+				<warengruppe name="Kochwurst (Leberwurst, Blutwurst, Sülzen, usw.) (am Stück)" nr="01540901"/>
+				<warengruppe name="Kochwurst (Sülzen, Zungenwurst, usw.) (Aufschnitt)" nr="01540902"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="SB Fleisch" nr="01550000">
+			<warengruppe name="Hackfleisch" nr="01550100"/>
+			<warengruppe name="Schweinefleisch" nr="01550200">
+				<warengruppe name="Schweinefleisch (mariniert, zubereitet)" nr="01550201"/>
+				<warengruppe name="Schweinefleisch (Natur)" nr="01550202"/>
+			</warengruppe>
+			<warengruppe name="Rindfleisch" nr="01550300">
+				<warengruppe name="Rindfleisch (mariniert, zubereitet)" nr="01550301"/>
+				<warengruppe name="Rindfleisch (Natur)" nr="01550302"/>
+			</warengruppe>
+			<warengruppe name="Lammfleisch" nr="01550400">
+				<warengruppe name="Lammfleisch (mariniert, zubereitet)" nr="01550401"/>
+				<warengruppe name="Lammfleisch (Natur)" nr="01550402"/>
+			</warengruppe>
+			<warengruppe name="Geflügelfleisch" nr="01550500">
+				<warengruppe name="Geflügelfleisch (mariniert, zubereitet)" nr="01550501"/>
+				<warengruppe name="Geflügefleisch (Natur)" nr="01550502"/>
+			</warengruppe>
+			<warengruppe name="Wild, Spezialitäten" nr="01550600">
+				<warengruppe name="Wild, Spezialitäten (mariniert, zubereitet)" nr="01550601"/>
+				<warengruppe name="Wild, Spezialitäten (Natur)" nr="01550602"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="SB Frischfisch, Meeresfrüchte" nr="01560000">
+			<warengruppe name="Seefisch (Natur, mariniert, zubereitet) " nr="01560100"/>
+			<warengruppe name="Süßwasserfisch (Natur, mariniert, zubereitet) " nr="01560200"/>
+			<warengruppe name="Meeresfrüchte (Natur, mariniert, zubereitet)" nr="01560300"/>
+			<warengruppe name="SB Räucherfisch " nr="01560400"/>
+			<warengruppe name="Fischnebenerzeugnisse" nr="01560500"/>
+		</warengruppe>
+	</warengruppe>
+	<warengruppe name="Trocken" nr="02000000">
+		<warengruppe name="Tee, Kaffee, Kakao, Heißgetränke" nr="02010000">
+			<warengruppe name="Tee" nr="02010100">
+				<warengruppe name="Schwarzer Tee, Pu Erh Tee" nr="02010101"/>
+				<warengruppe name="Grüner Tee, Weißer Tee, Gelber Tee, Oolong" nr="02010102"/>
+				<warengruppe name="Kräutertee" nr="02010103"/>
+				<warengruppe name="Mate, Lapacho, Rooibusch, usw." nr="02010104"/>
+				<warengruppe name="Früchtetee" nr="02010105"/>
+				<warengruppe name="Gewürztee (auch Chai, Ayurdvedische Tees)" nr="02010106"/>
+				<warengruppe
+                    name="Spezialtee (Stilltee, Indikationsandeutung - unterliegt nicht Arzneimittelgesetz, Basen-Ausgleichstee)"
+                    nr="02010107"
+                />
+				<warengruppe name="Probier-, Geschenk-, Mischsets" nr="02010108"/>
+			</warengruppe>
+			<warengruppe name="Trinkkakao, Carob, Kakaogetränkepulver" nr="02010200"/>
+			<warengruppe name="Kaffee" nr="02010300">
+				<warengruppe name="Röstkaffee" nr="02010301"/>
+				<warengruppe name="Espresso" nr="02010302"/>
+				<warengruppe name="Instantkaffee, Cappuccino" nr="02010303"/>
+				<warengruppe name="Grüner Kaffee" nr="02010304"/>
+			</warengruppe>
+			<warengruppe name="Frucht-, Getreide-, Malzkaffee" nr="02010400"/>
+			<warengruppe name="Kaffeeweißer, Kaffeesahne" nr="02010500"/>
+		</warengruppe>
+		<warengruppe name="Brotaufstrich, Honig" nr="02020000">
+			<warengruppe name="Brotaufstriche würzig (pikant, auch Schmalz)" nr="02020100"/>
+			<warengruppe name="Brotaufstriche, Fruchtaufstriche (süß)" nr="02020200"/>
+			<warengruppe name="Nussnougatcreme, Schokoaufstriche, usw." nr="02020300"/>
+			<warengruppe name="Nussmuse, Tahin" nr="02020400"/>
+			<warengruppe name="Honig, Honigprodukte" nr="02020500"/>
+		</warengruppe>
+		<warengruppe name="Säuglings-, Kindernahrung" nr="02030000">
+			<warengruppe name="Säuglingsnahrung" nr="02030100"/>
+			<warengruppe name="Babynahrung (Brei)" nr="02030200"/>
+			<warengruppe name="Säuglings-, Kindergläschen" nr="02030300"/>
+			<warengruppe name="Babygetränke" nr="02030400"/>
+			<warengruppe name="Quetschmus" nr="02030500"/>
+			<warengruppe name="Kinder-Knabberartikel, -Gebäck, -Riegel, usw." nr="02030600"/>
+			<warengruppe name="Kräuter- und Früchtetee für Säuglinge oder Kleinkinder" nr="02030700"/>
+		</warengruppe>
+		<warengruppe name="Getreide, Saaten, Hülsenfrüchte" nr="02040000">
+			<warengruppe name="Getreide, Getreideartige (Körner)" nr="02040100"/>
+			<warengruppe name="Getreideprodukte" nr="02040200">
+				<warengruppe name="Schrote" nr="02040201"/>
+				<warengruppe name="Mehle" nr="02040202"/>
+				<warengruppe name="Flocken" nr="02040203"/>
+				<warengruppe name="Grieß (Bulgur, Couscous, usw.)" nr="02040204"/>
+			</warengruppe>
+			<warengruppe name="Reis" nr="02040300"/>
+			<warengruppe name="Hülsenfrüchte" nr="02040400"/>
+			<warengruppe name="Ölsaaten" nr="02040500"/>
+			<warengruppe name="Keimsaaten" nr="02040600"/>
+		</warengruppe>
+		<warengruppe name="Cerealien (Müsli, Cornflakes, Crunchy)" nr="02050000">
+			<warengruppe name="Müsli" nr="02050100"/>
+			<warengruppe name="Crunchy" nr="02050200"/>
+			<warengruppe name="Granola" nr="02050300"/>
+			<warengruppe name="Frühstücksbreie, Porridge" nr="02050400"/>
+			<warengruppe name="Cornflakes, Pops" nr="02050500"/>
+			<warengruppe name="Toppings" nr="02050600"/>
+		</warengruppe>
+		<warengruppe name="Backerzeugnisse (Brot, Knäcke, Zwieback, gepuffte Waffeln)" nr="02060000">
+			<warengruppe name="Aufbackwaren" nr="02060100"/>
+			<warengruppe name="Pizzateig, Pita, Wraps, usw." nr="02060200"/>
+			<warengruppe name="Brot" nr="02060300">
+				<warengruppe name="SB-Brot (länger haltbar)" nr="02060301"/>
+				<warengruppe name="Knäckebrot" nr="02060302"/>
+				<warengruppe name="Zwieback" nr="02060303"/>
+			</warengruppe>
+			<warengruppe name="gepuffte Waffeln (Reis-, Mais-, Dinkelwaffeln, usw.)" nr="02060400"/>
+			<warengruppe name="SB Kuchen, Kleingebäck, Tortenböden" nr="02060500"/>
+			<warengruppe name="Paniermehl, Semmelbrösel" nr="02060600"/>
+		</warengruppe>
+		<warengruppe name="Nudeln, Teigwaren (ungekühlt)" nr="02070000">
+			<warengruppe name="Hartweizennudeln" nr="02070100"/>
+			<warengruppe name="Dinkelnudeln" nr="02070200"/>
+			<warengruppe name="gefüllte Nudeln" nr="02070300"/>
+			<warengruppe name="Nudeln (sonstiger Teig)" nr="02070400"/>
+			<warengruppe name="Suppeneinlagen (Backerbsen, Markklößchen, usw.)" nr="02070500">
+				<warengruppe name="Backerbsen" nr="02070501"/>
+				<warengruppe name="Markklößchen" nr="02070502"/>
+				<warengruppe name="Sonstige Suppeneinlagen" nr="02070503"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Convenience" nr="02080000">
+			<warengruppe name="Konserven" nr="02080100">
+				<warengruppe name="Wurst-, Fleischkonserven" nr="02080101"/>
+				<warengruppe name="Vegetarische Fleischersatzkonserven" nr="02080102"/>
+				<warengruppe name="Fisch-, Meeresfrüchtekonserven" nr="02080103"/>
+				<warengruppe name="Algenkonserven" nr="02080104"/>
+				<warengruppe name="Obstkonserven" nr="02080105"/>
+				<warengruppe name="Gemüsekonserven" nr="02080106"/>
+				<warengruppe name="Tomatenkonserven (pur)" nr="02080107"/>
+				<warengruppe name="Pilzkonserven" nr="02080108"/>
+				<warengruppe name="Kokoskonserven" nr="02080109"/>
+				<warengruppe name="Nuss-, Maronenkonserven, usw." nr="02080110"/>
+				<warengruppe name="Dessertsaucen" nr="02080111"/>
+				<warengruppe name="Olivenkonserven" nr="02080112"/>
+				<warengruppe name="Antipastikonserven (Bruschetta, usw.)" nr="02080113"/>
+				<warengruppe name="Salatkonserven (ungekühlt)" nr="02080114"/>
+			</warengruppe>
+			<warengruppe name="Fertiggerichte, Fertigsaucen" nr="02080200">
+				<warengruppe name="Fertigsaucen (herzhaft, ohne Tomatenbasis) " nr="02080201"/>
+				<warengruppe name="Tomaten-, Pasta-, Pizzasaucen" nr="02080202"/>
+				<warengruppe name="Suppen, Eintöpfe (Glas, Dose)" nr="02080203"/>
+			</warengruppe>
+			<warengruppe name="Halbfertiggerichte" nr="02080300">
+				<warengruppe name="Kartoffel Püree, Knödel, Puffer" nr="02080301"/>
+				<warengruppe name="Falafel, Taboule, Batirik" nr="02080302"/>
+				<warengruppe name="Pfannengerichte" nr="02080303"/>
+				<warengruppe name="Burgermischungen" nr="02080304"/>
+			</warengruppe>
+			<warengruppe name="Fixprodukte, Instantprodukte" nr="02080400">
+				<warengruppe name="Tütensuppen" nr="02080401"/>
+				<warengruppe name="Bechergerichte" nr="02080402"/>
+				<warengruppe name="Fixe Küche" nr="02080403"/>
+				<warengruppe name="Saucen, Saucenbinder" nr="02080404"/>
+				<warengruppe name="Nachspeise (süß), Dessertpulver, Eispulver" nr="02080405"/>
+			</warengruppe>
+			<warengruppe name="Würzsaucen, Grillsaucen, Ketchup, Pesto" nr="02080500">
+				<warengruppe name="Sojasaucen" nr="02080501"/>
+				<warengruppe name="Grillsaucen, Würzsaucen" nr="02080502"/>
+				<warengruppe name="Ketchup" nr="02080503"/>
+				<warengruppe name="Mayonnaise, Salatcreme, Aioli" nr="02080504"/>
+				<warengruppe name="Senf" nr="02080505"/>
+				<warengruppe name="Pesto" nr="02080506"/>
+				<warengruppe name="Chutneys" nr="02080507"/>
+				<warengruppe name="Salatsaucen, Dressings" nr="02080508"/>
+			</warengruppe>
+			<warengruppe name="Würzmittel (trocken, pastös, flüssig)" nr="02080600">
+				<warengruppe name="Brühwürfel" nr="02080601"/>
+				<warengruppe name="Brühen (Pulver)" nr="02080602"/>
+				<warengruppe name="Hefeextrakt, Hefeflocken" nr="02080603"/>
+				<warengruppe name="Flüssigwürzen" nr="02080604"/>
+				<warengruppe name="Würzpasten" nr="02080605"/>
+				<warengruppe name="Fond, Brühen (flüssig)" nr="02080606"/>
+				<warengruppe name="Essig" nr="02080607"/>
+			</warengruppe>
+			<warengruppe name="Backmischungen" nr="02080700">
+				<warengruppe name="Brot, Brötchen" nr="02080701"/>
+				<warengruppe name="Pizza, Quiche, usw. (herzhaft)" nr="02080702"/>
+				<warengruppe name="Kuchen, Süßgebäck" nr="02080703"/>
+			</warengruppe>
+			<warengruppe name="getrocknete Zutaten" nr="02080800">
+				<warengruppe name="getrocknete Algen" nr="02080801"/>
+				<warengruppe name="getrocknete Pilze" nr="02080802"/>
+				<warengruppe name="getrocknetes Gemüse" nr="02080803"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Trockenfrüchte, Nüsse" nr="02090000">
+			<warengruppe name="Nusskerne, Mandeln" nr="02090100">
+				<warengruppe name="Nusskerne, Mandeln, usw. (ganz)" nr="02090101"/>
+				<warengruppe name="Nusskerne, Mandeln, usw. (gemahlen, geraspelt, gestiftelt)" nr="02090102"/>
+			</warengruppe>
+			<warengruppe name="Trockenfrüchte" nr="02090200"/>
+			<warengruppe name="Nuss-, Trockenfruchtmischungen" nr="02090300"/>
+		</warengruppe>
+		<warengruppe name="Süßwaren, Knabberartikel" nr="02100000">
+			<warengruppe name="Waffeln, Kekse, Gebäck" nr="02100100">
+				<warengruppe name="Kekse, Gebäck" nr="02100101"/>
+				<warengruppe name="Waffeln" nr="02100102"/>
+				<warengruppe name="Schokokuss, Schaumwaffeln" nr="02100103"/>
+				<warengruppe name="gepuffte Waffeln mit Überzug (Reis-, Mais-, Dinkelwaffeln, usw.) " nr="02100104"/>
+			</warengruppe>
+			<warengruppe name="Süßwaren" nr="02100200">
+				<warengruppe name="Fruchtgummi, Lakritz, usw. (Kauware)" nr="02100201"/>
+				<warengruppe name="Kaugummi" nr="02100202"/>
+				<warengruppe name="Lutscher, Bonbons" nr="02100203"/>
+			</warengruppe>
+			<warengruppe name="Popcorn" nr="02100300"/>
+			<warengruppe name="süße Knabberartikel (z.B. schokolierte, kandierte Früchte, Nüsse, usw.)" nr="02100400"/>
+			<warengruppe name="herzhafte Knabberartikel (nicht süß)" nr="02100500">
+				<warengruppe name="Salzgebäck" nr="02100501"/>
+				<warengruppe name="Chips, Flips, usw." nr="02100502"/>
+				<warengruppe name="würziges Gebäck (Olive, Käse), Cracker, Grissini" nr="02100503"/>
+				<warengruppe name="Knabbermischungen (geröstete Erdnüsse, Mandeln, Kürbiskerne, usw.)" nr="02100504"/>
+			</warengruppe>
+			<warengruppe name="Fruchtschnitten, Riegel (auch schokoliert)" nr="02100600"/>
+			<warengruppe name="Schokoladen" nr="02100700">
+				<warengruppe name="Tafelschokolade, Minitafeln, Bruchschokolade" nr="02100701"/>
+				<warengruppe name="Schokoriegel" nr="02100702"/>
+				<warengruppe name="Schokofiguren" nr="02100703"/>
+			</warengruppe>
+			<warengruppe name="Pralinen, Konfekt, Marzipankonfekt" nr="02100800">
+				<warengruppe name="Pralinen" nr="02100801"/>
+				<warengruppe name="Konfekt" nr="02100802"/>
+				<warengruppe name="Marzipan, usw. (Figuren, Brote, Eier, usw.)" nr="02100803"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Fette, Öle" nr="02110000">
+			<warengruppe name="Speiseöle" nr="02110100"/>
+			<warengruppe name="Fette (auch Kokosöle)" nr="02110200"/>
+		</warengruppe>
+		<warengruppe name="Gewürze, Salz" nr="02120000">
+			<warengruppe name="Salz, Kräutersalz, Gomasio" nr="02120100"/>
+			<warengruppe name="Gewürze, Kräuter (mono)" nr="02120200"/>
+			<warengruppe name="Gewürze, Kräuter (gemischt)" nr="02120300"/>
+		</warengruppe>
+		<warengruppe name="Backzutaten, Süßungsmittel, Bindemittel" nr="02130000">
+			<warengruppe name="Zucker" nr="02130100"/>
+			<warengruppe name="Süßungsmittel (Ursüße, Ahornsirup, Agavendicksaft, usw.)" nr="02130200"/>
+			<warengruppe name="Zuckeraustauschstoffe" nr="02130300"/>
+			<warengruppe name="Backzutaten, Backhilfsmittel" nr="02130400">
+				<warengruppe name="Backmarzipan" nr="02130401"/>
+				<warengruppe name="Backfüllungen" nr="02130402"/>
+				<warengruppe name="Couvertüre, Kakao, Carob" nr="02130403"/>
+				<warengruppe name="Dekor" nr="02130404"/>
+				<warengruppe name="Backzutaten, Backhilfsmittel" nr="02130405"/>
+				<warengruppe name="Backaromen (z.B. Vanille)" nr="02130406"/>
+			</warengruppe>
+			<warengruppe name="Geliermittel, Bindemittel" nr="02130500"/>
+			<warengruppe name="Milchpulver, Milchersatzpulver" nr="02130600"/>
+		</warengruppe>
+		<warengruppe name="Gesundheitsmittel (Kur, Nahrungsergänzung)" nr="02140000">
+			<warengruppe name="Nahrungsergänzungsmittel (nach NEM-Verordnung)" nr="02140100">
+				<warengruppe name="Pulver, Granulate, Extrakte (NEM)" nr="02140101"/>
+				<warengruppe name="Tonikas, Elixire, Weine, Sirupe (NEM)" nr="02140102"/>
+				<warengruppe name="Kapseln, Tabletten, Dragees, Perlen (NEM)" nr="02140103"/>
+			</warengruppe>
+			<warengruppe name="Extrakte, Proteinpulver, Gemüse-, Fruchtpulver, Elixire, usw." nr="02140200">
+				<warengruppe name="Pulver, Granulate, Extrakte" nr="02140201"/>
+				<warengruppe name="Tonikas, Elixire, Weine, Sirupe" nr="02140202"/>
+				<warengruppe name="Kapseln, Tabletten, Dragees, Perlen" nr="02140203"/>
+			</warengruppe>
+			<warengruppe name="freiverkäufliche Arzneimittel" nr="02140300"/>
+			<warengruppe name="Medizinprodukte (zum Einnehmen)" nr="02140400"/>
+			<warengruppe name="Pflanzensäfte" nr="02140500"/>
+			<warengruppe name="Arzneitees" nr="02140600"/>
+			<warengruppe name="Heilwasser" nr="02140700"/>
+			<warengruppe name="Lebensmittel für besondere medizinische Zwecke" nr="02140800"/>
+			<warengruppe name="Tagesrationen für eine gewichtskontrollierende Ernährung" nr="02140900"/>
+			<warengruppe name="Blütenpollen" nr="02141000"/>
+		</warengruppe>
+	</warengruppe>
+	<warengruppe name="Getränke (auch gekühlte)" nr="03000000">
+		<warengruppe name="Wasser" nr="03010000"/>
+		<warengruppe name="Saft, Nektare" nr="03020000">
+			<warengruppe name="Fruchtsäfte" nr="03020100"/>
+			<warengruppe name="Nektare" nr="03020200"/>
+			<warengruppe name="Gemüsesäfte" nr="03020300"/>
+			<warengruppe name="Gemüsemoste" nr="03020400"/>
+			<warengruppe name="Gemüsetrunke" nr="03020500"/>
+			<warengruppe name="Mischgetränke (Obst-, Gemüsebasis)" nr="03020600"/>
+			<warengruppe name="Smoothies" nr="03020700"/>
+			<warengruppe name="Sirupe, Dicksaft, Vollfrucht" nr="03020800"/>
+			<warengruppe name="100% Frucht-Muttersäfte" nr="03020900"/>
+		</warengruppe>
+		<warengruppe name="Erfrischungsgetränke" nr="03030000">
+			<warengruppe name="Limonade, Cola" nr="03030100"/>
+			<warengruppe name="Schorle, Fruchtsaftgetränke" nr="03030200"/>
+			<warengruppe name="Kokosdrinks, Kokoswasser" nr="03030300"/>
+			<warengruppe name="Near-water-Getränke, Vitaminwasser, aromatisierte Mineralwasser" nr="03030400"/>
+			<warengruppe name="Energiedrinks" nr="03030500"/>
+			<warengruppe name="Cocktails" nr="03030600"/>
+		</warengruppe>
+		<warengruppe name="Wellnessgetränke" nr="03040000">
+			<warengruppe name="Gärgetränke, Enzymgetränke (Kwaz, Kombucha, usw.)" nr="03040100"/>
+			<warengruppe name="Sonstige Wellnessgetränke (Aloe, Weizengras, Kurkumasaft, usw.)" nr="03040900"/>
+		</warengruppe>
+		<warengruppe name="Kaffee-, Teegetränke" nr="03050000">
+			<warengruppe name="Kaffeegetränke (Soypresso, usw.)" nr="03050100"/>
+			<warengruppe name="Fertig-Teegetränke" nr="03050200"/>
+		</warengruppe>
+		<warengruppe name="Bier, Biermixgetränke" nr="03060000">
+			<warengruppe name="Bier" nr="03060100"/>
+			<warengruppe name="Mixgetränke (Radler, Malzgetränke, usw.)" nr="03060200"/>
+			<warengruppe name="Alkoholfreies Bier" nr="03060300"/>
+			<warengruppe name="Alkoholfreie Mixgetränke (Radler, Malzgetränke, usw.)" nr="03060400"/>
+		</warengruppe>
+		<warengruppe name="Wein, Schaumwein" nr="03070000">
+			<warengruppe name="Wein aus Deutschland" nr="03070100"/>
+			<warengruppe name="Wein aus Frankreich" nr="03070200"/>
+			<warengruppe name="Wein aus Italien" nr="03070300"/>
+			<warengruppe name="Wein aus Österreich" nr="03070400"/>
+			<warengruppe name="Wein aus Spanien" nr="03070500"/>
+			<warengruppe name="Wein aus Griechenland" nr="03070600"/>
+			<warengruppe name="Wein aus Südafrika" nr="03070700"/>
+			<warengruppe name="Wein aus sonstigen Ländern" nr="03071900"/>
+			<warengruppe name="Sekt, Schaumwein" nr="03072100"/>
+		</warengruppe>
+		<warengruppe name="Portwein, Sherry, usw. (aufgespritet)" nr="03080000"/>
+		<warengruppe name="Spirituosen, Liköre" nr="03090000"/>
+		<warengruppe name="Punsch, Glühwein" nr="03100000"/>
+		<warengruppe name="weinähnliche Getränke" nr="03110000">
+			<warengruppe name="Obstwein" nr="03110100"/>
+			<warengruppe name="Met (Honigwein)" nr="03110200"/>
+			<warengruppe name="Cidre" nr="03110300"/>
+			<warengruppe name="Mixgetränke (Weinschorle, usw.)" nr="03110400"/>
+			<warengruppe name="Wein-, Sekt-Alternativen (alkoholfrei)" nr="03110500"/>
+		</warengruppe>
+	</warengruppe>
+	<warengruppe name="Drogerie" nr="04000000">
+		<warengruppe name="Kosmetik" nr="04010000">
+			<warengruppe name="Gesichtsprodukte" nr="04010100">
+				<warengruppe name="Gesichtsreinigung" nr="04010101"/>
+				<warengruppe name="Gesichtslotion, -creme, -gel" nr="04010102"/>
+				<warengruppe name="Toner, Seren, Gesichtswasser" nr="04010103"/>
+				<warengruppe name="Masken, Kuren, Öle" nr="04010104"/>
+				<warengruppe name="Augenpflege" nr="04010105"/>
+				<warengruppe name="Lippenpflege" nr="04010106"/>
+			</warengruppe>
+			<warengruppe name="Haarprodukte" nr="04010200">
+				<warengruppe name="Shampoo, Reinigung" nr="04010201"/>
+				<warengruppe name="Spülung, Kur" nr="04010202"/>
+				<warengruppe name="Haarfarben" nr="04010203"/>
+				<warengruppe name="Haarstyling" nr="04010204"/>
+			</warengruppe>
+			<warengruppe name="Körperprodukte" nr="04010300">
+				<warengruppe name="Körperlotion, -creme" nr="04010301"/>
+				<warengruppe name="Körperöle, Massageöle" nr="04010302"/>
+				<warengruppe name="Hand-, Nagelpflege" nr="04010303"/>
+				<warengruppe name="Fuß-, Beinpflege" nr="04010304"/>
+				<warengruppe name="Deodorantien" nr="04010305"/>
+				<warengruppe name="Duschbad, Peeling" nr="04010306"/>
+				<warengruppe name="Schaumbad, Badezusätze" nr="04010307"/>
+				<warengruppe name="Seife, Waschlotionen" nr="04010308"/>
+				<warengruppe name="Intimpflege" nr="04010309"/>
+			</warengruppe>
+			<warengruppe name="Mundprodukte" nr="04010400">
+				<warengruppe name="Zahnpflege" nr="04010401"/>
+				<warengruppe name="Mundpflege" nr="04010402"/>
+			</warengruppe>
+			<warengruppe name="Dekorative Kosmetik" nr="04010500">
+				<warengruppe name="Make up, Puder, Rouge" nr="04010501"/>
+				<warengruppe name="Lippen (deko)" nr="04010502"/>
+				<warengruppe name="Augen (deko)" nr="04010503"/>
+				<warengruppe name="Nagel (deko)" nr="04010504"/>
+			</warengruppe>
+			<warengruppe name="Mutter-Kind Kosmetik (Baby)" nr="04010600">
+				<warengruppe name="Creme, Öle, Lotionen" nr="04010601"/>
+				<warengruppe name="Baden, Waschen" nr="04010602"/>
+				<warengruppe name="Schwangerschaft, Stillzeit" nr="04010603"/>
+			</warengruppe>
+			<warengruppe name="Sonnenschutz" nr="04010700"/>
+			<warengruppe name="Insektenschutz" nr="04010800"/>
+			<warengruppe name="Rasur, Haarentfernung" nr="04010900">
+				<warengruppe name="Rasur" nr="04010901"/>
+				<warengruppe name="Aftershave" nr="04010902"/>
+				<warengruppe name="Haarentfernung" nr="04010903"/>
+			</warengruppe>
+			<warengruppe name="Parfum" nr="04011000">
+				<warengruppe name="Parfum" nr="04011001"/>
+				<warengruppe name="Eau de Toilette" nr="04011002"/>
+			</warengruppe>
+			<warengruppe name="Grund-, Rohstoffe, Basisöle" nr="04011100"/>
+			<warengruppe name="Kosmetik mit medizinischer Indikation (Wundsalben, therap. Hautschutz)" nr="04011200"/>
+			<warengruppe name="Probier-, Reise-, Geschenksets (keine onpacks)" nr="04011300"/>
+		</warengruppe>
+		<warengruppe name="Hygiene" nr="04020000">
+			<warengruppe name="Toilettenpapier, Küchentücher, Kosmetiktücher, Taschentücher" nr="04020100"/>
+			<warengruppe name="Säuglings-, Kinderhygieneartikel" nr="04020200">
+				<warengruppe name="Windeln, Einmal-Wickelunterlagen" nr="04020201"/>
+				<warengruppe name="Feucht-, Reinigungstücher" nr="04020202"/>
+			</warengruppe>
+			<warengruppe name="Tampons, Binden, Inkontinenz, usw." nr="04020300"/>
+			<warengruppe name="Zubehör Körperpflege, Kosmetik" nr="04020400">
+				<warengruppe name="Zahnbürsten, Zungenbürsten, Zahnseide, usw." nr="04020401"/>
+				<warengruppe name="Rasurzubehör" nr="04020402"/>
+				<warengruppe name="Schminkzubehör (Schwämmchen, Pinsel, Spatel, Nachfüllbehälter, usw.)" nr="04020403"/>
+				<warengruppe name="Haarbürsten, Haarkämme" nr="04020404"/>
+				<warengruppe name="Massagezubehör" nr="04020405"/>
+				<warengruppe name="Seifensäckchen" nr="04020406"/>
+			</warengruppe>
+			<warengruppe name="Körperpflege- und Kosmetikbürsten (Hand- und Nagelbürsten, usw.)" nr="04020407"/>
+			<warengruppe name="Watte, Wattestäbchen, Wattepads" nr="04020500"/>
+			<warengruppe name="Verhütungsmittel" nr="04020600"/>
+			<warengruppe name="Hautdesinfektion" nr="04020700"/>
+		</warengruppe>
+		<warengruppe name="Medizin- und Medizinhilfsprodukte" nr="04030000">
+			<warengruppe name="Medizinische Hilfsprodukte (z.B. Nasendusche, Ohrkerze, Pflaster)" nr="04030100"/>
+			<warengruppe name="Medizinprodukte äußerlich" nr="04030200"/>
+		</warengruppe>
+	</warengruppe>
+	<warengruppe name="Nonfood" nr="05000000">
+		<warengruppe name="Spielwaren, Malen, Basteln" nr="05020000">
+			<warengruppe name="Spielwaren" nr="05020100">
+				<warengruppe name="Brettspiele" nr="05020101"/>
+				<warengruppe name="Kartenspiele" nr="05020102"/>
+				<warengruppe name="Plüschtiere, Puppen" nr="05020103"/>
+				<warengruppe name="Holzspielzeug" nr="05020104"/>
+				<warengruppe name="Outdoor" nr="05020105"/>
+				<warengruppe name="Sonstige Spielwaren" nr="05020109"/>
+			</warengruppe>
+			<warengruppe name="Malen" nr="05020200"/>
+			<warengruppe name="Basteln" nr="05020300"/>
+		</warengruppe>
+		<warengruppe name="Schreibwaren" nr="05030000">
+			<warengruppe name="Geschenkpapier" nr="05030100"/>
+			<warengruppe name="Stifte, Radierer, Anspitzer" nr="05030200"/>
+			<warengruppe name="Hefte, Kladden, Schreibpapier" nr="05030300"/>
+			<warengruppe name="Ansichtskarten, Glückwunschkarten" nr="05030400"/>
+		</warengruppe>
+		<warengruppe name="Verlagswaren" nr="05040000">
+			<warengruppe name="Zeitschriften, Zeitungen" nr="05040100"/>
+			<warengruppe name="Bücher" nr="05040200"/>
+			<warengruppe name="Landkarten" nr="05040300"/>
+			<warengruppe name="Kalender" nr="05040400"/>
+		</warengruppe>
+		<warengruppe name="Medien" nr="05050000">
+			<warengruppe name="Audio" nr="05050100"/>
+			<warengruppe name="Video" nr="05050200"/>
+		</warengruppe>
+		<warengruppe name="Textilien, Schuhe" nr="05060000">
+			<warengruppe name="Schuhe" nr="05060100"/>
+			<warengruppe name="Bekleidung" nr="05060200">
+				<warengruppe name="Babybekleidung" nr="05060201"/>
+				<warengruppe name="Kinderbekleidung" nr="05060202"/>
+				<warengruppe name="Damenbekleidung" nr="05060203"/>
+				<warengruppe name="Herrenbekleidung" nr="05060204"/>
+				<warengruppe name="Socken" nr="05060205"/>
+				<warengruppe name="Handschuhe" nr="05060206"/>
+				<warengruppe name="Mützen, Kappen, Hüte" nr="05060207"/>
+				<warengruppe name="Schals, Tücher, Gürtel" nr="05060208"/>
+				<warengruppe name="Sonstige Bekleidung" nr="05060209"/>
+			</warengruppe>
+			<warengruppe name="Heimtextilien" nr="05060300">
+				<warengruppe name="Kissen" nr="05060301"/>
+				<warengruppe name="Decken" nr="05060302"/>
+				<warengruppe name="Handtücher, Waschlappen" nr="05060303"/>
+				<warengruppe name="Bettwäsche" nr="05060304"/>
+				<warengruppe name="Felle" nr="05060305"/>
+				<warengruppe name="Matratzen" nr="05060306"/>
+				<warengruppe name="Matten, Badvorleger, Teppiche" nr="05060307"/>
+				<warengruppe name="Stoffe, Garne, Nähbedarf" nr="05060308"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Accessoires, Dekoration" nr="05070000">
+			<warengruppe name="Haarschmuck" nr="05070100"/>
+			<warengruppe name="Schmuck" nr="05070200"/>
+			<warengruppe name="Brillen" nr="05070300"/>
+			<warengruppe name="Taschen" nr="05070400"/>
+			<warengruppe name="Edelsteine" nr="05070500"/>
+		</warengruppe>
+		<warengruppe name="Haushaltswaren" nr="05080000">
+			<warengruppe name="Verpackungen, Taschen, Geschenkverpackungen" nr="05080100"/>
+			<warengruppe name="Vorratsbehälter" nr="05080200"/>
+			<warengruppe name="Kerzen, Leuchter, Feuermittel" nr="05080300">
+				<warengruppe name="Stabkerzen" nr="05080301"/>
+				<warengruppe name="Stumpenkerzen" nr="05080302"/>
+				<warengruppe name="Teelichte" nr="05080303"/>
+				<warengruppe name="Baumkerzen" nr="05080304"/>
+				<warengruppe name="Duftkerzen" nr="05080305"/>
+				<warengruppe name="Dekokerzen" nr="05080306"/>
+				<warengruppe name="Leuchter" nr="05080307"/>
+				<warengruppe name="Feuermittel" nr="05080308"/>
+			</warengruppe>
+			<warengruppe name="Geschirr, Trinkgefäße" nr="05080400"/>
+			<warengruppe name="Putz-, Reinigungszubehör (Bürsten, Besen, Schwämme, Dosierhilfen)" nr="05080500"/>
+			<warengruppe name="Keimgeräte" nr="05080600"/>
+			<warengruppe name="Mühlen" nr="05080700"/>
+			<warengruppe name="Töpfe, Pfannen" nr="05080800"/>
+			<warengruppe name="Wasserfilter-, Sprudelsysteme" nr="05080900"/>
+			<warengruppe name="Küchengeräte (z.B. Smoothie-Maker, Joghurtbereiter)" nr="05081000"/>
+			<warengruppe name="Korbwaren" nr="05081100"/>
+			<warengruppe name="Schädlingsbekämpfung" nr="05081200"/>
+			<warengruppe name="Zubehör Tee, Kaffee" nr="05081300"/>
+			<warengruppe name="Verbrauchsmaterialien (Müllbeutel, Servietten, Backpapier, Folien, usw.)" nr="05081400"/>
+			<warengruppe name="Mehrwegartikel (Brotbeutel, Mehrwegnetze, Eierboxen, Spender, Dosierhilfen, usw.)" nr="05081500"/>
+		</warengruppe>
+		<warengruppe name="Wasch-, Putz-, Reinigungsmittel (WPR)" nr="05090000">
+			<warengruppe name="Wasch-, Waschhilfsmittel, Wäschepflege" nr="05090100">
+				<warengruppe name="Colorwaschmittel" nr="05090101"/>
+				<warengruppe name="Waschmittel, Vollwaschmittel" nr="05090102"/>
+				<warengruppe name="Woll-, Feinwaschmittel" nr="05090103"/>
+				<warengruppe name="Bleiche, Wasserenthärter, Fleckenentferner (Gallseife, usw.)" nr="05090104"/>
+				<warengruppe name="Weichspüler" nr="05090105"/>
+				<warengruppe name="Waschnüsse, Waschbälle" nr="05090106"/>
+				<warengruppe name="Spezialwaschmittel (Funktionswäsche, usw.)" nr="05090107"/>
+				<warengruppe name="Wäschepflege (Wollkur, Sprühstärke, Bügelhilfe, usw.)" nr="05090108"/>
+				<warengruppe name="Wäschedesinfektion" nr="05090109"/>
+			</warengruppe>
+			<warengruppe name="Geschirrspülmittel" nr="05090200">
+				<warengruppe name="Handspülmittel" nr="05090201"/>
+				<warengruppe name="Maschinenspülmittel, Salz, Klarspüler" nr="05090202"/>
+			</warengruppe>
+			<warengruppe name="Putz-, Pflegemittel" nr="05090300">
+				<warengruppe name="Universalreiniger" nr="05090301"/>
+				<warengruppe name="Glasreiniger" nr="05090302"/>
+				<warengruppe name="Boden-, Flächenreiniger" nr="05090303"/>
+				<warengruppe name="WC Reiniger" nr="05090304"/>
+				<warengruppe name="Badreiniger" nr="05090305"/>
+				<warengruppe name="Entkalker" nr="05090306"/>
+				<warengruppe name="Küchenreiniger" nr="05090307"/>
+				<warengruppe name="Schuhpflege" nr="05090308"/>
+				<warengruppe name="Möbelpflege" nr="05090309"/>
+				<warengruppe name="Reinigungsartikel (Außenbereich)" nr="05090310"/>
+				<warengruppe name="Spezialreinigungsmittel (Anti-Schimmel, usw.)" nr="05090311"/>
+				<warengruppe name="Flächendesinfektion" nr="05090312"/>
+			</warengruppe>
+		</warengruppe>
+		<warengruppe name="Ätherische Öle, Lampen, Räuchern" nr="05100000">
+			<warengruppe name="Ätherische Öle" nr="05100100"/>
+			<warengruppe name="Duftlampen, -steine, -brunnen " nr="05100200"/>
+			<warengruppe name="Räucherwerk, Räucherzubehör" nr="05100300"/>
+			<warengruppe name="Lufterfrischer, Raumspray, Raumdüfte" nr="05100400"/>
+			<warengruppe name="Hydrolate" nr="05100500"/>
+			<warengruppe name="Duftgeschenke" nr="05100600"/>
+			<warengruppe name="Saunamischung" nr="05100700"/>
+		</warengruppe>
+		<warengruppe name="Hobby, Haus, Garten" nr="05110000">
+			<warengruppe name="Saaten" nr="05110100"/>
+			<warengruppe name="Gartenbedarf, Blumenerde" nr="05110200"/>
+			<warengruppe name="Pflanzen" nr="05110300">
+				<warengruppe name="Zierpflanzen (im Topf)" nr="05110301"/>
+				<warengruppe name="Jungpflanzen (Obst, Gemüse)" nr="05110302"/>
+				<warengruppe name="Pflanzzwiebeln" nr="05110303"/>
+				<warengruppe name="Solosträuße (nur Rosen, nur Tulpen, usw.)" nr="05110304"/>
+				<warengruppe name="gemischte Sträuße" nr="05110305"/>
+			</warengruppe>
+			<warengruppe name="Naturfarben, Lacke, Öle (auch Anti-Schimmel-Farben)" nr="05110400"/>
+			<warengruppe name="Düngemittel, Pflanzenschutz" nr="05110500"/>
+			<warengruppe name="Baustoffe" nr="05110600"/>
+			<warengruppe name="Naturmöbel" nr="05110700"/>
+			<warengruppe name="Grillbedarf" nr="05110800"/>
+		</warengruppe>
+		<warengruppe name="Baby-, Kleinkindbedarf" nr="05120000">
+			<warengruppe name="Schnuller, Sauger" nr="05120100"/>
+			<warengruppe name="Fläschchen, Becher, Schüsseln, Löffel, Tassen" nr="05120200"/>
+			<warengruppe name="Zahnhilfen (Beißringe, Veilchenwurzel, Fingerbürste)" nr="05120300"/>
+			<warengruppe name="Töpfchen, Toilettensitze" nr="05120400"/>
+		</warengruppe>
+		<warengruppe name="Zigaretten, Tabak" nr="05130000">
+			<warengruppe name="Zigaretten" nr="05130100"/>
+			<warengruppe name="Tabak (lose)" nr="05130200"/>
+			<warengruppe name="Blättchen, Filter, Stopfer, usw." nr="05130300"/>
+		</warengruppe>
+		<warengruppe name="Verkaufszubehör" nr="05140000">
+			<warengruppe name="Tragetaschen, Tragehilfen" nr="05140100">
+				<warengruppe name="Papier, Karton" nr="05140101"/>
+				<warengruppe name="Kunststoff" nr="05140102"/>
+				<warengruppe name="Stoff" nr="05140103"/>
+			</warengruppe>
+			<warengruppe name="Verpackungsmaterial, Verbrauchsmaterial" nr="05140200">
+				<warengruppe name="Käsepapier, Einpackpapier" nr="05140201"/>
+				<warengruppe name="Tüten, Bodenbeutel aus Papier " nr="05140202"/>
+				<warengruppe name="Tüten, Bodenbeutel aus Kunststoff " nr="05140203"/>
+				<warengruppe name="Verschlussmaterialien " nr="05140204"/>
+				<warengruppe name="Antipasti-Becher (Deckel) " nr="05140205"/>
+				<warengruppe name="Verkostungshilfen (Piker, Länderfähnchen, usw.) " nr="05140206"/>
+				<warengruppe name="Einwegbecher, Mitnahmeboxen (ToGo, Getränke, Speisen)" nr="05140208"/>
+				<warengruppe name="Eierkartons" nr="05140209"/>
+				<warengruppe name="Etiketten, Bonrollen, Preisauszeichnungen" nr="05140210"/>
+				<warengruppe name="Kühlakkus" nr="05140211"/>
+			</warengruppe>
+			<warengruppe name="Werbematerialien, Werbegeschenke (Prospekte, Flyer, Plakate, usw.)" nr="05140300"/>
+		</warengruppe>
+		<warengruppe name="Geschäftsausstattung" nr="05150000">
+			<warengruppe name="Bistro, Verkostung, Thekenzubehör" nr="05150100">
+				<warengruppe name="Mehrweg-Besteck (Löffel, Gabeln, Messer)" nr="05150101"/>
+				<warengruppe name="Mehrweg-Geschirr (Kaffee-, Teetassen, Teller, Gläser)" nr="05150102"/>
+				<warengruppe name="Serviceartikel (Tabletts, usw.)" nr="05150103"/>
+				<warengruppe name="Aufsteller, Schilder " nr="05150104"/>
+				<warengruppe name="Geräte (Folienroller, Abschneider, usw.)" nr="05150105"/>
+				<warengruppe name="Schalen, Geschirr (Platten, Präsentationsgeschirr, Drehteller, Bretter, usw.)" nr="05150106"/>
+				<warengruppe name="Thekenwerkzeug (Griffzangen, Fleischgabeln, Schneidwerkzeuge, Schneidbretter, usw.)" nr="05150107"/>
+			</warengruppe>
+			<warengruppe name="Obst-, Gemüse-Zubehör" nr="05150200"/>
+			<warengruppe name="Kassenzubehör" nr="05150300"/>
+			<warengruppe name="Verkaufs-, Präsentationshilfen" nr="05150400">
+				<warengruppe name="Scannerschienen" nr="05150401"/>
+				<warengruppe name="Fachteilersysteme" nr="05150402"/>
+				<warengruppe name="Präsentationshilfen (Korbwaren, Bäckerbleche, usw.)" nr="05150403"/>
+				<warengruppe name="Preistafeln, Beschriftungsmaterial " nr="05150404"/>
+				<warengruppe name="Prospekthalter, Aufsteller" nr="05150405"/>
+				<warengruppe name="Regalstopper, Aktionssterne" nr="05150406"/>
+				<warengruppe name="Außenwerbung (z.B. Blowflag, Plakataußenständer) " nr="05150407"/>
+			</warengruppe>
+			<warengruppe name="Warenträger (Regale, usw.)" nr="05150500"/>
+			<warengruppe name="Büro, Verwaltung (auch Geräte, Preisauszeichner)" nr="05150600"/>
+			<warengruppe name="Einkaufskörbe, -wagen" nr="05150700"/>
+		</warengruppe>
+	</warengruppe>
+	<warengruppe name="Tiernahrung, Tierbedarf" nr="06000000">
+		<warengruppe name="Tiernahrung" nr="06010000">
+			<warengruppe name="Trockenfutter" nr="06010100"/>
+			<warengruppe name="Nassfutter" nr="06010200"/>
+			<warengruppe name="Snacks" nr="06010300"/>
+			<warengruppe name="SB Heimtiernahrung (gekühlt)" nr="06010400"/>
+			<warengruppe name="TK Heimtiernahrung" nr="06010500"/>
+		</warengruppe>
+		<warengruppe name="Tierzubehör" nr="06020000"/>
+		<warengruppe name="Tierpflege" nr="06030000"/>
+	</warengruppe>
+</warengruppen>
