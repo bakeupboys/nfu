@@ -48,6 +48,7 @@ Changelog
 - 16.0.1.0.1: Rename to CSV Exporter
 - 16.0.1.1.0: Add rounding for float values and remove zero lines
 - 16.0.1.2.0: Change limiter to ";" and only show exporter in closed state
+- 16.0.1.2.1: Show exporter in in_progress state as well
 
 Bug Tracker
 ===========
