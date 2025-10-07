@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Sale",
-    "version": "16.0.1.2.0",
+    "version": "16.0.1.2.1",
     "depends": ["sale_order_batch", "nfu_sale_order_batch_packaging"],
     "data": ["views/sale_order_batch_views.xml"],
     "license": "LGPL-3",
