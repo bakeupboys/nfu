@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <xpath expr="//div[@name='integration']" position="inside">
                 <div class="col-12 col-lg-6 o_setting_box" id="datanature_integration">
-                    <div class="o_setting_right_pane" id="nfu_data_nature_settings">
+                    <div class="o_setting_right_pane" id="data_nature_settings">
                         <span class="o_form_label">
                                             DATA Nature Integration
                                         </span>

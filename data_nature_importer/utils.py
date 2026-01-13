@@ -16,8 +16,8 @@ def get_datanature_bearer_token(self):
     Obtain a bearer token from the DataNature API using the provided API key.
     """
     ICP = self.env["ir.config_parameter"].sudo()
-    userid = ICP.get_param("nfu_data_nature_importer.data_nature_username")
-    password = ICP.get_param("nfu_data_nature_importer.data_nature_key")
+    userid = ICP.get_param("data_nature_importer.data_nature_username")
+    password = ICP.get_param("data_nature_importer.data_nature_key")
     token = None
     if userid and password:
         token_url = f"{SECURITY_BASE}/resources/security/accesstoken"
