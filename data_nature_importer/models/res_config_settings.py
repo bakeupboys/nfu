@@ -7,13 +7,14 @@ class ResConfigSettings(models.TransientModel):
     data_nature_username = fields.Char(string="API Username")
     data_nature_key = fields.Char(string="API Key")
 
+    # pylint: disable=W8110
     def set_values(self):
         super().set_values()
         self.env["ir.config_parameter"].sudo().set_param(
-            "nfu_data_nature_importer.data_nature_username", self.data_nature_username
+            "data_nature_importer.data_nature_username", self.data_nature_username
         )
         self.env["ir.config_parameter"].sudo().set_param(
-            "nfu_data_nature_importer.data_nature_key", self.data_nature_key
+            "data_nature_importer.data_nature_key", self.data_nature_key
         )
 
     @api.model
@@ -22,9 +23,9 @@ class ResConfigSettings(models.TransientModel):
         res.update(
             data_nature_username=self.env["ir.config_parameter"]
             .sudo()
-            .get_param("nfu_data_nature_importer.data_nature_username", default=""),
+            .get_param("data_nature_importer.data_nature_username", default=""),
             data_nature_key=self.env["ir.config_parameter"]
             .sudo()
-            .get_param("nfu_data_nature_importer.data_nature_key", default=""),
+            .get_param("data_nature_importer.data_nature_key", default=""),
         )
         return res
