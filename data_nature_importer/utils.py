@@ -1,3 +1,4 @@
+import base64
 import xml.etree.ElementTree as ET
 
 import requests
@@ -227,5 +228,6 @@ def get_datanature_image(self, image_id, token=None):
     headers = {"Authorization": f"Bearer {token}", "accept": "application/octet-stream"}
     response = requests.get(url, headers=headers, timeout=30)
     if response.status_code == 200:
-        return response.content
+        image = base64.b64encode(response.content).decode("ascii")
+        return image
     raise UserError(_("Failed to fetch DataNature image for ID: %s") % image_id)
