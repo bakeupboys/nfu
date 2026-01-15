@@ -16,8 +16,10 @@ class ProductTemplate(models.Model):
         self.ensure_one()
         if not self.barcode:
             return False
-        metadata = dn_utils.get_datanature_metadata(self, self.barcode)[0]
-        return metadata
+        metadata = dn_utils.get_datanature_metadata(self, self.barcode)
+        if not metadata:
+            return False
+        return metadata[0]
 
     def _get_dn_image(self):
         self.ensure_one()
