@@ -10,6 +10,7 @@
                     <group>
                         <group name="bnn_information">
                             <field name="manufacturer_abbr"/>
+                            <field name="gtin_article"/>
                             <field name="additional_information"/>
                             <field name="quality"/>
                             <field name="origin"/>

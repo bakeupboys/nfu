@@ -1,5 +1,7 @@
 from odoo import fields, models
 
+from odoo.addons.data_nature_importer.utils import get_datanature_metadata
+
 
 class ProductTemplate(models.Model):
     _inherit = "product.template"
@@ -11,6 +13,15 @@ class ProductTemplate(models.Model):
     origin = fields.Char()
     packaging_qty = fields.Float(string="Packaging Quantity")
     packaging_name = fields.Char()
+    gtin_article = fields.Char(string="Article GTIN")
+
+    def _get_dn_metadata(self):
+        self.ensure_one()
+        if self.gtin_article:
+            metadata = get_datanature_metadata(self, self.gtin_article)
+            if metadata:
+                return metadata[0]
+        return super()._get_dn_metadata()
 
     def write(self, vals):
         res = super().write(vals)
