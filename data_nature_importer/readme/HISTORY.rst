@@ -1,2 +1,3 @@
 - 16.0.1.0.0: Initial module.
 - 16.0.1.0.1: Catch empty metadata response in _get_dn_metadata
+- 16.0.1.1.0: Add Queue Job support and move to server action

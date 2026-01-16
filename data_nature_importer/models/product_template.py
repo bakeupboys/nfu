@@ -8,9 +8,7 @@ class ProductTemplate(models.Model):
 
     def action_sync_datanature_image(self):
         for product in self:
-            image_data = product._get_dn_image()
-            if image_data:
-                product.image_1920 = image_data
+            product.with_delay()._sync_datanature_image()
 
     def _get_dn_metadata(self):
         self.ensure_one()
@@ -31,3 +29,9 @@ class ProductTemplate(models.Model):
         if image_data:
             return image_data
         return False
+
+    def _sync_datanature_image(self):
+        self.ensure_one()
+        image_data = self._get_dn_image()
+        if image_data:
+            self.image_1920 = image_data
