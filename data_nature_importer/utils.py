@@ -86,6 +86,7 @@ def _parse_products(xml_bytes):
                     "mime_type": img.findtext(
                         "dn:mime_type", default="", namespaces=ns
                     ),
+                    "default": img.findtext("dn:default", default="", namespaces=ns),
                     "size": img.findtext("dn:size", default="", namespaces=ns),
                     "img_width": img.findtext(
                         "dn:img_width", default="", namespaces=ns

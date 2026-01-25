@@ -24,7 +24,14 @@ class ProductTemplate(models.Model):
         metadata = self._get_dn_metadata()
         if not metadata or not metadata.get("images"):
             return False
-        image_id = metadata.get("images")[0].get("id")
+        images = metadata.get("images")
+        if not images:
+            return False
+        image_id = None
+        for img in images:
+            if img.get("default") == "true":
+                image_id = img.get("id")
+                break
         image_data = dn_utils.get_datanature_image(self, image_id, token=None)
         if image_data:
             return image_data
