@@ -1,4 +1,5 @@
 - 16.0.1.0.0: Initial module.
 - 16.0.1.0.1: Catch empty metadata response in _get_dn_metadata
 - 16.0.1.1.0: Add Queue Job support and move to server action
-- 16.0.1.0.2: Use default image as product image
+- 16.0.1.1.1: Use default image as product image
+- 16.0.1.2.0: Add Extra Product Media support

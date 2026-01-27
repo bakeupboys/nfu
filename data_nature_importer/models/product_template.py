@@ -8,7 +8,7 @@ class ProductTemplate(models.Model):
 
     def action_sync_datanature_image(self):
         for product in self:
-            product.with_delay()._sync_datanature_image()
+            product.with_delay()._sync_dn_images()
 
     def _get_dn_metadata(self):
         self.ensure_one()
@@ -19,7 +19,7 @@ class ProductTemplate(models.Model):
             return False
         return metadata[0]
 
-    def _get_dn_image(self):
+    def _sync_dn_images(self):
         self.ensure_one()
         metadata = self._get_dn_metadata()
         if not metadata or not metadata.get("images"):
@@ -28,17 +28,30 @@ class ProductTemplate(models.Model):
         if not images:
             return False
         image_id = None
-        for img in images:
-            if img.get("default") == "true":
-                image_id = img.get("id")
-                break
-        image_data = dn_utils.get_datanature_image(self, image_id, token=None)
-        if image_data:
-            return image_data
-        return False
-
-    def _sync_datanature_image(self):
-        self.ensure_one()
-        image_data = self._get_dn_image()
-        if image_data:
-            self.image_1920 = image_data
+        for image in images:
+            image_id = image.get("id")
+            image_data = dn_utils.get_datanature_image(self, image_id, token=None)
+            if not image_data:
+                continue
+            if image.get("default") == "true":
+                self.image_1920 = image_data
+            else:
+                ProductImage = self.env["product.image"]
+                if (
+                    ProductImage.search_count(
+                        [
+                            ("product_tmpl_id", "=", self.id),
+                            ("name", "=", f"DATA Nature Image: {image_id}"),
+                        ]
+                    )
+                    > 0
+                ):
+                    continue
+                ProductImage.create(
+                    {
+                        "name": f"DATA Nature Image: {image_id}",
+                        "product_tmpl_id": self.id,
+                        "image_1920": image_data,
+                    }
+                )
+        return True
