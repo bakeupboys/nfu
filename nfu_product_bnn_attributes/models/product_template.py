@@ -6,6 +6,9 @@ from odoo.addons.data_nature_importer.utils import get_datanature_metadata
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
+    # TODO: Remove as soon as data_nature thumbnails work
+    image_1920 = fields.Image(verify_resolution=False)
+
     manufacturer_abbr = fields.Char(string="Manufacturer Abbreviation")
     # Should be moved to product.product at some point
     additional_information = fields.Char()
