@@ -43,6 +43,7 @@ Changelog
 - 16.0.1.1.0: Add Queue Job support and move to server action
 - 16.0.1.1.1: Use default image as product image
 - 16.0.1.2.0: Add Extra Product Media support
+- 16.0.1.2.1: Add image mime type check
 
 Bug Tracker
 ===========
