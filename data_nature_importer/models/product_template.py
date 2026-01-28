@@ -30,6 +30,11 @@ class ProductTemplate(models.Model):
         image_id = None
         for image in images:
             image_id = image.get("id")
+            if image.get("mime_type") not in [
+                "image/jpeg",
+                "image/png",
+            ]:
+                continue
             image_data = dn_utils.get_datanature_image(self, image_id, token=None)
             if not image_data:
                 continue
