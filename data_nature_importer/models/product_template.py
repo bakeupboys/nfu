@@ -1,6 +1,12 @@
+from PIL import Image
+
 from odoo import models
 
 from .. import utils as dn_utils
+
+
+# Increase the max image pixels limit for PIL to avoid DecompressionBombError
+Image.MAX_IMAGE_PIXELS = 2 * 189135000  # set custom limit for large images
 
 
 class ProductTemplate(models.Model):

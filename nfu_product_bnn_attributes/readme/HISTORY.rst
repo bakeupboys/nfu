@@ -8,3 +8,4 @@
 - 16.0.1.3.0: Add GTIN Article field and update metadata retrieval
 - 16.0.1.3.1: Temporay disable image_1920 field verification
 - 16.0.1.3.2: Temporay disable image_1920 field verification for product.image
+- 16.0.1.3.3: Add max size for bith image_1920 fields
