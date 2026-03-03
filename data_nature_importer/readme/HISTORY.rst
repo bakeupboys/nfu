@@ -4,3 +4,4 @@
 - 16.0.1.1.1: Use default image as product image
 - 16.0.1.2.0: Add Extra Product Media support
 - 16.0.1.2.1: Add image mime type check
+- 16.0.1.2.3: Increase the max image pixels limit for PIL to avoid DecompressionBombError

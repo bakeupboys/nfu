@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Product",
-    "version": "16.0.1.3.2",
+    "version": "16.0.1.3.3",
     "depends": ["nfu_product", "data_nature_importer"],
     "data": ["data/ir_config_parameter.xml", "views/product_bnn_views.xml"],
     "assets": {},
