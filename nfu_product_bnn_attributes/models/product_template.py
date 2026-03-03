@@ -1,13 +1,21 @@
+from PIL import Image
+
 from odoo import fields, models
 
 from odoo.addons.data_nature_importer.utils import get_datanature_metadata
+
+
+# Increase the max image pixels limit for PIL to avoid DecompressionBombError
+Image.MAX_IMAGE_PIXELS = 2 * 189135000  # set custom limit for large images
 
 
 class ProductTemplate(models.Model):
     _inherit = "product.template"
 
     # TODO: Remove as soon as data_nature thumbnails work
-    image_1920 = fields.Image(verify_resolution=False)
+    image_1920 = fields.Image(
+        "Image", max_width=1920, max_height=1920, verify_resolution=False
+    )
 
     manufacturer_abbr = fields.Char(string="Manufacturer Abbreviation")
     # Should be moved to product.product at some point
