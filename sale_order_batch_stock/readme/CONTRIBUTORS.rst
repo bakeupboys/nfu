@@ -1,1 +1,0 @@
-* Niels Göttsch <niels@ziemlichoptimal.de>
