@@ -1,13 +1,11 @@
 <odoo>
-    <record id="model_product_template_action_sync_image" model="ir.actions.server">
-        <field name="name">Sync Datanature Image</field>
-        <field name="model_id" ref="product.model_product_template"/> <field
-            name="binding_model_id"
-            ref="product.model_product_template"
-        />
+    <record id="model_product_template_action_sync_information" model="ir.actions.server">
+        <field name="name">Sync DataNature Information</field>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="binding_model_id" ref="product.model_product_template"/>
         <field name="state">code</field>
         <field name="code">
-            action = records.action_sync_datanature_image()
+            action = records.action_sync_datanature_information()
         </field>
     </record>
 </odoo>
