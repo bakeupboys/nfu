@@ -70,6 +70,15 @@ def _parse_products(xml_bytes):
             "zutatenlegende_txt": prod.findtext(
                 "dn:zut_zutatenlegende_txt", default="", namespaces=ns
             ),
+            "warengruppe_id": prod.findtext(
+                "dn:pbm_warengruppe_id", default="", namespaces=ns
+            ),
+            "warengruppe_kuerzel": prod.findtext(
+                "dn:pbm_warengruppe_kuerzel", default="", namespaces=ns
+            ),
+            "warengruppe_pfad": prod.findtext(
+                "dn:pbm_warengruppe_pfad", default="", namespaces=ns
+            ),
             "beschreibung_kurz": prod.findtext(
                 "dn:markinf_produktbeschreibung_kurz", default="", namespaces=ns
             ),
