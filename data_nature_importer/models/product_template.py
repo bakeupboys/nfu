@@ -14,7 +14,7 @@ class ProductTemplate(models.Model):
 
     def action_sync_datanature_information(self):
         for product in self:
-            product._sync_dn_information()
+            product.with_delay()._sync_dn_information()
 
     def _get_dn_metadata(self):
         self.ensure_one()
