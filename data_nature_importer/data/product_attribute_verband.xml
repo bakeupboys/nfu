@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="attr_verband" model="product.attribute">
+        <field name="name">Verband</field>
+        <field name="create_variant">no_variant</field>
+    </record>
+
+    <record id="attr_verband_val_1" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Naturland (DN)</field>
+    </record>
+    <record id="attr_verband_val_2" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Bioland (DB)</field>
+    </record>
+    <record id="attr_verband_val_3" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Ecoland (DC)</field>
+    </record>
+    <record id="attr_verband_val_4" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Gäa (DG)</field>
+    </record>
+    <record id="attr_verband_val_5" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Biokreis (DK)</field>
+    </record>
+    <record id="attr_verband_val_6" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Verbund Ökohöfe (DV)</field>
+    </record>
+    <record id="attr_verband_val_7" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Ecovin (DW)</field>
+    </record>
+    <record id="attr_verband_val_8" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Bio Suisse (BS)</field>
+    </record>
+    <record id="attr_verband_val_9" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Biopark (DP)</field>
+    </record>
+    <record id="attr_verband_val_10" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">IFOAM (IA)</field>
+    </record>
+    <record id="attr_verband_val_11" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Naturland (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_12" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Bioland (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_13" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Ecoland (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_14" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Gäa (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_15" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Biokreis (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_16" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Verbund Ökohöfe (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_17" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Ecovin (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_18" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Bio Suisse (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_19" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Bio Austria (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_20" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Biopark (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_21" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Bio Austria (BA)</field>
+    </record>
+    <record id="attr_verband_val_22" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Demeter (DD)</field>
+    </record>
+    <record id="attr_verband_val_23" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Demeter (in Umstellung) (UW)</field>
+    </record>
+    <record id="attr_verband_val_24" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_verband"/>
+        <field name="name">Naturland Fair (NF)</field>
+    </record>
+</odoo>

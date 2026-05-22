@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="attr_ernaehrungshinweise" model="product.attribute">
+        <field name="name">Ernährungshinweise</field>
+        <field name="create_variant">no_variant</field>
+    </record>
+
+    <record id="attr_ernaehrungshinweise_val_vegan" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Vegan</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_vegetarisch" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Vegetarisch</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_laktosefrei" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Laktosefrei</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_glutenfrei" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Glutenfrei</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_rohkost" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Rohkost</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_ohne_schweinefleisch" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Ohne Schweinefleisch</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_zuckerfrei" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Zuckerfrei</field>
+    </record>
+    <record id="attr_ernaehrungshinweise_val_ohne_zuckerzusatz" model="product.attribute.value">
+        <field name="attribute_id" ref="attr_ernaehrungshinweise"/>
+        <field name="name">Ohne Zuckerzusatz</field>
+    </record>
+</odoo>
