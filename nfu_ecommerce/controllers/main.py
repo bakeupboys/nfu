@@ -73,6 +73,16 @@ class WebsiteSale(WebsiteSale):
         new_values["packaging_info"] = packaging_info
         return new_values
 
+    def _get_search_order(self, post):
+        # is_published is company_dependent and has no DB column, so it cannot
+        # be used in ORDER BY. The shop domain already filters published products,
+        # so dropping it from the sort has no visible effect for visitors.
+        order = (
+            post.get("order")
+            or request.env["website"].get_current_website().shop_default_sort
+        )
+        return "%s, id desc" % order
+
     def _get_search_options(
         self,
         category=None,

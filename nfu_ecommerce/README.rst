@@ -55,6 +55,7 @@ Changelog
 :1.4.1: Add credit to portal details
 :1.4.2: Catch unescaped float values
 :1.4.3: Drop session if SO belongs to another website (Odoo 16 bug)
+:1.4.3: Remove is_published filtering and use job manager only on more than one
 
 Bug Tracker
 ===========
