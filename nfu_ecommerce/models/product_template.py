@@ -8,7 +8,7 @@ class ProductTemplate(models.Model):
         copy=False,
         default=lambda self: self._default_is_published(),
         index=True,
-        company_dependent=True,
+        company_dependent=True,  # added
     )
 
     def action_publish_on_website(self):

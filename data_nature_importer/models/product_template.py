@@ -13,8 +13,11 @@ class ProductTemplate(models.Model):
     _inherit = "product.template"
 
     def action_sync_datanature_information(self):
-        for product in self:
-            product.with_delay()._sync_dn_information()
+        if len(self) == 1:
+            self._sync_dn_information()
+        else:
+            for product in self:
+                product.with_delay()._sync_dn_information()
 
     def _get_dn_metadata(self):
         self.ensure_one()
@@ -43,6 +46,10 @@ class ProductTemplate(models.Model):
         )
         if category and category not in self.public_categ_ids:
             self.public_categ_ids = [(4, category.id)]
+
+    # TODO: remove legacy methode aber cleaning up failed jobs
+    def _sync_datanature_image(self, metadata):
+        return self._sync_dn_images(metadata)
 
     def _sync_dn_images(self, metadata):
         images = metadata.get("images")
