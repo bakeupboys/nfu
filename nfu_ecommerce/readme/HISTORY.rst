@@ -1,14 +1,15 @@
-:0.0.1: Initial module.
-:1.0.0: Live
-:1.1.0: Add Open Packagings Filter and fix rounding issue
-:1.1.1: Pass arguments to super again
-:1.1.2: Make publish on website multi company
-:1.2.0: Add Open Packages to Product list
-:1.3.0: Adapt new Open Packages format and add indicators
-:1.3.1: Remove Max Qty from first page
-:1.3.2: Add decimal to ribbon
-:1.4.0: Add credit warning and avoid debts option
-:1.4.1: Add credit to portal details
-:1.4.2: Catch unescaped float values
-:1.4.3: Drop session if SO belongs to another website (Odoo 16 bug)
-:1.4.3: Remove is_published filtering and use job manager only on more than one
+- 16.0.0.0.1: Initial module.
+- 16.0.1.0.0: Live
+- 16.0.1.1.0: Add Open Packagings Filter and fix rounding issue
+- 16.0.1.1.1: Pass arguments to super again
+- 16.0.1.1.2: Make publish on website multi company
+- 16.0.1.2.0: Add Open Packages to Product list
+- 16.0.1.3.0: Adapt new Open Packages format and add indicators
+- 16.0.1.3.1: Remove Max Qty from first page
+- 16.0.1.3.2: Add decimal to ribbon
+- 16.0.1.4.0: Add credit warning and avoid debts option
+- 16.0.1.4.1: Add credit to portal details
+- 16.0.1.4.2: Catch unescaped float values
+- 16.0.1.4.3: Drop session if SO belongs to another website (Odoo 16 bug)
+- 16.0.1.4.3: Remove is_published filtering and use job manager only on more than one
+- 16.0.1.4.5: Make open Packagings more visible

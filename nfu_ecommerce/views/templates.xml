@@ -2,7 +2,7 @@
 <odoo>
 
     <template id="products_open_packaging" inherit_id="website_sale.products">
-        <xpath expr="//div[hasclass('products_attributes_filters')]" position="after">
+        <xpath expr="//div[hasclass('products_attributes_filters')]" position="before">
             <div class="mt-3">
             <a t-att-href="keep('/shop',open_packagings = False if open_packagings else True)">
                 <h6 t-attf-class="o_packaging_collapse_title mb-3 {{_titleClasses}}"><b>
@@ -15,7 +15,7 @@
     </template>
 
     <template id="o_wsale_offcanvas" name="Open Packagings" inherit_id="website_sale.o_wsale_offcanvas">
-        <xpath expr="//t[@t-call='website_sale.filter_products_price']" position="before">
+        <xpath expr="//div[contains(@t-if,'opt_wsale_categories')]" position="before">
         <div class="position-relative o_wsale_offcanvas_title px-4 border-top">
             <a t-att-href="keep('/shop',open_packagings =  False if open_packagings else True)">
                 <h6 t-attf-class="o_packaging_collapse_title mb-3 pt-3 {{_titleClasses}}"><b>
