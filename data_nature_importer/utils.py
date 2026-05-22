@@ -79,6 +79,44 @@ def _parse_products(xml_bytes):
             "warengruppe_pfad": prod.findtext(
                 "dn:pbm_warengruppe_pfad", default="", namespaces=ns
             ),
+            "bio_verband_id": prod.findtext(
+                "dn:bio_verband_id", default="", namespaces=ns
+            ),
+            "pbm_markenname": prod.findtext(
+                "dn:pbm_markenname", default="", namespaces=ns
+            ),
+            "ernhinweis_vegan": prod.findtext(
+                "dn:ernhinweis_vegan", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_vegetarisch": prod.findtext(
+                "dn:ernhinweis_vegetarisch", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_laktosefrei": prod.findtext(
+                "dn:ernhinweis_laktosefrei", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_glutenfrei": prod.findtext(
+                "dn:ernhinweis_glutenfrei", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_rohkost": prod.findtext(
+                "dn:ernhinweis_rohkost", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_ohne_schweinefleisch": prod.findtext(
+                "dn:ernhinweis_ohne_schweinefleisch", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_zuckerfrei": prod.findtext(
+                "dn:ernhinweis_zuckerfrei", default="", namespaces=ns
+            )
+            == "true",
+            "ernhinweis_ohne_zuckerzusatz": prod.findtext(
+                "dn:ernhinweis_ohne_zuckerzusatz", default="", namespaces=ns
+            )
+            == "true",
             "beschreibung_kurz": prod.findtext(
                 "dn:markinf_produktbeschreibung_kurz", default="", namespaces=ns
             ),

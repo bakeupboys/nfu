@@ -1,0 +1,4351 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* data_nature_importer
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-22 11:59+0000\n"
+"PO-Revision-Date: 2026-05-22 11:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020900
+msgid "100% Frucht-Muttersäfte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model_terms:ir.ui.view,arch_db:data_nature_importer.view_res_config_settings_datanature
+msgid ""
+"<span class=\"o_form_label\">\n"
+"                                            DATA Nature Integration\n"
+"                                        </span>"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:ir.model.fields,field_description:data_nature_importer.field_res_config_settings__data_nature_key
+msgid "API Key"
+msgstr "API Schlüssel"
+
+#. module: data_nature_importer
+#: model:ir.model.fields,field_description:data_nature_importer.field_res_config_settings__data_nature_username
+msgid "API Username"
+msgstr "API Nutzername"
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05070000
+msgid "Accessoires, Dekoration"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010902
+msgid "Aftershave"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080104
+msgid "Algenkonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03060400
+msgid "Alkoholfreie Mixgetränke (Radler, Malzgetränke, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03060300
+msgid "Alkoholfreies Bier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190903
+msgid "Ananas"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05030400
+msgid "Ansichtskarten, Glückwunschkarten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030500
+msgid "Antipasti (Oliven, Tofu, Seitan, Lopino, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530500
+msgid "Antipasti, Oliven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140205
+msgid "Antipasti-Becher (Deckel)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080113
+msgid "Antipastikonserven (Bruschetta, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190304
+msgid "Aprikosen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192305
+msgid "Artischocken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140600
+msgid "Arzneitees"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192905
+msgid "Auberginen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05050100
+msgid "Audio"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060100
+msgid "Aufbackwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01160500
+msgid "Aufschnitt, Aufstrich (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150104
+msgid "Aufsteller, Schilder"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010503
+msgid "Augen (deko)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010105
+msgid "Augenpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150407
+msgid "Außenwerbung (z.B. Blowflag, Plakataußenständer)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190902
+msgid "Avocados"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05120000
+msgid "Baby-, Kleinkindbedarf"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060201
+msgid "Babybekleidung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030400
+msgid "Babygetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030200
+msgid "Babynahrung (Brei)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130406
+msgid "Backaromen (z.B. Vanille)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070501
+msgid "Backerbsen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060000
+msgid "Backerzeugnisse (Brot, Knäcke, Zwieback, gepuffte Waffeln)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130402
+msgid "Backfüllungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130401
+msgid "Backmarzipan"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080700
+msgid "Backmischungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130400
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130405
+msgid "Backzutaten, Backhilfsmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130000
+msgid "Backzutaten, Süßungsmittel, Bindemittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010602
+msgid "Baden, Waschen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090305
+msgid "Badreiniger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190700
+msgid "Bananen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020300
+msgid "Basteln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080304
+msgid "Baumkerzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110600
+msgid "Baustoffe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080402
+msgid "Bechergerichte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190100
+msgid "Beerenobst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060200
+msgid "Bekleidung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060304
+msgid "Bettwäsche"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03060100
+msgid "Bier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03060000
+msgid "Bier, Biermixgetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_21
+msgid "Bio Austria (BA)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_19
+msgid "Bio Austria (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_8
+msgid "Bio Suisse (BS)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_18
+msgid "Bio Suisse (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_5
+msgid "Biokreis (DK)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_15
+msgid "Biokreis (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_2
+msgid "Bioland (DB)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_12
+msgid "Bioland (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_9
+msgid "Biopark (DP)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_20
+msgid "Biopark (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190202
+msgid "Birnen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150100
+msgid "Bistro, Verkostung, Thekenzubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192201
+msgid "Blattsalate"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192301
+msgid "Blattspinat"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090104
+msgid "Bleiche, Wasserenthärter, Fleckenentferner (Gallseife, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192505
+msgid "Blumenkohl, Romanesco"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05130300
+msgid "Blättchen, Filter, Stopfer, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02141000
+msgid "Blütenpollen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090303
+msgid "Boden-, Flächenreiniger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01193102
+msgid "Bohnen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01021100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01521100
+msgid "Brat-, Grillkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040300
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540300
+msgid "Bratwurst, Grillwurst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020101
+msgid "Brettspiele"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05070300
+msgid "Brillen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192507
+msgid "Broccoli"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060300
+msgid "Brot"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010102
+msgid "Brot (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010101
+msgid "Brot (tiefgekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510102
+msgid "Brot SB (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080701
+msgid "Brot, Brötchen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02020000
+msgid "Brotaufstrich, Honig"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02020100
+msgid "Brotaufstriche würzig (pikant, auch Schmalz)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02020200
+msgid "Brotaufstriche, Fruchtaufstriche (süß)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010300
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510300
+msgid "Brötchen, Kleingebäck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010302
+msgid "Brötchen, Kleingebäck (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010301
+msgid "Brötchen, Kleingebäck (tiefgekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510302
+msgid "Brötchen, Kleingebäck SB (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080602
+msgid "Brühen (Pulver)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040800
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540800
+msgid "Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540802
+msgid "Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.) (Aufschnitt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540801
+msgid "Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.) (am Stück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080601
+msgid "Brühwürfel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080304
+msgid "Burgermischungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140700
+msgid "Butter, Butterschmalz, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05040200
+msgid "Bücher"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150600
+msgid "Büro, Verwaltung (auch Geräte, Preisauszeichner)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050000
+msgid "Cerealien (Müsli, Cornflakes, Crunchy)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192503
+msgid "Chinakohl"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100502
+msgid "Chips, Flips, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080507
+msgid "Chutneys"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03110300
+msgid "Cidre"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190402
+msgid "Clementinen, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030600
+msgid "Cocktails"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090101
+msgid "Colorwaschmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:ir.model,name:data_nature_importer.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080000
+msgid "Convenience"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050500
+msgid "Cornflakes, Pops"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130403
+msgid "Couvertüre, Kakao, Carob"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010601
+msgid "Creme, Öle, Lotionen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050200
+msgid "Crunchy"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060203
+msgid "Damenbekleidung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:ir.model.fields,field_description:data_nature_importer.field_product_public_category__datanature_warengruppe_id
+msgid "DataNature Warengruppe ID"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190905
+msgid "Datteln (für Obst-, Gemüse-Bereich)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060302
+msgid "Decken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080306
+msgid "Dekokerzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130404
+msgid "Dekor"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010500
+msgid "Dekorative Kosmetik"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_22
+msgid "Demeter (DD)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_23
+msgid "Demeter (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010305
+msgid "Deodorantien"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140600
+msgid "Dessert (Pudding, Milchreis, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080111
+msgid "Dessertsaucen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070200
+msgid "Dinkelnudeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01170100
+msgid "Drinks (Soja, Reis, Hafer, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04000000
+msgid "Drogerie"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100600
+msgid "Duftgeschenke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080305
+msgid "Duftkerzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100200
+msgid "Duftlampen, -steine, -brunnen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010306
+msgid "Duschbad, Peeling"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110500
+msgid "Düngemittel, Pflanzenschutz"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140102
+msgid "ESL-Milch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04011002
+msgid "Eau de Toilette"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_3
+msgid "Ecoland (DC)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_13
+msgid "Ecoland (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_7
+msgid "Ecovin (DW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_17
+msgid "Ecovin (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05070500
+msgid "Edelsteine"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01180000
+msgid "Eier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01180100
+msgid "Eier (abgepackt, auch gegarte Eier, bunte Eier)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01180200
+msgid "Eier (lose, auch gegarte Eier, bunte Eier)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140209
+msgid "Eierkartons"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150700
+msgid "Einkaufskörbe, -wagen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140208
+msgid "Einwegbecher, Mitnahmeboxen (ToGo, Getränke, Speisen)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030500
+msgid "Energiedrinks"
+msgstr ""
+
+#. module: data_nature_importer
+#: model_terms:ir.ui.view,arch_db:data_nature_importer.view_res_config_settings_datanature
+msgid "Enrich your product data from DATA Nature."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090306
+msgid "Entkalker"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01193101
+msgid "Erbsen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192001
+msgid "Erdnüsse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030000
+msgid "Erfrischungsgetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute,name:data_nature_importer.attr_ernaehrungshinweise
+msgid "Ernährungshinweise"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010302
+msgid "Espresso"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080607
+msgid "Essig"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140210
+msgid "Etiketten, Bonrollen, Preisauszeichnungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190900
+msgid "Exoten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140200
+msgid "Extrakte, Proteinpulver, Gemüse-, Fruchtpulver, Elixire, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150402
+msgid "Fachteilersysteme"
+msgstr ""
+
+#. module: data_nature_importer
+#. odoo-python
+#: code:addons/data_nature_importer/utils.py:0
+#, python-format
+msgid "Failed to fetch DataNature image for ID: %s"
+msgstr ""
+
+#. module: data_nature_importer
+#. odoo-python
+#: code:addons/data_nature_importer/utils.py:0
+#, python-format
+msgid "Failed to fetch DataNature metadata"
+msgstr ""
+
+#. module: data_nature_importer
+#. odoo-python
+#: code:addons/data_nature_importer/utils.py:0
+#: code:addons/data_nature_importer/utils.py:0
+#: code:addons/data_nature_importer/utils.py:0
+#, python-format
+msgid "Failed to obtain DataNature bearer token"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080302
+msgid "Falafel, Taboule, Batirik"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190904
+msgid "Feigen (frisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030400
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530400
+msgid "Feinkostsalate"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030402
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530402
+msgid "Feinkostsalate (mit Fisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030404
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530404
+msgid "Feinkostsalate (mit Fleisch und Fisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030401
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530401
+msgid "Feinkostsalate (mit Fleisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030403
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530403
+msgid "Feinkostsalate (vegetarisch, vegan)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060305
+msgid "Felle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192607
+msgid "Fenchel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530300
+msgid "Fermentiertes Gemüse (Sauerkraut, Kimchi, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03050200
+msgid "Fertig-Teegetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01160400
+msgid "Fertiggerichte, Beilagen-Convenience (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080200
+msgid "Fertiggerichte, Fertigsaucen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080201
+msgid "Fertigsaucen (herzhaft, ohne Tomatenbasis)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01150200
+msgid "Fette"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02110200
+msgid "Fette (auch Kokosöle)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02110000
+msgid "Fette, Öle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020202
+msgid "Feucht-, Reinigungstücher"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080308
+msgid "Feuermittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080103
+msgid "Fisch-, Meeresfrüchtekonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01060500
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01560500
+msgid "Fischnebenerzeugnisse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080403
+msgid "Fixe Küche"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080400
+msgid "Fixprodukte, Instantprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040203
+msgid "Flocken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090312
+msgid "Flächendesinfektion"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05120200
+msgid "Fläschchen, Becher, Schüsseln, Löffel, Tassen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01180300
+msgid "Flüssigei"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080604
+msgid "Flüssigwürzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080606
+msgid "Fond, Brühen (flüssig)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01000000
+msgid "Frische"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530200
+msgid "Frische Algen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030900
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530900
+msgid "Frische Brotaufstriche"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01531000
+msgid "Frische Dressings, Cremes, Dips (Meerrettich, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01531200
+msgid "Frische Hefe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530800
+msgid "Frische Suppen, Fertiggerichte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030800
+msgid "Frische Suppen, Fertiggerichte (gekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01531100
+msgid "Frische Teige"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030600
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530600
+msgid "Frische Teigwaren (Pasta, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030700
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530700
+msgid "Frisches Pesto, Würzsaucen (gekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030300
+msgid "Frisches Sauerkraut (Großgebinde)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020101
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520101
+msgid "Frischkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520100
+msgid "Frischkäse, Milchmischerzeugnisse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140101
+msgid "Frischmilch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010400
+msgid "Frucht-, Getreide-, Malzkaffee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192900
+msgid "Fruchtgemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100201
+msgid "Fruchtgummi, Lakritz, usw. (Kauware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140402
+msgid "Fruchtjoghurt (Obst, Vanille, Nüsse, Schokolade, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140503
+msgid "Fruchtquark"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100600
+msgid "Fruchtschnitten, Riegel (auch schokoliert)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020100
+msgid "Fruchtsäfte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010105
+msgid "Früchtetee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050400
+msgid "Frühstücksbreie, Porridge"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010304
+msgid "Fuß-, Beinpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040600
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540600
+msgid "Garschinken, Garpökelware"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110200
+msgid "Gartenbedarf, Blumenerde"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550502
+msgid "Geflügefleisch (Natur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050500
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550500
+msgid "Geflügelfleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050502
+msgid "Geflügelfleisch (Natur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050501
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550501
+msgid "Geflügelfleisch (mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130500
+msgid "Geliermittel, Bindemittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080106
+msgid "Gemüsekonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020400
+msgid "Gemüsemoste"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020300
+msgid "Gemüsesäfte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020500
+msgid "Gemüsetrunke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150105
+msgid "Geräte (Folienroller, Abschneider, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05030100
+msgid "Geschenkpapier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080400
+msgid "Geschirr, Trinkgefäße"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090200
+msgid "Geschirrspülmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150000
+msgid "Geschäftsausstattung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010102
+msgid "Gesichtslotion, -creme, -gel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010100
+msgid "Gesichtsprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010101
+msgid "Gesichtsreinigung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140000
+msgid "Gesundheitsmittel (Kur, Nahrungsergänzung)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040100
+msgid "Getreide, Getreideartige (Körner)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040000
+msgid "Getreide, Saaten, Hülsenfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040200
+msgid "Getreideprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03000000
+msgid "Getränke (auch gekühlte)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02120300
+msgid "Gewürze, Kräuter (gemischt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02120200
+msgid "Gewürze, Kräuter (mono)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02120000
+msgid "Gewürze, Salz"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010106
+msgid "Gewürztee (auch Chai, Ayurdvedische Tees)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090302
+msgid "Glasreiniger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_glutenfrei
+msgid "Glutenfrei"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050300
+msgid "Granola"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190404
+msgid "Grapefruits"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040204
+msgid "Grieß (Bulgur, Couscous, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110800
+msgid "Grillbedarf"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080502
+msgid "Grillsaucen, Würzsaucen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04011100
+msgid "Grund-, Rohstoffe, Basisöle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010304
+msgid "Grüner Kaffee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010102
+msgid "Grüner Tee, Weißer Tee, Gelber Tee, Oolong"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192504
+msgid "Grünkohl, Braunkohl, Schwarzkohl"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192906
+msgid "Gurken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_4
+msgid "Gäa (DG)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_14
+msgid "Gäa (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03040100
+msgid "Gärgetränke, Enzymgetränke (Kwaz, Kombucha, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140103
+msgid "H-Milch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020404
+msgid "Haarbürsten, Haarkämme"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010903
+msgid "Haarentfernung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010203
+msgid "Haarfarben"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010200
+msgid "Haarprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05070100
+msgid "Haarschmuck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010204
+msgid "Haarstyling"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550100
+msgid "Hackfleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080300
+msgid "Halbfertiggerichte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020500
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520500
+msgid "Halbfester Schnittkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010303
+msgid "Hand-, Nagelpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060206
+msgid "Handschuhe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090201
+msgid "Handspülmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060303
+msgid "Handtücher, Waschlappen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020700
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520700
+msgid "Hartkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070100
+msgid "Hartweizennudeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192002
+msgid "Haselnüsse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080000
+msgid "Haushaltswaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020700
+msgid "Hautdesinfektion"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080603
+msgid "Hefeextrakt, Hefeflocken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05030300
+msgid "Hefte, Kladden, Schreibpapier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140700
+msgid "Heilwasser"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060300
+msgid "Heimtextilien"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060204
+msgid "Herrenbekleidung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110000
+msgid "Hobby, Haus, Garten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020104
+msgid "Holzspielzeug"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02020500
+msgid "Honig, Honigprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190802
+msgid "Honig-, Zuckermelonen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100500
+msgid "Hydrolate"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020000
+msgid "Hygiene"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01193100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040400
+msgid "Hülsenfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_10
+msgid "IFOAM (IA)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190909
+msgid "Ingwer"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010800
+msgid "Insektenschutz"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010303
+msgid "Instantkaffee, Cappuccino"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010309
+msgid "Intimpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140400
+msgid "Joghurt"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140403
+msgid "Joghurt (Schaf, Ziege, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01170300
+msgid "Joghurtalternativen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110302
+msgid "Jungpflanzen (Obst, Gemüse)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010300
+msgid "Kaffee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03050000
+msgid "Kaffee-, Teegetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03050100
+msgid "Kaffeegetränke (Soypresso, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010500
+msgid "Kaffeeweißer, Kaffeesahne"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190908
+msgid "Kakis"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05040400
+msgid "Kalender"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140203
+msgid "Kapseln, Tabletten, Dragees, Perlen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140103
+msgid "Kapseln, Tabletten, Dragees, Perlen (NEM)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020102
+msgid "Kartenspiele"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080301
+msgid "Kartoffel Püree, Knödel, Puffer"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192801
+msgid "Kartoffeln (festkochend)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192803
+msgid "Kartoffeln (mehligkochend)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192802
+msgid "Kartoffeln (vorwiegend festkochend)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192800
+msgid "Kartoffeln, Süßkartoffeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540604
+msgid "Kasseler (Aufschnitt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540603
+msgid "Kasseler (am Strück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150300
+msgid "Kassenzubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100202
+msgid "Kaugummi"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194100
+msgid "Keime, Sprossen (Sämlinge)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080600
+msgid "Keimgeräte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040600
+msgid "Keimsaaten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194101
+msgid "Keimsprossen (Sojabohnen, Mungobohnen, Gerste, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100101
+msgid "Kekse, Gebäck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190200
+msgid "Kernobst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080300
+msgid "Kerzen, Leuchter, Feuermittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080503
+msgid "Ketchup"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030600
+msgid "Kinder-Knabberartikel, -Gebäck, -Riegel, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060202
+msgid "Kinderbekleidung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190301
+msgid "Kirschen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060301
+msgid "Kissen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190600
+msgid "Kiwis"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100504
+msgid "Knabbermischungen (geröstete Erdnüsse, Mandeln, Kürbiskerne, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192703
+msgid "Knoblauch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060302
+msgid "Knäckebrot"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540602
+msgid "Kochschinken, Putenbrust (Aufschnitt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540601
+msgid "Kochschinken, Putenbrust (am Stück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040900
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540900
+msgid "Kochwurst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540901
+msgid "Kochwurst (Leberwurst, Blutwurst, Sülzen, usw.) (am Stück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540902
+msgid "Kochwurst (Sülzen, Zungenwurst, usw.) (Aufschnitt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192500
+msgid "Kohlgemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192509
+msgid "Kohlrabi"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030300
+msgid "Kokosdrinks, Kokoswasser"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080109
+msgid "Kokoskonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192004
+msgid "Kokosnüsse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100802
+msgid "Konfekt"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080100
+msgid "Konserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05081100
+msgid "Korbwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010000
+msgid "Kosmetik"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04011200
+msgid "Kosmetik mit medizinischer Indikation (Wundsalben, therap. Hautschutz)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194102
+msgid "Kressen (Gartenkresse, Rettich, Radieschen, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194000
+msgid "Kräuter (Schnittkräuter)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030700
+msgid "Kräuter- und Früchtetee für Säuglinge oder Kleinkinder"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140502
+msgid "Kräuterquark"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010103
+msgid "Kräutertee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010400
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510400
+msgid "Kuchen, Feingebäck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010402
+msgid "Kuchen, Feingebäck (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010401
+msgid "Kuchen, Feingebäck (tiefgekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510402
+msgid "Kuchen, Feingebäck SB (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080703
+msgid "Kuchen, Süßgebäck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194202
+msgid "Kultur-, Speisepilze"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140102
+msgid "Kunststoff"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190910
+msgid "Kurkumas"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01021300
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01521300
+msgid "Käse (rechtlich ohne Käsegruppen-Zuordnung)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020300
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520300
+msgid "Käse in Lake, Feta"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01021200
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01521200
+msgid "Käsealternativen (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140201
+msgid "Käsepapier, Einpackpapier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010301
+msgid "Körperlotion, -creme"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020407
+msgid "Körperpflege- und Kosmetikbürsten (Hand- und Nagelbürsten, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010300
+msgid "Körperprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010302
+msgid "Körperöle, Massageöle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05081000
+msgid "Küchengeräte (z.B. Smoothie-Maker, Joghurtbereiter)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090307
+msgid "Küchenreiniger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140211
+msgid "Kühlakkus"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192903
+msgid "Kürbisse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_laktosefrei
+msgid "Laktosefrei"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050400
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550400
+msgid "Lammfleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050402
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550402
+msgid "Lammfleisch (Natur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050401
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550401
+msgid "Lammfleisch (mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05040300
+msgid "Landkarten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192702
+msgid "Lauch, Porree"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140800
+msgid "Lebensmittel für besondere medizinische Zwecke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080307
+msgid "Leuchter"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030100
+msgid "Limonade, Cola"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010502
+msgid "Lippen (deko)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010106
+msgid "Lippenpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100400
+msgid "Lufterfrischer, Raumspray, Raumdüfte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100203
+msgid "Lutscher, Bonbons"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010501
+msgid "Make up, Puder, Rouge"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020200
+msgid "Malen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192303
+msgid "Mangold (rot, grün, bunt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190901
+msgid "Mangos"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01150100
+msgid "Margarine"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01150000
+msgid "Margarine, Fette, Schmalz"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070502
+msgid "Markklößchen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192005
+msgid "Maronen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100803
+msgid "Marzipan, usw. (Figuren, Brote, Eier, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090202
+msgid "Maschinenspülmittel, Salz, Klarspüler"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010104
+msgid "Masken, Kuren, Öle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020405
+msgid "Massagezubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010104
+msgid "Mate, Lapacho, Rooibusch, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060306
+msgid "Matratzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060307
+msgid "Matten, Badvorleger, Teppiche"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080504
+msgid "Mayonnaise, Salatcreme, Aioli"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05050000
+msgid "Medien"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04030000
+msgid "Medizin- und Medizinhilfsprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04030100
+msgid "Medizinische Hilfsprodukte (z.B. Nasendusche, Ohrkerze, Pflaster)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140400
+msgid "Medizinprodukte (zum Einnehmen)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04030200
+msgid "Medizinprodukte äußerlich"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01060300
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01560300
+msgid "Meeresfrüchte (Natur, mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040202
+msgid "Mehle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150101
+msgid "Mehrweg-Besteck (Löffel, Gabeln, Messer)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150102
+msgid "Mehrweg-Geschirr (Kaffee-, Teetassen, Teller, Gläser)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05081500
+msgid ""
+"Mehrwegartikel (Brotbeutel, Mehrwegnetze, Eierboxen, Spender, Dosierhilfen, "
+"usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190800
+msgid "Melonen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03110200
+msgid "Met (Honigwein)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140100
+msgid "Milch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01170000
+msgid "Milchalternativen (auch ungekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020102
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520102
+msgid "Milchmischerzeugnisse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130600
+msgid "Milchpulver, Milchersatzpulver"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020600
+msgid "Mischgetränke (Obst-, Gemüsebasis)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194300
+msgid "Mischprodukte (Suppengrün, Ratatouille-Mix, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03060200
+msgid "Mixgetränke (Radler, Malzgetränke, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03110400
+msgid "Mixgetränke (Weinschorle, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140000
+msgid "Mopro"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010402
+msgid "Mundpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010400
+msgid "Mundprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010600
+msgid "Mutter-Kind Kosmetik (Baby)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090309
+msgid "Möbelpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192601
+msgid "Möhren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080700
+msgid "Mühlen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050100
+msgid "Müsli"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060207
+msgid "Mützen, Kappen, Hüte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080405
+msgid "Nachspeise (süß), Dessertpulver, Eispulver"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010504
+msgid "Nagel (deko)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140100
+msgid "Nahrungsergänzungsmittel (nach NEM-Verordnung)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06010200
+msgid "Nassfutter"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110400
+msgid "Naturfarben, Lacke, Öle (auch Anti-Schimmel-Farben)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140401
+msgid "Naturjoghurt"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_1
+msgid "Naturland (DN)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_11
+msgid "Naturland (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_24
+msgid "Naturland Fair (NF)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110700
+msgid "Naturmöbel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140501
+msgid "Naturquark"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030400
+msgid "Near-water-Getränke, Vitaminwasser, aromatisierte Mineralwasser"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020200
+msgid "Nektare"
+msgstr ""
+
+#. module: data_nature_importer
+#. odoo-python
+#: code:addons/data_nature_importer/utils.py:0
+#, python-format
+msgid "No username and password configured for DataNature API"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05000000
+msgid "Nonfood"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070400
+msgid "Nudeln (sonstiger Teig)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070000
+msgid "Nudeln, Teigwaren (ungekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080110
+msgid "Nuss-, Maronenkonserven, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02090300
+msgid "Nuss-, Trockenfruchtmischungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02090100
+msgid "Nusskerne, Mandeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02090101
+msgid "Nusskerne, Mandeln, usw. (ganz)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02090102
+msgid "Nusskerne, Mandeln, usw. (gemahlen, geraspelt, gestiftelt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02020400
+msgid "Nussmuse, Tahin"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02020300
+msgid "Nussnougatcreme, Schokoaufstriche, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192000
+msgid "Nüsse, Maronen, usw. (in der Schale)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190000
+msgid "Obst, Gemüse, Kräuter, Pflanzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150200
+msgid "Obst-, Gemüse-Zubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080105
+msgid "Obstkonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03110100
+msgid "Obstwein"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_ohne_schweinefleisch
+msgid "Ohne Schweinefleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_ohne_zuckerzusatz
+msgid "Ohne Zuckerzusatz"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080112
+msgid "Olivenkonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190401
+msgid "Orangen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020105
+msgid "Outdoor"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192304
+msgid "Pac Choi"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060600
+msgid "Paniermehl, Semmelbrösel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190907
+msgid "Papayas"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140101
+msgid "Papier, Karton"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192902
+msgid "Paprikas, Chillis, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04011000
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04011001
+msgid "Parfum"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020200
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520200
+msgid "Pasta Filata (Mozzarella, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192605
+msgid "Pastinaken, Petersilienwurzeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080506
+msgid "Pesto"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080303
+msgid "Pfannengerichte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190303
+msgid "Pfirsiche, Nektarinen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110300
+msgid "Pflanzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01195000
+msgid "Pflanzen (Lebensmittel im Topf, z.B. Kräuter)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140500
+msgid "Pflanzensäfte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01170500
+msgid "Pflanzliche Desserts"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110303
+msgid "Pflanzzwiebeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190302
+msgid "Pflaumen, Zwetschgen, Mirabellen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190906
+msgid "Physalis"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194200
+msgid "Pilze"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080108
+msgid "Pilzkonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080702
+msgid "Pizza, Quiche, usw. (herzhaft)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060200
+msgid "Pizzateig, Pita, Wraps, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020103
+msgid "Plüschtiere, Puppen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100300
+msgid "Popcorn"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03080000
+msgid "Portwein, Sherry, usw. (aufgespritet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100801
+msgid "Pralinen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100800
+msgid "Pralinen, Konfekt, Marzipankonfekt"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150404
+msgid "Preistafeln, Beschriftungsmaterial"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010108
+msgid "Probier-, Geschenk-, Mischsets"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04011300
+msgid "Probier-, Reise-, Geschenksets (keine onpacks)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:ir.model.fields,field_description:data_nature_importer.field_product_product__producer_id
+#: model:ir.model.fields,field_description:data_nature_importer.field_product_template__producer_id
+msgid "Producer"
+msgstr "Hersteller"
+
+#. module: data_nature_importer
+#: model:ir.model.fields,field_description:data_nature_importer.field_product_product__producer_name
+#: model:ir.model.fields,field_description:data_nature_importer.field_product_template__producer_name
+msgid "Producer Name"
+msgstr "Hersteller Name"
+
+#. module: data_nature_importer
+#: model:ir.model,name:data_nature_importer.model_product_template
+msgid "Product"
+msgstr "Produkt"
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150405
+msgid "Prospekthalter, Aufsteller"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150403
+msgid "Präsentationshilfen (Korbwaren, Bäckerbleche, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140201
+msgid "Pulver, Granulate, Extrakte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140101
+msgid "Pulver, Granulate, Extrakte (NEM)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03100000
+msgid "Punsch, Glühwein"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090300
+msgid "Putz-, Pflegemittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080500
+msgid "Putz-, Reinigungszubehör (Bürsten, Besen, Schwämme, Dosierhilfen)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140500
+msgid "Quark"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01170400
+msgid "Quarkalternativen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030500
+msgid "Quetschmus"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192604
+msgid "Radieschen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140300
+msgid "Rahmprodukte (Sahne, Sauerrahm, Crème fraîche)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010901
+msgid "Rasur"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010900
+msgid "Rasur, Haarentfernung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020402
+msgid "Rasurzubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150406
+msgid "Regalstopper, Aktionssterne"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01021000
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01521000
+msgid "Reibekäse, Pastakäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090310
+msgid "Reinigungsartikel (Außenbereich)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040300
+msgid "Reis"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192606
+msgid "Rettiche"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192100
+msgid "Rhabarber"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050300
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550300
+msgid "Rindfleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050302
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550302
+msgid "Rindfleisch (Natur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050301
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550301
+msgid "Rindfleisch (mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_rohkost
+msgid "Rohkost"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040500
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540500
+msgid "Rohschinken, Rohpökelwaren, Räucherschinken, Speck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540502
+msgid "Rohschinken, Rohpökelwaren, Räucherschinken, Speck (Aufschnitt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540501
+msgid "Rohschinken, Rohpökelwaren, Räucherschinken, Speck (am Stück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040700
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540700
+msgid "Rohwurst (schnittfähig, streichfähig)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540702
+msgid "Rohwurst schnittfähig (Salami, usw.) (Aufschnitt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540701
+msgid "Rohwurst schnittfähig (Salami, usw.) (am Stück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540703
+msgid "Rohwurst streichfähig (Teewurst, Zwiebelmett, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01160200
+msgid "Rollen, Burger, Bratlinge, Snacks (Fleischalternativen)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192506
+msgid "Rosenkohl"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192603
+msgid "Rote Bete"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192502
+msgid "Rotkohl"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01060400
+msgid "Räucherfisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100300
+msgid "Räucherwerk, Räucherzubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010301
+msgid "Röstkaffee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510000
+msgid "SB Backwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01530000
+msgid "SB Feinkost, Teige, Convenience"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550000
+msgid "SB Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01560000
+msgid "SB Frischfisch, Meeresfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06010400
+msgid "SB Heimtiernahrung (gekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060500
+msgid "SB Kuchen, Kleingebäck, Tortenböden"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520000
+msgid "SB Käse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01560400
+msgid "SB Räucherfisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540000
+msgid "SB Wurst, Aufschnitt, Fleischerzeugnisse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060301
+msgid "SB-Brot (länger haltbar)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110100
+msgid "Saaten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020000
+msgid "Saft, Nektare"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01170200
+msgid "Sahnealternativen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192200
+msgid "Salate"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080114
+msgid "Salatkonserven (ungekühlt)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080508
+msgid "Salatsaucen, Dressings"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02120100
+msgid "Salz, Kräutersalz, Gomasio"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100501
+msgid "Salzgebäck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080404
+msgid "Saucen, Saucenbinder"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020800
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520800
+msgid "Sauermilchkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100700
+msgid "Saunamischung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150401
+msgid "Scannerschienen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150106
+msgid ""
+"Schalen, Geschirr (Platten, Präsentationsgeschirr, Drehteller, Bretter, "
+"usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060208
+msgid "Schals, Tücher, Gürtel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010307
+msgid "Schaumbad, Badezusätze"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01150300
+msgid "Schmalz (weiterverarbeitetes Schlachtfett)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020900
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520900
+msgid "Schmelzkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020403
+msgid "Schminkzubehör (Schwämmchen, Pinsel, Spatel, Nachfüllbehälter, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05070200
+msgid "Schmuck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020600
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520600
+msgid "Schnittkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05120100
+msgid "Schnuller, Sauger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100703
+msgid "Schokofiguren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100103
+msgid "Schokokuss, Schaumwaffeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100700
+msgid "Schokoladen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100702
+msgid "Schokoriegel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03030200
+msgid "Schorle, Fruchtsaftgetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05030000
+msgid "Schreibwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040201
+msgid "Schrote"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060100
+msgid "Schuhe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090308
+msgid "Schuhpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010603
+msgid "Schwangerschaft, Stillzeit"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010101
+msgid "Schwarzer Tee, Pu Erh Tee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192602
+msgid "Schwarzwurzeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050200
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550200
+msgid "Schweinefleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050202
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550202
+msgid "Schweinefleisch (Natur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050201
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550201
+msgid "Schweinefleisch (mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05081200
+msgid "Schädlingsbekämpfung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01060100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01560100
+msgid "Seefisch (Natur, mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010308
+msgid "Seife, Waschlotionen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020406
+msgid "Seifensäckchen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03072100
+msgid "Sekt, Schaumwein"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192608
+msgid "Sellerie"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080505
+msgid "Senf"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150103
+msgid "Serviceartikel (Tabletts, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010201
+msgid "Shampoo, Reinigung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020800
+msgid "Sirupe, Dicksaft, Vollfrucht"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03020700
+msgid "Smoothies"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06010300
+msgid "Snacks"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040400
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540400
+msgid "Snackwurst (aus Rohwurst)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060205
+msgid "Socken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080501
+msgid "Sojasaucen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110304
+msgid "Solosträuße (nur Rosen, nur Tulpen, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010700
+msgid "Sonnenschutz"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060209
+msgid "Sonstige Bekleidung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190919
+msgid "Sonstige Exoten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01193109
+msgid "Sonstige Hülsenfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192009
+msgid "Sonstige Nüsse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192209
+msgid "Sonstige Salate"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020109
+msgid "Sonstige Spielwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192306
+msgid "Sonstige Stiel-, Blatt-, Blütengemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070503
+msgid "Sonstige Suppeneinlagen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03040900
+msgid "Sonstige Wellnessgetränke (Aloe, Weizengras, Kurkumasaft, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190409
+msgid "Sonstige Zitrusfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190209
+msgid "Sonstiges Kernobst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192519
+msgid "Sonstiges Kohlgemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190309
+msgid "Sonstiges Steinobst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192619
+msgid "Sonstiges Wurzel-, Knollengemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192709
+msgid "Sonstiges Zwiebelgemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192400
+msgid "Spargel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200501
+msgid "Speiseeis (Familienpackungen)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200502
+msgid "Speiseeis (Portionsware, Impulsware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02110100
+msgid "Speiseöle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090311
+msgid "Spezialreinigungsmittel (Anti-Schimmel, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010107
+msgid ""
+"Spezialtee (Stilltee, Indikationsandeutung - unterliegt nicht "
+"Arzneimittelgesetz, Basen-Ausgleichstee)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090107
+msgid "Spezialwaschmittel (Funktionswäsche, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020100
+msgid "Spielwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05020000
+msgid "Spielwaren, Malen, Basteln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03090000
+msgid "Spirituosen, Liköre"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010202
+msgid "Spülung, Kur"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080301
+msgid "Stabkerzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192609
+msgid "Steckrüben"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190300
+msgid "Steinobst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192300
+msgid "Stiel-, Blatt-, Blütengemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05030200
+msgid "Stifte, Radierer, Anspitzer"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140103
+msgid "Stoff"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060308
+msgid "Stoffe, Garne, Nähbedarf"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080302
+msgid "Stumpenkerzen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080203
+msgid "Suppen, Eintöpfe (Glas, Dose)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070500
+msgid "Suppeneinlagen (Backerbsen, Markklößchen, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:ir.actions.server,name:data_nature_importer.model_product_template_action_sync_information
+msgid "Sync DataNature Information"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030300
+msgid "Säuglings-, Kindergläschen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020200
+msgid "Säuglings-, Kinderhygieneartikel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030000
+msgid "Säuglings-, Kindernahrung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02030100
+msgid "Säuglingsnahrung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192804
+msgid "Süßkartoffeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130200
+msgid "Süßungsmittel (Ursüße, Ahornsirup, Agavendicksaft, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100200
+msgid "Süßwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100000
+msgid "Süßwaren, Knabberartikel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01060200
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01560200
+msgid "Süßwasserfisch (Natur, mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040802
+msgid ""
+"THEKE (Aufschnitt) - Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040604
+msgid "THEKE (Aufschnitt) - Kasseler"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040602
+msgid "THEKE (Aufschnitt) - Kochschinken, Putenbrust, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040902
+msgid "THEKE (Aufschnitt) - Kochwurst (Sülzen, Zungenwurst, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040502
+msgid ""
+"THEKE (Aufschnitt) - Rohschinken, Rohpökelwaren, Räucherschinken, Speck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040702
+msgid "THEKE (Aufschnitt) - Rohwurst schnittfähig (Salami, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040801
+msgid ""
+"THEKE (am Stück) - Brühwurst (Fleischwurst, Jagdwurst, Bierschinken, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040603
+msgid "THEKE (am Stück) - Kasseler"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040601
+msgid "THEKE (am Stück) - Kochschinken, Putenbrust, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040901
+msgid "THEKE (am Stück) - Kochwurst (Leberwurst, Blutwurst, Sülzen, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040501
+msgid "THEKE (am Stück) - Rohschinken, Rohpökelwaren, Räucherschinken, Speck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040701
+msgid "THEKE (am Stück) - Rohwurst schnittfähig (Salami, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040703
+msgid "THEKE (am Stück) - Rohwurst streichfähig (Teewurst, Zwiebelmett, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01201000
+msgid "TK Babykost"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01201001
+msgid "TK Babykost (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01201002
+msgid "TK Babykost mit Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01201003
+msgid "TK Babykost mit Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200400
+msgid "TK Backwaren, Teige"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200402
+msgid "TK Brot"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01201200
+msgid "TK Eier, Eiprodukte (pur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200500
+msgid "TK Eis"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200800
+msgid "TK Fertig-, Halbfertiggerichte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200801
+msgid "TK Fertig-, Halbfertiggerichte (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200802
+msgid "TK Fertig-, Halbfertiggerichte mit Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200803
+msgid "TK Fertig-, Halbfertiggerichte mit Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200804
+msgid "TK Fertig-, Halbfertiggerichte mit Fleisch und Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200600
+msgid "TK Fisch, Meeresfrüchte, Schalentiere, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200700
+msgid "TK Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200101
+msgid "TK Gemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200100
+msgid "TK Gemüse, Kräuter, Obst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06010500
+msgid "TK Heimtiernahrung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200200
+msgid "TK Kartoffelprodukte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200403
+msgid "TK Klein-, Frühstücksgebäck (Brötchen, Brezeln, Laugengebäck, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200102
+msgid "TK Kräuter"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200103
+msgid "TK Obst"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200300
+msgid "TK Pizza"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200301
+msgid "TK Pizza (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200302
+msgid "TK Pizza mit Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200303
+msgid "TK Pizza mit Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200304
+msgid "TK Pizza mit Fleisch und Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01201100
+msgid "TK Snacks"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200900
+msgid "TK Suppen, Eintöpfe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200901
+msgid "TK Suppen, Eintöpfe (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200902
+msgid "TK Suppen, Eintöpfe mit Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200903
+msgid "TK Suppen, Eintöpfe mit Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200904
+msgid "TK Suppen, Eintöpfe mit Fleisch und Fisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200405
+msgid "TK Süßspeisen, Dessert"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200401
+msgid "TK Teige (backfertig)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200404
+msgid "TK Torten, Kuchen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05130200
+msgid "Tabak (lose)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100701
+msgid "Tafelschokolade, Minitafeln, Bruchschokolade"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140900
+msgid "Tagesrationen für eine gewichtskontrollierende Ernährung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020300
+msgid "Tampons, Binden, Inkontinenz, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05070400
+msgid "Taschen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010100
+msgid "Tee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010000
+msgid "Tee, Kaffee, Kakao, Heißgetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080303
+msgid "Teelichte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05060000
+msgid "Textilien, Schuhe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01010000
+msgid "Theke, Großgebinde Backwaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01030000
+msgid "Theke, Großgebinde Feinkost, Teige, Convenience"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050000
+msgid "Theke, Großgebinde Fleisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01060000
+msgid "Theke, Großgebinde Frischfisch, Meeresfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020000
+msgid "Theke, Großgebinde Käse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040000
+msgid "Theke, Großgebinde Wurst, Aufschnitt, Fleischerzeugnisse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150107
+msgid ""
+"Thekenwerkzeug (Griffzangen, Fleischgabeln, Schneidwerkzeuge, "
+"Schneidbretter, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01200000
+msgid "Tiefkühlprodukte (auch Großgebinde)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06010000
+msgid "Tiernahrung"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06000000
+msgid "Tiernahrung, Tierbedarf"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06030000
+msgid "Tierpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06020000
+msgid "Tierzubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510200
+msgid "Toastbrot"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01510202
+msgid "Toastbrot SB (Bäckerware)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01160100
+msgid "Tofu, Seitan, Lopino, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01160000
+msgid "Tofu-, Seitan-, Lupinenprodukte, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020100
+msgid "Toilettenpapier, Küchentücher, Kosmetiktücher, Taschentücher"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192901
+msgid "Tomaten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080202
+msgid "Tomaten-, Pasta-, Pizzasaucen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080107
+msgid "Tomatenkonserven (pur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010103
+msgid "Toner, Seren, Gesichtswasser"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140202
+msgid "Tonikas, Elixire, Weine, Sirupe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140102
+msgid "Tonikas, Elixire, Weine, Sirupe (NEM)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02050600
+msgid "Toppings"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140100
+msgid "Tragetaschen, Tragehilfen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02010200
+msgid "Trinkkakao, Carob, Kakaogetränkepulver"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01140200
+msgid "Trinkmilch, Molkedrinks, Milchmischgetränke, Trinkjoghurt"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02000000
+msgid "Trocken"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02090200
+msgid "Trockenfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02090000
+msgid "Trockenfrüchte, Nüsse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_06010100
+msgid "Trockenfutter"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05120400
+msgid "Töpfchen, Toilettensitze"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080800
+msgid "Töpfe, Pfannen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140203
+msgid "Tüten, Bodenbeutel aus Kunststoff"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140202
+msgid "Tüten, Bodenbeutel aus Papier"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080401
+msgid "Tütensuppen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090301
+msgid "Universalreiniger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_vegan
+msgid "Vegan"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_vegetarisch
+msgid "Vegetarisch"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080102
+msgid "Vegetarische Fleischersatzkonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute,name:data_nature_importer.attr_verband
+msgid "Verband"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05081400
+msgid ""
+"Verbrauchsmaterialien (Müllbeutel, Servietten, Backpapier, Folien, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_6
+msgid "Verbund Ökohöfe (DV)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_verband_val_16
+msgid "Verbund Ökohöfe (in Umstellung) (UW)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020600
+msgid "Verhütungsmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150400
+msgid "Verkaufs-, Präsentationshilfen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140000
+msgid "Verkaufszubehör"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140206
+msgid "Verkostungshilfen (Piker, Länderfähnchen, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05040000
+msgid "Verlagswaren"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080100
+msgid "Verpackungen, Taschen, Geschenkverpackungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140200
+msgid "Verpackungsmaterial, Verbrauchsmaterial"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140204
+msgid "Verschlussmaterialien"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05050200
+msgid "Video"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080200
+msgid "Vorratsbehälter"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090304
+msgid "WC Reiniger"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100102
+msgid "Waffeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100100
+msgid "Waffeln, Kekse, Gebäck"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192003
+msgid "Walnüsse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05150500
+msgid "Warenträger (Regale, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090000
+msgid "Wasch-, Putz-, Reinigungsmittel (WPR)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090100
+msgid "Wasch-, Waschhilfsmittel, Wäschepflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090102
+msgid "Waschmittel, Vollwaschmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090106
+msgid "Waschnüsse, Waschbälle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03010000
+msgid "Wasser"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05080900
+msgid "Wasserfilter-, Sprudelsysteme"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190801
+msgid "Wassermelonen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020500
+msgid "Watte, Wattestäbchen, Wattepads"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:ir.model,name:data_nature_importer.model_product_public_category
+msgid "Website Product Category"
+msgstr "Website-Produktkategorien"
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020400
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520400
+msgid "Weichkäse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020404
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520404
+msgid "Weichkäse (diverse Affinitäten)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020402
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520402
+msgid "Weichkäse mit Rotkultur"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020403
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520403
+msgid "Weichkäse mit blauem Edelschimmel (Gorgonzola, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020401
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520401
+msgid "Weichkäse mit weißem Edelschimmel (Camembert, Brie, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090105
+msgid "Weichspüler"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070100
+msgid "Wein aus Deutschland"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070200
+msgid "Wein aus Frankreich"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070600
+msgid "Wein aus Griechenland"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070300
+msgid "Wein aus Italien"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070500
+msgid "Wein aus Spanien"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070700
+msgid "Wein aus Südafrika"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03071900
+msgid "Wein aus sonstigen Ländern"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070400
+msgid "Wein aus Österreich"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03070000
+msgid "Wein, Schaumwein"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03110500
+msgid "Wein-, Sekt-Alternativen (alkoholfrei)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190500
+msgid "Weintrauben"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190502
+msgid "Weintrauben (kernarm, kernlos)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190501
+msgid "Weintrauben (mit Kernen)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192501
+msgid "Weißkohl, Spitzkohl"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03040000
+msgid "Wellnessgetränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05140300
+msgid "Werbematerialien, Werbegeschenke (Prospekte, Flyer, Plakate, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050600
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550600
+msgid "Wild, Spezialitäten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050602
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550602
+msgid "Wild, Spezialitäten (Natur)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01050601
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01550601
+msgid "Wild, Spezialitäten (mariniert, zubereitet)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194201
+msgid "Wild-, Waldpilze"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020201
+msgid "Windeln, Einmal-Wickelunterlagen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192508
+msgid "Wirsing"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090103
+msgid "Woll-, Feinwaschmittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080101
+msgid "Wurst-, Fleischkonserven"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192600
+msgid "Wurzel-, Knollengemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192302
+msgid "Wurzelspinat"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090109
+msgid "Wäschedesinfektion"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05090108
+msgid "Wäschepflege (Wollkur, Sprühstärke, Bügelhilfe, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01040100
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01540100
+msgid "Würstchen (Wiener, usw.) (am Stück)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01160300
+msgid "Würstchen (vegan, vegetarisch)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080600
+msgid "Würzmittel (trocken, pastös, flüssig)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080605
+msgid "Würzpasten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080500
+msgid "Würzsaucen, Grillsaucen, Ketchup, Pesto"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020401
+msgid "Zahnbürsten, Zungenbürsten, Zahnseide, usw."
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05120300
+msgid "Zahnhilfen (Beißringe, Veilchenwurzel, Fingerbürste)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04010401
+msgid "Zahnpflege"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05040100
+msgid "Zeitschriften, Zeitungen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110301
+msgid "Zierpflanzen (im Topf)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05130100
+msgid "Zigaretten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05130000
+msgid "Zigaretten, Tabak"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190403
+msgid "Zitronen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190400
+msgid "Zitrusfrüchte"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_04020400
+msgid "Zubehör Körperpflege, Kosmetik"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05081300
+msgid "Zubehör Tee, Kaffee"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01020103
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01520103
+msgid "Zubereitung mit Käse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192904
+msgid "Zucchinis"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130100
+msgid "Zucker"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02130300
+msgid "Zuckeraustauschstoffe"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.attribute.value,name:data_nature_importer.attr_ernaehrungshinweise_val_zuckerfrei
+msgid "Zuckerfrei"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01193000
+msgid "Zuckermais"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060303
+msgid "Zwieback"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192700
+msgid "Zwiebelgemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01192701
+msgid "Zwiebeln, Schalotten, Frühlingszwiebeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02140300
+msgid "freiverkäufliche Arzneimittel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02070300
+msgid "gefüllte Nudeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05110305
+msgid "gemischte Sträuße"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02060400
+msgid "gepuffte Waffeln (Reis-, Mais-, Dinkelwaffeln, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100104
+msgid "gepuffte Waffeln mit Überzug (Reis-, Mais-, Dinkelwaffeln, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080801
+msgid "getrocknete Algen"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080802
+msgid "getrocknete Pilze"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080800
+msgid "getrocknete Zutaten"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02080803
+msgid "getrocknetes Gemüse"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100500
+msgid "herzhafte Knabberartikel (nicht süß)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100400
+msgid ""
+"süße Knabberartikel (z.B. schokolierte, kandierte Früchte, Nüsse, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194401
+msgid "verarbeitete Kartoffeln"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194400
+msgid "verarbeitete Produkte (Großverbraucher, Gastro)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194402
+msgid "verarbeitetes Gemüse (rote Beete, frisches Sauerkraut, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01194403
+msgid "verarbeitetes Obst (gekochte Maronen, usw.)"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_03110000
+msgid "weinähnliche Getränke"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02100503
+msgid "würziges Gebäck (Olive, Käse), Cracker, Grissini"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_01190201
+msgid "Äpfel"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100100
+msgid "Ätherische Öle"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_05100000
+msgid "Ätherische Öle, Lampen, Räuchern"
+msgstr ""
+
+#. module: data_nature_importer
+#: model:product.public.category,name:data_nature_importer.datanature_warengruppe_02040500
+msgid "Ölsaaten"
+msgstr ""

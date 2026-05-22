@@ -5,3 +5,4 @@
 - 16.0.1.2.0: Add Extra Product Media support
 - 16.0.1.2.1: Add image mime type check
 - 16.0.1.2.3: Increase the max image pixels limit for PIL to avoid DecompressionBombError
+- 16.0.1.3.0: Add Cathegories, diet and organisation fields
