@@ -1,5 +1,6 @@
 from odoo import fields, http
 from odoo.http import request
+from odoo.osv import expression
 from odoo.tools import lazy
 
 from odoo.addons.website_sale.controllers.main import WebsiteSale
@@ -72,6 +73,18 @@ class WebsiteSale(WebsiteSale):
             }
         new_values["packaging_info"] = packaging_info
         return new_values
+
+    def _get_search_domain(
+        self, search, category, attrib_values, search_in_description=True
+    ):
+        # AND across all selected attribute values instead of OR within same attribute
+        domain = super()._get_search_domain(search, category, [], search_in_description)
+        if attrib_values:
+            attr_domains = [
+                [("attribute_line_ids.value_ids", "in", [v[1]])] for v in attrib_values
+            ]
+            domain = expression.AND([domain] + attr_domains)
+        return domain
 
     def _get_search_order(self, post):
         # is_published is company_dependent and has no DB column, so it cannot
