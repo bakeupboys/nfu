@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_sale_order_batch_packaging_reconcile_form" model="ir.ui.view">
+        <field name="name">sale.order.batch.packaging.reconcile.form</field>
+        <field name="model">sale.order.batch.packaging.reconcile</field>
+        <field name="arch" type="xml">
+            <form string="Fill Packages">
+                <sheet>
+                    <notebook>
+                        <page string="Fill Packages" name="fill_packages">
+                            <field name="line_ids">
+                                <tree editable="bottom">
+                                    <field name="product_id" readonly="1"/>
+                                    <field name="open_packaging_qty" readonly="1"/>
+                                    <field name="use_whole_units"/>
+                                </tree>
+                            </field>
+                        </page>
+                        <page string="Zero Out" name="zero_out">
+                            <field name="zero_line_ids">
+                                <tree editable="bottom">
+                                    <field name="product_id" readonly="1"/>
+                                    <field name="open_packaging_qty" readonly="1"/>
+                                    <field name="keep_qty"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <footer>
+                    <button name="action_reconcile" type="object" string="Reconcile" class="btn-primary"/>
+                    <button string="Cancel" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+</odoo>

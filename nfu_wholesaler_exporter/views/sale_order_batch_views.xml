@@ -6,12 +6,20 @@
         <field name="inherit_id" ref="sale_order_batch.view_order_batch_form"/>
         <field name="arch" type="xml">
             <xpath expr="//header" position="inside">
+                <field name="has_fillable_packages" invisible="1"/>
                 <button
                     name="export_wholesaler_csv"
                     type="object"
                     string="Export Wholesaler CSV"
                     class="oe_highlight"
-                    attrs="{'invisible': [('state', 'not in', ['in_progress','closed'])]}"
+                    attrs="{'invisible': ['|', ('state', 'not in', ['in_progress', 'closed']), ('has_fillable_packages', '=', True)]}"
+                />
+                <button
+                    name="export_wholesaler_csv"
+                    type="object"
+                    string="Export Wholesaler CSV"
+                    class="btn-secondary"
+                    attrs="{'invisible': ['|', ('state', 'not in', ['in_progress', 'closed']), ('has_fillable_packages', '=', False)]}"
                 />
             </xpath>
         </field>
