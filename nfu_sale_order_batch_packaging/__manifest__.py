@@ -7,10 +7,14 @@
     "version": "16.0.1.3.7",
     "depends": ["sale", "sale_order_batch"],
     "data": [
+        "security/ir.model.access.csv",
         "data/ir_config_parameter.xml",
+        "data/uom_data.xml",
+        "wizard/sale_order_batch_packaging_reconcile_views.xml",
         "views/sale_order_views.xml",
         "views/sale_order_batch_views.xml",
         "views/sale_order_batch_product_views.xml",
     ],
     "license": "LGPL-3",
+    "post_init_hook": "post_init_hook",
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="uom.product_uom_unit" model="uom.uom">
+        <field name="reconcile_whole_units">True</field>
+    </record>
+
+    <record id="product_uom_stueck" model="uom.uom">
+        <field name="name">Stück</field>
+        <field name="category_id" ref="uom.product_uom_categ_unit"/>
+        <field name="uom_type">smaller</field>
+        <field name="rounding">0.01</field>
+        <field name="ratio">1.0</field>
+        <field name="reconcile_whole_units">True</field>
+    </record>
+</odoo>

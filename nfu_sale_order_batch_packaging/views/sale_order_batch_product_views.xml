@@ -15,6 +15,15 @@
                         <field name="open_packaging_max_qty" decoration-danger="(open_packaging_max_qty != 0.0)"/>
                         <field name="open_packaging_state"/>
                     </xpath>
+                    <xpath expr="//header" position="inside">
+                        <field name="has_qty_adjusted" invisible="1"/>
+                        <button
+                    name="action_restore_ordered_qty"
+                    type="object"
+                    string="Restore Ordered Qty"
+                    attrs="{'invisible': [('has_qty_adjusted', '=', False)]}"
+                />
+                    </xpath>
                     <xpath
                 expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
                 position="before"
