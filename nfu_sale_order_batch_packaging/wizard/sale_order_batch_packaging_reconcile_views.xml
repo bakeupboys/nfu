@@ -7,7 +7,12 @@
             <form string="Fill Packages">
                 <sheet>
                     <notebook>
-                        <page string="Fill Packages" name="fill_packages">
+                        <page
+                            string="Fill Packages"
+                            name="fill_packages"
+                            attrs="{'invisible': [('has_fill_lines', '=', False)]}"
+                        >
+                            <field name="has_fill_lines" invisible="1"/>
                             <field name="line_ids">
                                 <tree editable="bottom">
                                     <field name="product_id" readonly="1"/>
@@ -16,7 +21,8 @@
                                 </tree>
                             </field>
                         </page>
-                        <page string="Zero Out" name="zero_out">
+                        <page string="Zero Out" name="zero_out" attrs="{'invisible': [('has_zero_lines', '=', False)]}">
+                            <field name="has_zero_lines" invisible="1"/>
                             <field name="zero_line_ids">
                                 <tree editable="bottom">
                                     <field name="product_id" readonly="1"/>

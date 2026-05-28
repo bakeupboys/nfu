@@ -10,6 +10,18 @@ class SaleOrderBatchPackagingReconcile(models.TransientModel):
     zero_line_ids = fields.One2many(
         "sale.order.batch.packaging.reconcile.zero.line", "wizard_id"
     )
+    has_fill_lines = fields.Boolean(compute="_compute_has_fill_lines")
+    has_zero_lines = fields.Boolean(compute="_compute_has_zero_lines")
+
+    @api.depends("line_ids")
+    def _compute_has_fill_lines(self):
+        for wizard in self:
+            wizard.has_fill_lines = bool(wizard.line_ids)
+
+    @api.depends("zero_line_ids")
+    def _compute_has_zero_lines(self):
+        for wizard in self:
+            wizard.has_zero_lines = bool(wizard.zero_line_ids)
 
     def action_reconcile(self):
         for line in self.line_ids:

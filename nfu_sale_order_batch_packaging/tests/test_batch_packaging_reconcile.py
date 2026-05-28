@@ -83,7 +83,9 @@ class TestBatchPackagingReconcile(TransactionCase):
         bp._reconcile_packaging(0.001)
 
         self.assertAlmostEqual(bp.open_packaging_qty, 0.0, places=2)
-        capped = bp.sale_order_line_ids.filtered(lambda l: l.product_uom_max_qty == 9.0)
+        capped = bp.sale_order_line_ids.filtered(
+            lambda line: line.product_uom_max_qty == 9.0
+        )
         # capped line must be at its max
         self.assertAlmostEqual(capped.product_uom_qty, 9.0, places=3)
         # every line must stay within its max
@@ -96,7 +98,7 @@ class TestBatchPackagingReconcile(TransactionCase):
         # total = 7, open = 5; rooms: 3 and 5
         bp = self._add_lines(product, [(3.0, 6.0), (4.0, 9.0)])
         self.assertAlmostEqual(bp.open_packaging_qty, 5.0, places=2)
-        orig = {l.id: l.product_uom_qty for l in bp.sale_order_line_ids}
+        orig = {line.id: line.product_uom_qty for line in bp.sale_order_line_ids}
 
         bp._reconcile_packaging(1.0)
 
@@ -111,7 +113,7 @@ class TestBatchPackagingReconcile(TransactionCase):
         # total = 7, open = 3; rooms: 7 and 6 → sorted: line2(6), line1(7)
         bp = self._add_lines(product, [(3.0, 10.0), (4.0, 10.0)])
         self.assertAlmostEqual(bp.open_packaging_qty, 3.0, places=2)
-        orig = {l.id: l.product_uom_qty for l in bp.sale_order_line_ids}
+        orig = {line.id: line.product_uom_qty for line in bp.sale_order_line_ids}
 
         bp._reconcile_packaging(0.1)
 
@@ -230,8 +232,8 @@ class TestBatchPackagingReconcile(TransactionCase):
         # reconciliation must have increased some qty
         self.assertTrue(
             any(
-                l.product_uom_qty != l.product_uom_ordered_qty
-                for l in bp.sale_order_line_ids
+                line.product_uom_qty != line.product_uom_ordered_qty
+                for line in bp.sale_order_line_ids
             )
         )
         self.batch.action_restore_ordered_qty()
@@ -258,8 +260,8 @@ class TestBatchPackagingReconcile(TransactionCase):
         # product_b lines must be unchanged
         self.assertTrue(
             any(
-                l.product_uom_qty != l.product_uom_ordered_qty
-                for l in bp_b.sale_order_line_ids
+                line.product_uom_qty != line.product_uom_ordered_qty
+                for line in bp_b.sale_order_line_ids
             )
         )
 
@@ -283,6 +285,32 @@ class TestBatchPackagingReconcile(TransactionCase):
         bp._reconcile_packaging(0.1)
         self.batch.action_restore_ordered_qty()
         self.assertFalse(self.batch.has_qty_adjusted)
+
+    def test_has_fillable_packages_false_when_no_open_qty(self):
+        """has_fillable_packages is False when all products have complete packages."""
+        product = self._make_product(self.uom_kg, 10.0)
+        self._add_lines(product, [(10.0, 15.0)])  # qty is exact multiple of packaging
+        self.assertFalse(self.batch.has_fillable_packages)
+
+    def test_has_fillable_packages_true_for_eligible(self):
+        """has_fillable_packages is True when an eligible product has open packaging qty."""
+        product = self._make_product(self.uom_kg, 10.0)
+        self._add_lines(product, [(23.0, 30.0)])  # open_packaging_max_qty == 0
+        self.assertTrue(self.batch.has_fillable_packages)
+
+    def test_has_fillable_packages_true_for_ineligible(self):
+        """has_fillable_packages is True even for ineligible (zero-out) products."""
+        product = self._make_product(self.uom_kg, 10.0)
+        self._add_lines(
+            product, [(23.0, 24.0)]
+        )  # max too tight → open_packaging_max_qty != 0
+        self.assertGreater(
+            self.batch.product_ids.filtered(
+                lambda p: p.product_id == product
+            ).open_packaging_max_qty,
+            0.0,
+        )
+        self.assertTrue(self.batch.has_fillable_packages)
 
     # ------------------------------------------------------------------
     # Zero-out
@@ -320,7 +348,7 @@ class TestBatchPackagingReconcile(TransactionCase):
         """Lines with keep_qty=True are not zeroed out."""
         ineligible = self._make_product(self.uom_kg, 10.0)
         bp = self._add_lines(ineligible, [(23.0, 24.0)])
-        orig_qtys = {l.id: l.product_uom_qty for l in bp.sale_order_line_ids}
+        orig_qtys = {line.id: line.product_uom_qty for line in bp.sale_order_line_ids}
 
         action = self.batch.action_fill_packages()
         wizard = self.env["sale.order.batch.packaging.reconcile"].browse(
