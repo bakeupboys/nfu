@@ -1,17 +1,18 @@
-- 0.0.1: Initial module.
-- 1.0.0: rename to nfu_sale_order_batch_packaging
-- 1.1.0: Live
-- 1.2.0: Add regeneration action for batch products
-- 1.2.1: refactoring
-- 1.3.0: add packaging states
-- 1.3.1: add open_max_qty
-- 1.3.2: fix color indicator
-- 1.3.3: Enable packagings on installation
-- 1.3.4: 
+- 16.0.0.0.1: Initial module.
+- 16.0.1.0.0: rename to nfu_sale_order_batch_packaging
+- 16.0.1.16.0.1.0: Live
+- 16.0.1.2.0: Add regeneration action for batch products
+- 16.0.1.2.1: refactoring
+- 16.0.1.3.0: add packaging states
+- 16.0.1.3.1: add open_max_qty
+- 16.0.1.3.2: fix color indicator
+- 16.0.1.3.3: Enable packagings on installation
+- 16.0.1.3.4: 
     - on creation set max_qty to product_uom_qty if not set
     - remove zero exception for max_qty
     - store open_packaging_qty on batch product module to make it sortable
     - always adjust max_qty to be at least uom_qty except you only set max qty
-- 1.3.4: store all quantities and round open values
-- 1.3.6: make sure packages are readable by the user
-- 1.3.7: really make sure packages are readable by the user
+- 16.0.1.3.4: store all quantities and round open values
+- 16.0.1.3.6: make sure packages are readable by the user
+- 16.0.1.3.7: really make sure packages are readable by the user
+- 16.0.1.4.0: Add automatiok batch fillup

@@ -22,12 +22,11 @@ class SaleOrderBatch(models.Model):
                 for line in batch.sale_order_line_ids
             )
 
-    @api.depends("product_ids.open_packaging_qty", "product_ids.open_packaging_max_qty")
+    @api.depends("product_ids.open_packaging_qty")
     def _compute_has_fillable_packages(self):
         for batch in self:
             batch.has_fillable_packages = any(
-                p.open_packaging_qty > 0 and p.open_packaging_max_qty == 0.0
-                for p in batch.product_ids
+                p.open_packaging_qty > 0 for p in batch.product_ids
             )
 
     def action_restore_ordered_qty(self):

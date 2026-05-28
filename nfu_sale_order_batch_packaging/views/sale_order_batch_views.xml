@@ -5,6 +5,37 @@
                 <field name="model">sale.order.batch</field>
                 <field name="inherit_id" ref="sale_order_batch.view_order_batch_form"/>
                 <field name="arch" type="xml">
+                        <!-- Header buttons -->
+                        <xpath expr="//button[@id='action_confirm_primary']" position="before">
+                                <field name="has_qty_adjusted" invisible="1"/>
+                                <field name="has_fillable_packages" invisible="1"/>
+                                <button
+                    name="action_fill_packages"
+                    type="object"
+                    class="btn-primary"
+                    string="Fill Packages"
+                    attrs="{'invisible': ['|', ('state', 'not in', ['in_progress']), ('has_fillable_packages', '=', False)]}"
+                />
+                        </xpath>
+                        <xpath expr="//button[@id='action_confirm_primary']" position="attributes">
+                                <attribute
+                    name="attrs"
+                >{'invisible': ['|', ('state', 'not in', ['in_progress']), ('has_fillable_packages', '=', True)]}</attribute>
+                        </xpath>
+                        <xpath expr="//button[@id='action_confirm_secondary']" position="attributes">
+                                <attribute
+                    name="attrs"
+                >{"invisible": ["|", ["state", "not in", ["draft", "in_progress"]], ["has_fillable_packages", "=", False]]}</attribute>
+                        </xpath>
+                        <xpath expr="//button[@id='create_invoices']" position="before">
+                                <button
+                    name="action_restore_ordered_qty"
+                    type="object"
+                    string="Restore Ordered Qty"
+                    attrs="{'invisible': ['|', ('state', '!=', 'in_progress'),('has_qty_adjusted', '=', False)]}"
+                />
+                        </xpath>
+                        <!-- Fields -->
                         <xpath
                 expr="//field[@name='sale_order_line_ids']/tree/field[@name='product_uom_qty']"
                 position="before"
@@ -25,42 +56,6 @@
                         </xpath>
                         <xpath expr="//field[@name='product_ids']/tree/field[@name='product_id']" position="attributes">
                                 <attribute name="decoration-warning">(open_packaging_qty != 0)</attribute>
-                        </xpath>
-                        <!-- Confirm (in_progress): primary when nothing to fill, secondary otherwise -->
-                        <xpath expr="//button[@id='action_confirm'][@class='btn-primary']" position="replace">
-                                <button
-                    name="action_confirm"
-                    id="action_confirm"
-                    data-hotkey="v"
-                    string="Confirm"
-                    type="object"
-                    class="btn-primary"
-                    attrs="{'invisible': ['|', ('state', 'not in', ['in_progress']), ('has_fillable_packages', '=', True)]}"
-                />
-                                <button
-                    name="action_confirm"
-                    string="Confirm"
-                    type="object"
-                    class="btn-secondary"
-                    attrs="{'invisible': ['|', ('state', 'not in', ['in_progress']), ('has_fillable_packages', '=', False)]}"
-                />
-                        </xpath>
-                        <xpath expr="//header" position="inside">
-                                <field name="has_qty_adjusted" invisible="1"/>
-                                <field name="has_fillable_packages" invisible="1"/>
-                                <button
-                    name="action_fill_packages"
-                    type="object"
-                    class="btn-primary"
-                    string="Fill Packages"
-                    attrs="{'invisible': ['|', ('state', 'not in', ['in_progress']), ('has_fillable_packages', '=', False)]}"
-                />
-                                <button
-                    name="action_restore_ordered_qty"
-                    type="object"
-                    string="Restore Ordered Qty"
-                    attrs="{'invisible': [('has_qty_adjusted', '=', False)]}"
-                />
                         </xpath>
                 </field>
         </record>
