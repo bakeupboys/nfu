@@ -1,4 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_batch_packaging_reconcile,sale.order.batch.packaging.reconcile,model_sale_order_batch_packaging_reconcile,base.group_user,1,1,1,1
-access_batch_packaging_reconcile_line,sale.order.batch.packaging.reconcile.line,model_sale_order_batch_packaging_reconcile_line,base.group_user,1,1,1,1
-access_batch_packaging_reconcile_zero_line,sale.order.batch.packaging.reconcile.zero.line,model_sale_order_batch_packaging_reconcile_zero_line,base.group_user,1,1,1,1
+access_batch_packaging_fill,sale.order.batch.packaging.fill,model_sale_order_batch_packaging_fill,base.group_user,1,1,1,1
+access_batch_packaging_fill_line,sale.order.batch.packaging.fill.line,model_sale_order_batch_packaging_fill_line,base.group_user,1,1,1,1
+access_batch_packaging_fill_zero_line,sale.order.batch.packaging.fill.zero.line,model_sale_order_batch_packaging_fill_zero_line,base.group_user,1,1,1,1

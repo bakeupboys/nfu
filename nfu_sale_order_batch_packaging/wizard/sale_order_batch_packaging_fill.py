@@ -1,14 +1,14 @@
 from odoo import api, fields, models
 
 
-class SaleOrderBatchPackagingReconcile(models.TransientModel):
-    _name = "sale.order.batch.packaging.reconcile"
-    _description = "Batch Packaging Auto-Reconcile Wizard"
+class SaleOrderBatchPackagingFill(models.TransientModel):
+    _name = "sale.order.batch.packaging.fill"
+    _description = "Batch Packaging Auto-Fill Wizard"
 
     batch_id = fields.Many2one("sale.order.batch", readonly=True)
-    line_ids = fields.One2many("sale.order.batch.packaging.reconcile.line", "wizard_id")
+    line_ids = fields.One2many("sale.order.batch.packaging.fill.line", "wizard_id")
     zero_line_ids = fields.One2many(
-        "sale.order.batch.packaging.reconcile.zero.line", "wizard_id"
+        "sale.order.batch.packaging.fill.zero.line", "wizard_id"
     )
     has_fill_lines = fields.Boolean(compute="_compute_has_fill_lines")
     has_zero_lines = fields.Boolean(compute="_compute_has_zero_lines")
@@ -23,22 +23,19 @@ class SaleOrderBatchPackagingReconcile(models.TransientModel):
         for wizard in self:
             wizard.has_zero_lines = bool(wizard.zero_line_ids)
 
-    def action_reconcile(self):
+    def action_fill(self):
         for line in self.line_ids:
-            rounding = 1.0 if line.use_whole_units else 0.1
-            line.batch_product_id._reconcile_packaging(rounding)
+            line.batch_product_id._fill_packaging(line.batch_fill_precision)
         for zero_line in self.zero_line_ids.filtered(lambda l: not l.keep_qty):
             zero_line.batch_product_id._zero_packaging()
         return {"type": "ir.actions.act_window_close"}
 
 
-class SaleOrderBatchPackagingReconcileLine(models.TransientModel):
-    _name = "sale.order.batch.packaging.reconcile.line"
-    _description = "Batch Packaging Auto-Reconcile Wizard Line"
+class SaleOrderBatchPackagingFillLine(models.TransientModel):
+    _name = "sale.order.batch.packaging.fill.line"
+    _description = "Batch Packaging Auto-Fill Wizard Line"
 
-    wizard_id = fields.Many2one(
-        "sale.order.batch.packaging.reconcile", ondelete="cascade"
-    )
+    wizard_id = fields.Many2one("sale.order.batch.packaging.fill", ondelete="cascade")
     batch_product_id = fields.Many2one("sale.order.batch.product", required=True)
     product_id = fields.Many2one(
         related="batch_product_id.product_id", string="Product"
@@ -48,29 +45,27 @@ class SaleOrderBatchPackagingReconcileLine(models.TransientModel):
         string="Open Packaging Qty",
         digits=[12, 3],
     )
-    use_whole_units = fields.Boolean(
-        string="Round to 1",
-        compute="_compute_use_whole_units",
+    batch_fill_precision = fields.Float(
+        string="Precision",
+        compute="_compute_batch_fill_precision",
         precompute=True,
         store=True,
         readonly=False,
     )
 
-    @api.depends("batch_product_id.product_id.uom_id.reconcile_whole_units")
-    def _compute_use_whole_units(self):
+    @api.depends("batch_product_id.product_id.uom_id.batch_fill_precision")
+    def _compute_batch_fill_precision(self):
         for line in self:
-            line.use_whole_units = (
-                line.batch_product_id.product_id.uom_id.reconcile_whole_units
+            line.batch_fill_precision = (
+                line.batch_product_id.product_id.uom_id.batch_fill_precision
             )
 
 
-class SaleOrderBatchPackagingReconcileZeroLine(models.TransientModel):
-    _name = "sale.order.batch.packaging.reconcile.zero.line"
-    _description = "Batch Packaging Auto-Reconcile Zero-Out Line"
+class SaleOrderBatchPackagingFillZeroLine(models.TransientModel):
+    _name = "sale.order.batch.packaging.fill.zero.line"
+    _description = "Batch Packaging Auto-Fill Zero-Out Line"
 
-    wizard_id = fields.Many2one(
-        "sale.order.batch.packaging.reconcile", ondelete="cascade"
-    )
+    wizard_id = fields.Many2one("sale.order.batch.packaging.fill", ondelete="cascade")
     batch_product_id = fields.Many2one("sale.order.batch.product", required=True)
     product_id = fields.Many2one(
         related="batch_product_id.product_id", string="Product"
