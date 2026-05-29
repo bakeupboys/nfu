@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <record id="view_sale_order_batch_packaging_reconcile_form" model="ir.ui.view">
-        <field name="name">sale.order.batch.packaging.reconcile.form</field>
-        <field name="model">sale.order.batch.packaging.reconcile</field>
+    <record id="view_sale_order_batch_packaging_fill_form" model="ir.ui.view">
+        <field name="name">sale.order.batch.packaging.fill.form</field>
+        <field name="model">sale.order.batch.packaging.fill</field>
         <field name="arch" type="xml">
-            <form string="Fill Packages">
+            <form>
                 <sheet>
                     <notebook>
                         <page
@@ -17,7 +17,7 @@
                                 <tree editable="bottom">
                                     <field name="product_id" readonly="1"/>
                                     <field name="open_packaging_qty" readonly="1"/>
-                                    <field name="use_whole_units"/>
+                                    <field name="batch_fill_precision"/>
                                 </tree>
                             </field>
                         </page>
@@ -34,7 +34,7 @@
                     </notebook>
                 </sheet>
                 <footer>
-                    <button name="action_reconcile" type="object" string="Reconcile" class="btn-primary"/>
+                    <button name="action_fill" type="object" string="Confirm" class="btn-primary"/>
                     <button string="Cancel" class="btn-secondary" special="cancel"/>
                 </footer>
             </form>

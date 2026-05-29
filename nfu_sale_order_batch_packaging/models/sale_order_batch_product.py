@@ -99,13 +99,18 @@ class SaleOrderBatchProduct(models.Model):
     def action_restore_ordered_qty(self):
         self.ensure_one()
         lines = self.sale_order_line_ids.filtered(
-            lambda l: l.product_uom_qty != l.product_uom_ordered_qty
+            lambda l: l.product_uom_ordered_qty != 0
+            and l.product_uom_qty != l.product_uom_ordered_qty
         )
         for line in lines:
             line.write({"product_uom_qty": line.product_uom_ordered_qty})
 
-    def _reconcile_packaging(self, rounding):
+    def _fill_packaging(self, rounding):
         self.ensure_one()
+        for line in self.sale_order_line_ids.filtered(
+            lambda l: l.product_uom_ordered_qty == 0
+        ):
+            line.write({"product_uom_ordered_qty": line.product_uom_qty})
         target = self.open_packaging_qty
         eligible = sorted(
             [

@@ -15,4 +15,4 @@
 - 16.0.1.3.4: store all quantities and round open values
 - 16.0.1.3.6: make sure packages are readable by the user
 - 16.0.1.3.7: really make sure packages are readable by the user
-- 16.0.1.4.0: Add automatiok batch fillup
+- 16.0.1.4.0: Add automatic batch fillup

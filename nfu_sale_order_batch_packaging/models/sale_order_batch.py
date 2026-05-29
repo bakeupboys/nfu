@@ -45,7 +45,7 @@ class SaleOrderBatch(models.Model):
         ineligible = self.product_ids.filtered(
             lambda p: p.open_packaging_qty > 0 and p.open_packaging_max_qty != 0.0
         )
-        wizard = self.env["sale.order.batch.packaging.reconcile"].create(
+        wizard = self.env["sale.order.batch.packaging.fill"].create(
             {
                 "batch_id": self.id,
                 "line_ids": [(0, 0, {"batch_product_id": p.id}) for p in eligible],
@@ -56,7 +56,8 @@ class SaleOrderBatch(models.Model):
         )
         return {
             "type": "ir.actions.act_window",
-            "res_model": "sale.order.batch.packaging.reconcile",
+            "name": "Fill Open Packages",
+            "res_model": "sale.order.batch.packaging.fill",
             "res_id": wizard.id,
             "view_mode": "form",
             "target": "new",
