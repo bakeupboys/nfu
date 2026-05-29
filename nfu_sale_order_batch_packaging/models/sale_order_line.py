@@ -6,7 +6,7 @@ class SaleOrderLine(models.Model):
     _inherit = "sale.order.line"
 
     product_uom_ordered_qty = fields.Float(
-        string="Ordered Qty", digits="Product Unit of Measure", default=1.0
+        string="Ordered Qty", digits="Product Unit of Measure", default=0.0
     )
     product_uom_max_qty = fields.Float(
         string="Max Qty", digits="Product Unit of Measure"
@@ -32,16 +32,18 @@ class SaleOrderLine(models.Model):
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
+            product_qty = vals.get("product_uom_qty", 0.0)
             if (
                 not vals.get("product_uom_max_qty")
                 or vals.get("product_uom_max_qty") == 0
             ):
-                product_qty = vals.get("product_uom_qty")
                 vals["product_uom_max_qty"] = product_qty
+            if not vals.get("product_uom_ordered_qty"):
+                vals["product_uom_ordered_qty"] = product_qty
             if vals.get("product_id") and not vals.get("product_packaging_id"):
                 product_id = vals.get("product_id")
                 # Make sure we're not sudo
-                # e.x. when comming from webshop
+                # e.x. when coming from webshop
                 packaging = self.env["product.packaging"].search(
                     [
                         ("product_id", "=", product_id),

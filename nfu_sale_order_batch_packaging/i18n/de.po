@@ -1,0 +1,269 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* nfu_sale_order_batch_packaging
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-05-29 21:37+0000\n"
+"PO-Revision-Date: 2026-05-29 21:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__batch_id
+msgid "Batch"
+msgstr "Charge"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_uom_uom__batch_fill_precision
+msgid "Batch Fill Precision"
+msgstr "Füllgenauigkeit"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_sale_order_batch_packaging_fill
+msgid "Batch Packaging Auto-Fill Wizard"
+msgstr "Assistent zur automatischen Befüllung"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_sale_order_batch_packaging_fill_line
+msgid "Batch Packaging Auto-Fill Wizard Line"
+msgstr ""
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_sale_order_batch_packaging_fill_zero_line
+msgid "Batch Packaging Auto-Fill Zero-Out Line"
+msgstr ""
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__batch_product_id
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__batch_product_id
+msgid "Batch Product"
+msgstr "Sammelprodukt"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_line__batch_uom_max_qty
+msgid "Batch UOM Max Qty"
+msgstr ""
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_line__batch_uom_qty
+msgid "Batch UOM Qty"
+msgstr ""
+
+#. module: nfu_sale_order_batch_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_sale_order_batch_packaging_fill_form
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_sale_order_batch_packaging_fill_form
+msgid "Confirm"
+msgstr "Bestätigen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__create_uid
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__create_uid
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__create_date
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__create_date
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__display_name
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__display_name
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: nfu_sale_order_batch_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_order_batch_form
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_sale_order_batch_packaging_fill_form
+msgid "Fill Packages"
+msgstr "Pakete befüllen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields.selection,name:nfu_sale_order_batch_packaging.selection__sale_order_batch_product__open_packaging_state__full
+msgid "Full"
+msgstr "Voll"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__has_fill_lines
+msgid "Has Fill Lines"
+msgstr "Hat Füllzeilen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch__has_fillable_packages
+msgid "Has Fillable Packages"
+msgstr "Hat befüllbare Pakete"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch__has_qty_adjusted
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_product__has_qty_adjusted
+msgid "Has Qty Adjusted"
+msgstr "Menge angepasst"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__has_zero_lines
+msgid "Has Zero Lines"
+msgstr "Hat Nullzeilen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__id
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__id
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__keep_qty
+msgid "Keep"
+msgstr "Behalten"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill____last_update
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line____last_update
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line____last_update
+msgid "Last Modified on"
+msgstr "Zuletzt geändert am"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__write_uid
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__write_uid
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__write_date
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__write_date
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields.selection,name:nfu_sale_order_batch_packaging.selection__sale_order_batch_product__open_packaging_state__last_open
+msgid "Last package open"
+msgstr "Letztes Paket offen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__line_ids
+msgid "Line"
+msgstr "Zeile"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_product__product_uom_max_qty
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_line__product_uom_max_qty
+msgid "Max Qty"
+msgstr "Max. Menge"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields.selection,name:nfu_sale_order_batch_packaging.selection__sale_order_batch_product__open_packaging_state__open
+msgid "Open"
+msgstr "Offen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_product__open_packaging_max_qty
+msgid "Open Packaging Max Qty"
+msgstr "Max. Menge der offenen Verpackung"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__open_packaging_qty
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__open_packaging_qty
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_product__open_packaging_qty
+msgid "Open Packaging Qty"
+msgstr "Menge der offenen Verpackung"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_product__open_packaging_state
+msgid "Open Packaging State"
+msgstr "Status der offenen Verpackung"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_line__product_uom_ordered_qty
+msgid "Ordered Qty"
+msgstr "Bestellte Menge"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__batch_fill_precision
+msgid "Precision"
+msgstr "Genauigkeit"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_product_template
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__product_id
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__product_id
+msgid "Product"
+msgstr "Produkt"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_uom_uom
+msgid "Product Unit of Measure"
+msgstr "Maßeinheit des Produkts"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_product_product
+msgid "Product Variant"
+msgstr "Produktvariante"
+
+#. module: nfu_sale_order_batch_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_order_batch_form
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_order_batch_product_form
+msgid "Restore Ordered Qty"
+msgstr "Bestellte Menge wiederherstellen"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,help:nfu_sale_order_batch_packaging.field_uom_uom__batch_fill_precision
+msgid ""
+"Rounding step used by the batch fill wizard for this UOM (e.g. 1.0 for whole"
+" units, 0.1 for one decimal)."
+msgstr ""
+"Rundungsschritt des Füll-Assistenten für diese Maßeinheit (z.B. 1.0"
+" für ganze Einheiten, 0.1 für eine Dezimalstelle)."
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_sale_order_batch_product
+msgid "Sale Order Batch Product"
+msgstr ""
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_sale_order_batch
+msgid "Sales Order Batch"
+msgstr "Sammelverkaufsauftrag"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model,name:nfu_sale_order_batch_packaging.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Verkaufsauftragszeile"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:uom.uom,name:nfu_sale_order_batch_packaging.product_uom_stueck
+msgid "Stück"
+msgstr "Stück"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_line__wizard_id
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill_zero_line__wizard_id
+msgid "Wizard"
+msgstr "Assistent"
+
+#. module: nfu_sale_order_batch_packaging
+#: model:ir.model.fields,field_description:nfu_sale_order_batch_packaging.field_sale_order_batch_packaging_fill__zero_line_ids
+msgid "Zero Line"
+msgstr "Nullzeile"
+
+#. module: nfu_sale_order_batch_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_sale_order_batch_packaging_fill_form
+msgid "Zero Out"
+msgstr "Auf Null setzen"
