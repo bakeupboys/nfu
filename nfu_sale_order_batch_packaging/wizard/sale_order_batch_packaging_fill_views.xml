@@ -14,7 +14,7 @@
                         >
                             <field name="has_fill_lines" invisible="1"/>
                             <field name="line_ids">
-                                <tree editable="bottom">
+                                <tree editable="bottom" delete="0">
                                     <field name="product_id" readonly="1"/>
                                     <field name="open_packaging_qty" readonly="1"/>
                                     <field name="batch_fill_precision"/>
@@ -24,7 +24,7 @@
                         <page string="Zero Out" name="zero_out" attrs="{'invisible': [('has_zero_lines', '=', False)]}">
                             <field name="has_zero_lines" invisible="1"/>
                             <field name="zero_line_ids">
-                                <tree editable="bottom">
+                                <tree editable="bottom" delete="0">
                                     <field name="product_id" readonly="1"/>
                                     <field name="open_packaging_qty" readonly="1"/>
                                     <field name="keep_qty"/>
