@@ -96,6 +96,32 @@ class SaleOrderBatchProduct(models.Model):
                 for line in product.sale_order_line_ids
             )
 
+    def action_fill_packages(self):
+        self.ensure_one()
+        if self.open_packaging_qty > 0 and self.open_packaging_max_qty == 0.0:
+            line_ids = [(0, 0, {"batch_product_id": self.id})]
+            zero_line_ids = []
+        elif self.open_packaging_qty > 0 and self.open_packaging_max_qty != 0.0:
+            line_ids = []
+            zero_line_ids = [(0, 0, {"batch_product_id": self.id})]
+        else:
+            return
+        wizard = self.env["sale.order.batch.packaging.fill"].create(
+            {
+                "batch_id": self.batch_id.id,
+                "line_ids": line_ids,
+                "zero_line_ids": zero_line_ids,
+            }
+        )
+        return {
+            "type": "ir.actions.act_window",
+            "name": "Fill Open Packages",
+            "res_model": "sale.order.batch.packaging.fill",
+            "res_id": wizard.id,
+            "view_mode": "form",
+            "target": "new",
+        }
+
     def action_restore_ordered_qty(self):
         self.ensure_one()
         lines = self.sale_order_line_ids.filtered(
@@ -128,7 +154,11 @@ class SaleOrderBatchProduct(models.Model):
             fair_share = float_round(remaining / n, precision_rounding=rounding)
             addition = min(room, fair_share)
             if addition > 0:
-                line.write({"product_uom_qty": line.product_uom_qty + addition})
+                new_qty = float_round(
+                    line.product_uom_qty + addition, precision_rounding=rounding
+                )
+                new_qty = min(new_qty, line.product_uom_max_qty)
+                line.write({"product_uom_qty": new_qty})
                 distributed += addition
             last_line = line
             n -= 1
@@ -137,7 +167,11 @@ class SaleOrderBatchProduct(models.Model):
         # Attach any sub-rounding remainder directly to the last eligible line
         remainder = target - distributed
         if remainder > 1e-9 and last_line:
-            last_line.write({"product_uom_qty": last_line.product_uom_qty + remainder})
+            new_qty = float_round(
+                last_line.product_uom_qty + remainder, precision_rounding=rounding
+            )
+            new_qty = min(new_qty, last_line.product_uom_max_qty)
+            last_line.write({"product_uom_qty": new_qty})
 
     def _zero_packaging(self):
         self.ensure_one()

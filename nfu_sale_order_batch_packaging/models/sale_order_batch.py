@@ -1,5 +1,7 @@
 from odoo import api, fields, models
 
+from odoo.addons.sale_order_batch.models.sale_order_batch import READONLY_FIELD_STATES
+
 
 class SaleOrderBatch(models.Model):
     _inherit = "sale.order.batch"
@@ -9,6 +11,12 @@ class SaleOrderBatch(models.Model):
     )
     has_fillable_packages = fields.Boolean(
         compute="_compute_has_fillable_packages",
+    )
+    open_product_ids = fields.Many2many(
+        comodel_name="sale.order.batch.product",
+        compute="_compute_open_product_ids",
+        inverse="_inverse_open_product_ids",
+        states=READONLY_FIELD_STATES,
     )
 
     @api.depends(
@@ -28,6 +36,16 @@ class SaleOrderBatch(models.Model):
             batch.has_fillable_packages = any(
                 p.open_packaging_qty > 0 for p in batch.product_ids
             )
+
+    @api.depends("product_ids.open_packaging_qty")
+    def _compute_open_product_ids(self):
+        for batch in self:
+            batch.open_product_ids = batch.product_ids.filtered(
+                lambda p: p.open_packaging_qty > 0
+            )
+
+    def _inverse_open_product_ids(self):
+        pass
 
     def action_restore_ordered_qty(self):
         self.ensure_one()

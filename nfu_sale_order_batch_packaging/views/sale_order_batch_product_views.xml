@@ -17,6 +17,14 @@
                     </xpath>
                     <xpath expr="//header" position="inside">
                         <field name="has_qty_adjusted" invisible="1"/>
+                        <field name="open_packaging_qty" invisible="1"/>
+                        <button
+                    name="action_fill_packages"
+                    type="object"
+                    string="Fill Packages"
+                    class="btn-primary"
+                    attrs="{'invisible': [('open_packaging_qty', '=', 0.0)]}"
+                />
                         <button
                     name="action_restore_ordered_qty"
                     type="object"
