@@ -94,6 +94,11 @@ msgid "Fill Packages"
 msgstr "Pakete befüllen"
 
 #. module: nfu_sale_order_batch_packaging
+#: model_terms:ir.ui.view,arch_db:nfu_sale_order_batch_packaging.view_order_batch_form
+msgid "Open Products"
+msgstr "Offene Produkte"
+
+#. module: nfu_sale_order_batch_packaging
 #: model:ir.model.fields.selection,name:nfu_sale_order_batch_packaging.selection__sale_order_batch_product__open_packaging_state__full
 msgid "Full"
 msgstr "Voll"

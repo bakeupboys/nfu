@@ -1,5 +1,6 @@
 from odoo import _, api, fields, models
 from odoo.exceptions import UserError
+from odoo.tools import float_round
 
 
 class SaleOrderLine(models.Model):
@@ -21,7 +22,13 @@ class SaleOrderLine(models.Model):
     @api.constrains("product_uom_qty", "product_uom_max_qty")
     def _check_product_uom_qty(self):
         for order_line in self:
-            if order_line.product_uom_qty > order_line.product_uom_max_qty:
+            if (
+                float_round(
+                    order_line.product_uom_max_qty - order_line.product_uom_qty,
+                    precision_rounding=order_line.product_uom.rounding,
+                )
+                < 0
+            ):
                 raise UserError(
                     _(
                         f"{order_line.order_id.name}, {order_line.product_id.name}: "
