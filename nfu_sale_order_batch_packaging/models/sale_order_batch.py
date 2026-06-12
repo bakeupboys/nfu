@@ -1,6 +1,4 @@
 from odoo import api, fields, models
-from odoo.tools import float_is_zero
-
 from odoo.addons.sale_order_batch.models.sale_order_batch import READONLY_FIELD_STATES
 
 
