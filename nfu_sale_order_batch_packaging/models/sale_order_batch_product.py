@@ -167,10 +167,9 @@ class SaleOrderBatchProduct(models.Model):
         # Attach any sub-rounding remainder directly to the last eligible line
         remainder = target - distributed
         if remainder > 1e-9 and last_line:
-            new_qty = float_round(
-                last_line.product_uom_qty + remainder, precision_rounding=rounding
+            new_qty = min(
+                last_line.product_uom_qty + remainder, last_line.product_uom_max_qty
             )
-            new_qty = min(new_qty, last_line.product_uom_max_qty)
             last_line.write({"product_uom_qty": new_qty})
 
     def _zero_packaging(self):
