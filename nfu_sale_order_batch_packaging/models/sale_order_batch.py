@@ -1,5 +1,6 @@
 from odoo import api, fields, models
 from odoo.addons.sale_order_batch.models.sale_order_batch import READONLY_FIELD_STATES
+from odoo.tools import float_is_zero
 
 
 class SaleOrderBatch(models.Model):
@@ -57,10 +58,10 @@ class SaleOrderBatch(models.Model):
     def action_fill_packages(self):
         self.ensure_one()
         eligible = self.product_ids.filtered(
-            lambda p: p.open_packaging_qty > 0 and float_is_zero(p.open_packaging_max_qty)
+            lambda p: p.open_packaging_qty > 0 and float_is_zero(p.open_packaging_max_qty, precision_rounding=p.product_id.uom_id.batch_fill_precision)
         )
         ineligible = self.product_ids.filtered(
-            lambda p: p.open_packaging_qty > 0 and not float_is_zero(p.open_packaging_max_qty)
+            lambda p: p.open_packaging_qty > 0 and not float_is_zero(p.open_packaging_max_qty, precision_rounding=p.product_id.uom_id.batch_fill_precision)
         )
         wizard = self.env["sale.order.batch.packaging.fill"].create(
             {
