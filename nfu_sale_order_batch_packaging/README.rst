@@ -37,7 +37,7 @@ Changelog
 
 - 16.0.0.0.1: Initial module.
 - 16.0.1.0.0: rename to nfu_sale_order_batch_packaging
-- 16.0.1.16.0.1.0: Live
+- 16.0.1.1.0: Live
 - 16.0.1.2.0: Add regeneration action for batch products
 - 16.0.1.2.1: refactoring
 - 16.0.1.3.0: add packaging states
