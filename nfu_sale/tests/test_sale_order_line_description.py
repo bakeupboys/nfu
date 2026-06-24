@@ -15,12 +15,13 @@ class TestSaleOrderLineDescription(TransactionCase):
         )
 
     def test_description_skips_variant_attributes(self):
-        """A small and a large baguette ordered on the same product keep the
-        product description but never show their size attribute value."""
+        """A small and a large baguette (two real variants) keep the product
+        name, internal reference and sales description, but never show their
+        size attribute value."""
         attribute = self.env["product.attribute"].create(
             {
                 "name": "Size",
-                "create_variant": "no_variant",
+                "create_variant": "always",
                 "value_ids": [
                     (0, 0, {"name": "Small"}),
                     (0, 0, {"name": "Large"}),
@@ -43,19 +44,17 @@ class TestSaleOrderLineDescription(TransactionCase):
                 ],
             }
         )
-        product = template.product_variant_ids[0]
-        ptavs = template.attribute_line_ids.product_template_value_ids
-        small = ptavs.filtered(lambda p: p.name == "Small")
-        large = ptavs.filtered(lambda p: p.name == "Large")
+        # Two variants are generated; give each its own internal reference.
+        self.assertEqual(len(template.product_variant_ids), 2)
         order = self.env["sale.order"].create({"partner_id": self.partner.id})
-        for size in (small, large):
+        for index, variant in enumerate(template.product_variant_ids):
+            size = variant.product_template_attribute_value_ids.name
+            variant.default_code = "BAG-%s" % index
+            # The variant display name carries the size, e.g. "[BAG-0] Baguette (Small)".
+            self.assertIn(size, variant.display_name)
             line = self.env["sale.order.line"].create(
-                {
-                    "order_id": order.id,
-                    "product_id": product.id,
-                    "product_no_variant_attribute_value_ids": [(6, 0, size.ids)],
-                }
+                {"order_id": order.id, "product_id": variant.id}
             )
-            self.assertIn("Baguette", line.name)
+            self.assertIn("[%s] Baguette" % variant.default_code, line.name)
             self.assertIn("Crusty loaf", line.name)
-            self.assertNotIn(size.name, line.name)
+            self.assertNotIn(size, line.name)
