@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "Stock",
-    "version": "16.0.1.0.2",
+    "version": "16.0.1.0.3",
     "depends": ["stock", "partner_firstname"],
     "data": [
         "views/report_deliveryslip.xml",
