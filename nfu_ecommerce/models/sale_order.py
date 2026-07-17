@@ -28,35 +28,15 @@ class SaleOrder(models.Model):
                 raise ValidationError(_("You don't have enough credit."))
 
     def _cart_find_product_line(self, product_id=None, line_id=None, **kwargs):
-        """Let identical no_variant selections merge into one cart line."""
-        # Lift the no_variant "always new line" guard (opt-in checked in
-        # product.template._has_no_variant_attributes), then let super search.
-        self = self.with_context(nfu_merge_no_variant=True)
-        lines = super()._cart_find_product_line(product_id, line_id, **kwargs)
-        if line_id or not lines:
-            return lines
+        """Merge into a single cart line for opted-in no_variant templates.
 
-        # Keep only lines with the same no_variant selection. The created line
-        # stores the *completed* combination (_prepare_order_line_values fills
-        # in defaults via _get_closest_possible_combination), so complete the
-        # received values the same way before comparing.
-        product = self.env["product.product"].browse(product_id)
-        received_values = self.env["product.template.attribute.value"].browse(
-            [
-                int(value["value"])
-                for value in (kwargs.get("no_variant_attribute_values") or [])
-            ]
-        )
-        combination = product.product_tmpl_id._get_closest_possible_combination(
-            product.product_template_attribute_value_ids | received_values
-        )
-        requested_no_variant_values = combination.filtered(
-            lambda ptav: ptav.attribute_id.create_variant == "no_variant"
-        )
-        return lines.filtered(
-            lambda line: line.product_no_variant_attribute_value_ids
-            == requested_no_variant_values
-        )
+        Lifting the guard (opt-in checked in
+        product.template._has_no_variant_attributes) lets the standard search
+        return the existing same-product line regardless of the no_variant
+        selection, so a new position is never created when one already exists.
+        """
+        self = self.with_context(nfu_merge_no_variant=True)
+        return super()._cart_find_product_line(product_id, line_id, **kwargs)
 
     def _prepare_order_line_values(
         self,
