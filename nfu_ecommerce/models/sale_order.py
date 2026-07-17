@@ -36,14 +36,22 @@ class SaleOrder(models.Model):
         if line_id or not lines:
             return lines
 
-        # Keep only lines with the same no_variant selection.
-        requested_no_variant_values = self.env[
-            "product.template.attribute.value"
-        ].browse(
+        # Keep only lines with the same no_variant selection. The created line
+        # stores the *completed* combination (_prepare_order_line_values fills
+        # in defaults via _get_closest_possible_combination), so complete the
+        # received values the same way before comparing.
+        product = self.env["product.product"].browse(product_id)
+        received_values = self.env["product.template.attribute.value"].browse(
             [
                 int(value["value"])
                 for value in (kwargs.get("no_variant_attribute_values") or [])
             ]
+        )
+        combination = product.product_tmpl_id._get_closest_possible_combination(
+            product.product_template_attribute_value_ids | received_values
+        )
+        requested_no_variant_values = combination.filtered(
+            lambda ptav: ptav.attribute_id.create_variant == "no_variant"
         )
         return lines.filtered(
             lambda line: line.product_no_variant_attribute_value_ids
