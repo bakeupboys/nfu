@@ -154,3 +154,21 @@ msgstr ""
 #, python-format
 msgid "You don't have enough credit."
 msgstr "Du hast nicht genug Guthaben."
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,field_description:nfu_ecommerce.field_product_attribute__nfu_merge_cart_lines
+msgid "Merge Cart Lines"
+msgstr "Warenkorbzeilen zusammenführen"
+
+#. module: nfu_ecommerce
+#: model:ir.model.fields,help:nfu_ecommerce.field_product_attribute__nfu_merge_cart_lines
+msgid ""
+"Only relevant for attributes that never create a variant (Variant Creation "
+"Mode = 'Never'). When enabled, adding a product to the cart from the webshop "
+"with the same selection for this attribute increases the quantity of the "
+"existing cart line instead of creating a new line."
+msgstr ""
+"Nur relevant für Attribute, die nie eine Variante erzeugen (Variantenerstellung "
+"= 'Nie'). Wenn aktiviert, erhöht das Hinzufügen eines Produkts zum Warenkorb im "
+"Webshop mit derselben Auswahl für dieses Attribut die Menge der bestehenden "
+"Warenkorbzeile, anstatt eine neue Zeile anzulegen."

@@ -27,6 +27,29 @@ class SaleOrder(models.Model):
             if order.website_id.avoid_depts and order.updated_balance < 0:
                 raise ValidationError(_("You don't have enough credit."))
 
+    def _cart_find_product_line(self, product_id=None, line_id=None, **kwargs):
+        """Let identical no_variant selections merge into one cart line."""
+        # Lift the no_variant "always new line" guard (opt-in checked in
+        # product.template._has_no_variant_attributes), then let super search.
+        self = self.with_context(nfu_merge_no_variant=True)
+        lines = super()._cart_find_product_line(product_id, line_id, **kwargs)
+        if line_id or not lines:
+            return lines
+
+        # Keep only lines with the same no_variant selection.
+        requested_no_variant_values = self.env[
+            "product.template.attribute.value"
+        ].browse(
+            [
+                int(value["value"])
+                for value in (kwargs.get("no_variant_attribute_values") or [])
+            ]
+        )
+        return lines.filtered(
+            lambda line: line.product_no_variant_attribute_value_ids
+            == requested_no_variant_values
+        )
+
     def _prepare_order_line_values(
         self,
         product_id,

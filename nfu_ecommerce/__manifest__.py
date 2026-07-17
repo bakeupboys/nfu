@@ -4,7 +4,7 @@
     "author": "BAKEUP",
     "website": "https://www.bakeup.org",
     "category": "website",
-    "version": "16.0.1.5.0",
+    "version": "16.0.1.6.0",
     "depends": [
         "sale_product_configurator",
         "website_sale",
@@ -15,6 +15,7 @@
     ],
     "data": [
         "views/res_config_settings_views.xml",
+        "views/product_attribute_views.xml",
         "views/product_template_views.xml",
         "views/templates.xml",
     ],
