@@ -11,6 +11,22 @@ class ProductTemplate(models.Model):
         company_dependent=True,  # added
     )
 
+    def _has_no_variant_attributes(self):
+        res = super()._has_no_variant_attributes()
+        # During a merging cart search, hide no_variant attributes from the
+        # "always new line" guard when they all opted into merging.
+        if res and self.env.context.get("nfu_merge_no_variant"):
+            no_variant_attributes = (
+                self.valid_product_template_attribute_line_ids.attribute_id.filtered(
+                    lambda a: a.create_variant == "no_variant"
+                )
+            )
+            if no_variant_attributes and all(
+                a.nfu_merge_cart_lines for a in no_variant_attributes
+            ):
+                return False
+        return res
+
     def action_publish_on_website(self):
         for product in self:
             product.is_published = True
