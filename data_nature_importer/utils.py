@@ -4,6 +4,8 @@ import xml.etree.ElementTree as ET
 import requests
 
 from odoo import _
+
+# TODO: switch UserError to log warning
 from odoo.exceptions import UserError
 
 
@@ -52,6 +54,7 @@ def _parse_products(xml_bytes):
             "bio_id": prod.findtext("dn:sys_bio_id", default="", namespaces=ns),
             "version": prod.findtext("dn:sys_version_nr", default="", namespaces=ns),
             "gtin": prod.findtext("dn:idnr_gtin", default="", namespaces=ns),
+            "vpe1_gtin": prod.findtext("dn:log_vpe1_gtin", default="", namespaces=ns),
             "name_short": prod.findtext(
                 "dn:pbm_produktname_kurz", default="", namespaces=ns
             ),
@@ -167,7 +170,7 @@ def _parse_products(xml_bytes):
     return products
 
 
-def get_datanature_metadata(self, gtin, token=None):
+def get_datanature_metadata(self, gtin=False, bio_id=False, token=None):
     """
     Fetch product metadata from DataNature API using the provided BNN and bearer token.
     """
@@ -175,7 +178,14 @@ def get_datanature_metadata(self, gtin, token=None):
         token = get_datanature_bearer_token(self)
         if not token:
             raise UserError(_("Failed to obtain DataNature bearer token"))
-    url = f"{PIM_BASE}/resources/pim/if/{PIM_VERSION}/export/filter/idnr_gtin/{gtin}"
+    if gtin:
+        url = (
+            f"{PIM_BASE}/resources/pim/if/{PIM_VERSION}/export/filter/idnr_gtin/{gtin}"
+        )
+    elif bio_id:
+        url = f"{PIM_BASE}/resources/pim/if/{PIM_VERSION}/export/filter/sys_bio_id/{bio_id}"
+    else:
+        raise UserError(_("GTIN or BIO ID not provided"))
     headers = {"Authorization": f"Bearer {token}", "accept": "application/xml"}
     response = requests.get(url, headers=headers, timeout=30)
     if response.status_code == 200:

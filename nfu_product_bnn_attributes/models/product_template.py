@@ -19,11 +19,14 @@ class ProductTemplate(models.Model):
     packaging_qty = fields.Float(string="Packaging Quantity")
     packaging_name = fields.Char()
     gtin_article = fields.Char(string="Article GTIN")
+    bio_id = fields.Char(string="BIO ID")
 
     def _get_dn_metadata(self):
         self.ensure_one()
-        if self.gtin_article:
-            metadata = get_datanature_metadata(self, self.gtin_article)
+        if self.gtin_article or self.bio_id:
+            metadata = get_datanature_metadata(
+                self, gtin=self.gtin_article, bio_id=self.bio_id
+            )
             if metadata:
                 return metadata[0]
         return super()._get_dn_metadata()

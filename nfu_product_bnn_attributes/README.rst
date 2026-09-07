@@ -43,6 +43,7 @@ Changelog
 - 16.0.1.3.1: Temporay disable image_1920 field verification
 - 16.0.1.3.2: Temporay disable image_1920 field verification for product.image
 - 16.0.1.3.3: Add max size for bith image_1920 fields
+- 16.0.1.4.0: Add BIO ID support
 
 Bug Tracker
 ===========

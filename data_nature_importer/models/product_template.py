@@ -62,7 +62,7 @@ class ProductTemplate(models.Model):
         self.ensure_one()
         if not self.barcode:
             return False
-        metadata = dn_utils.get_datanature_metadata(self, self.barcode)
+        metadata = dn_utils.get_datanature_metadata(self, gtin=self.barcode)
         if not metadata:
             return False
         return metadata[0]
@@ -151,10 +151,6 @@ class ProductTemplate(models.Model):
             partner = self.env["res.partner"].create({"name": name, "is_company": True})
         if self.producer_id != partner:
             self.producer_id = partner
-
-    # TODO: remove legacy methode aber cleaning up failed jobs
-    def _sync_datanature_image(self, metadata):
-        return self._sync_dn_images(metadata)
 
     def _sync_dn_images(self, metadata):
         images = metadata.get("images")
