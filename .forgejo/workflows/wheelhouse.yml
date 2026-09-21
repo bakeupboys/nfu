@@ -1,0 +1,154 @@
+name: wheelhouse
+
+# Build a wheel for every CHANGED Odoo addon (via the `whool` build backend)
+# and publish them to this Forgejo instance's PyPI package registry, so the
+# modules can be `pip install`ed into production deployments.
+#
+# Versions are computed by whool's native post-version strategy: for the 16.0
+# series this is ".N", where N is the number of commits to the addon since its
+# manifest version last changed. So a fresh, PEP 440-newer wheel is published
+# on every push (e.g. 16.0.2.4.3 -> 16.0.2.4.3.1, .2, ...) without having to
+# manually bump __manifest__.py. Bumping the manifest version drops the suffix
+# and publishes the clean release (16.0.2.5.0). This requires full git history,
+# hence `fetch-depth: 0`.
+#
+# Install example (read token recommended for private repos):
+#   uv pip install \
+#     --index-url https://<user>:<token>@git.ziemlichoptimal.de/api/packages/odoo/pypi/simple/ \
+#     odoo-addon-sale-order-batch
+
+on:
+  push:
+    branches:
+      # All Odoo series branches: 16.0, 17.0, 18.0, ...
+      # Deliberately excludes 16.0-ocabot-* / feature branches.
+      - "*.0"
+  # Manual trigger (Actions tab -> "Run workflow"). Use force_all=true to
+  # build & publish every addon regardless of the changed-files diff -- handy
+  # for seeding the registry on the very first run.
+  workflow_dispatch:
+    inputs:
+      force_all:
+        description: "Build & publish ALL addons (ignore the changed-files diff)"
+        type: boolean
+        default: false
+
+jobs:
+  wheelhouse:
+    # The in-cluster `moby` runner, not ubuntu-latest. Ported 2026-09-11 along
+    # with moby/uberbau_xyz, moby/claude-code and moby/brewlog's build job.
+    #
+    # This job is light enough to run anywhere — it installs uv into $HOME and
+    # builds pure-python wheels, with no apt and no container of its own. It moves
+    # for a supply-chain reason rather than a resource one: the wheels it
+    # publishes are what odoo-customers/* images `pip install` at build time, so
+    # every customer image depends on this job having run. Resting that on the
+    # small Forgejo host — which also serves git, the registry and Caddy — puts
+    # the whole Odoo chain on the machine least able to carry it. On `moby` the
+    # base images, the customer images and the wheels they consume all come off
+    # one builder.
+    #
+    # Host mode means no disposable container, so `uv` persists in the runner's
+    # HOME between runs. That is fine here (it is a ~30MB user-level install and
+    # the installer is idempotent) and is the reason this job could move while
+    # the OCA test workflows in .github/workflows could not.
+    runs-on: moby
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # Full history is required by whool to count commits since the last
+          # manifest version change (the ".N" post-version strategy).
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+
+      - name: Determine addons to build
+        id: changed
+        run: |
+          set -euo pipefail
+          force="${{ github.event.inputs.force_all || 'false' }}"
+          addons=""
+          if [ "$force" = "true" ]; then
+            # Forced run: build every addon, ignore the diff.
+            for addon in */ ; do
+              name="${addon%/}"
+              if [ -f "${addon}__manifest__.py" ] && [ -f "${addon}pyproject.toml" ]; then
+                addons="${addons} ${name}"
+              fi
+            done
+          else
+            before="${{ github.event.before }}"
+            # On the first push to a branch (or a force-push), `before` is all
+            # zeros / unreachable; fall back to the parent commit.
+            if [ -z "$before" ] || ! git cat-file -e "${before}^{commit}" 2>/dev/null ; then
+              before="$(git rev-parse HEAD~1 2>/dev/null || true)"
+            fi
+            if [ -n "$before" ]; then
+              changed_files="$(git diff --name-only "$before" HEAD)"
+            else
+              changed_files="$(git ls-files)"
+            fi
+            # Reduce to top-level addon dirs that actually changed and are addons.
+            for addon in */ ; do
+              name="${addon%/}"
+              if [ -f "${addon}__manifest__.py" ] && [ -f "${addon}pyproject.toml" ] \
+                 && echo "$changed_files" | grep -q "^${name}/" ; then
+                addons="${addons} ${name}"
+              fi
+            done
+          fi
+          addons="$(echo "$addons" | xargs || true)"
+          echo "Addons to build:${addons:- (none)}"
+          echo "addons=${addons}" >> "$GITHUB_OUTPUT"
+
+      - name: Build wheels for changed addons
+        if: steps.changed.outputs.addons != ''
+        run: |
+          set -euo pipefail
+          rm -rf dist && mkdir -p dist
+          for name in ${{ steps.changed.outputs.addons }} ; do
+            echo "::group::Building ${name}"
+            # whool reads the manifest version and appends ".N" based on git
+            # history (16.0 series default), so no manual version bump needed.
+            uv build --wheel --out-dir dist "${name}"
+            echo "::endgroup::"
+          done
+          echo "Built wheels:"
+          ls -1 dist
+
+      - name: Publish to Forgejo PyPI registry
+        if: steps.changed.outputs.addons != ''
+        env:
+          # The PyPI registry lives under the repo owner (here: odoo).
+          TWINE_REPOSITORY_URL: ${{ github.server_url }}/api/packages/${{ github.repository_owner }}/pypi
+          # Defaults to the pushing user; set WHEELHOUSE_USER if the token below
+          # belongs to a different account (e.g. a dedicated publish user).
+          TWINE_USERNAME: ${{ secrets.WHEELHOUSE_USER || github.actor }}
+          # Forgejo's automatic Actions token can write packages for the
+          # repo owner. Override with a dedicated PAT in the WHEELHOUSE_TOKEN
+          # secret if you tighten the default token permissions.
+          TWINE_PASSWORD: ${{ secrets.WHEELHOUSE_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          set -euo pipefail
+          # twine's --skip-existing only works for PyPI/TestPyPI, not custom
+          # repositories, so we upload wheel-by-wheel and treat an
+          # "already exists" (HTTP 409) response as a skip to stay idempotent.
+          for whl in dist/*.whl ; do
+            echo "::group::Uploading $(basename "$whl")"
+            if out="$(uvx twine upload --non-interactive --disable-progress-bar "$whl" 2>&1)" ; then
+              echo "$out"
+            else
+              echo "$out"
+              if echo "$out" | grep -qiE "409|already exist|conflict" ; then
+                echo "Version already published, skipping."
+              else
+                echo "::endgroup::"
+                exit 1
+              fi
+            fi
+            echo "::endgroup::"
+          done
