@@ -12,6 +12,23 @@ class Website(models.Model):
     )
     avoid_depts = fields.Boolean(string="Avoid depths")
 
+    def sale_product_domain(self):
+        """Override to keep the published filter out of ir.property.
+
+        The stock domain carries ("is_published", "=", True) for every
+        non-internal user. is_published is company_dependent here, so Odoo
+        resolves that leaf in Python and inlines ~18k ids into the SQL. Swap it
+        for the searchable mirror, which compiles to one indexed subquery.
+        """
+        return [
+            ("nfu_published_for_company", leaf[1], leaf[2])
+            if isinstance(leaf, (list, tuple))
+            and len(leaf) == 3
+            and leaf[0] == "is_published"
+            else leaf
+            for leaf in super().sale_product_domain()
+        ]
+
     def sale_get_order(self, force_create=False, update_pricelist=False):
         """Override to clean sale_order_id if so belongs to another website"""
         self.ensure_one()
