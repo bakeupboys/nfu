@@ -14,3 +14,4 @@
 - 16.0.1.4.3: Remove is_published filtering and use job manager only on more than one
 - 16.0.1.4.5: Make open Packagings more visible
 - 16.0.1.5.0: Make attribute selection an AND-filter
+- 16.0.1.7.0: Stop resolving is_published through ir.property in the shop domain
